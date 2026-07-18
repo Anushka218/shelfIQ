@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from app.routes import events, products,trends,users,shelf
+from app.routes import events, products,trends,users,shelf,analytics,search,filter
 
 app = FastAPI(title="ShelfIQ API")
 
@@ -34,4 +34,19 @@ app.include_router(
     shelf.router,
     prefix="/api/shelf",
     tags=["Shelf"]
+)
+app.include_router(
+    analytics.router,
+    prefix="/api/analytics",
+    tags=["Analytics"]
+)
+app.include_router(
+    search.router,
+    prefix="/api/search",
+    tags=["Search"]
+)
+app.include_router(
+    filter.router,
+    prefix="/api/products/filter",
+    tags=["Filters"]
 )
