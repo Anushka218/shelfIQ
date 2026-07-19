@@ -5,10 +5,9 @@ class Preference(BaseModel):
     name: str
     score: int
 
-
 class AffinityResponse(BaseModel):
     user_id: str
-
+    event_count: int
     favorite_categories: list[Preference]
     favorite_brands: list[Preference]
     favorite_colors: list[Preference]

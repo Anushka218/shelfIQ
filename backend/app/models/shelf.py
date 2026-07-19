@@ -14,4 +14,5 @@ class Recommendation(BaseModel):
 class ShelfResponse(BaseModel):
     user_id: str
     region: str
+    alpha: float
     recommendations: list[Recommendation]

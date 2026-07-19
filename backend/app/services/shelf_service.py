@@ -33,8 +33,8 @@ def build_shelf(user_id: str):
             "region": 1
         }
     )
-    logger.warning(f"Shelf request failed: User '{user_id}' not found")
     if not user_event:
+        logger.warning(f"Shelf request failed: User '{user_id}' not found")
         raise HTTPException(
           status_code=404,
           detail="User not found"
@@ -47,6 +47,9 @@ def build_shelf(user_id: str):
     # Get user affinity
    
     affinity_data = get_user_preferences(user_id)
+    event_count = affinity_data["event_count"]
+
+    alpha = max(0.5,1 - event_count / 20)
     # Convert results into dictionaries
     trend_scores = {
         item["category"]: item["score"]
@@ -77,46 +80,39 @@ def build_shelf(user_id: str):
     )
 
     recommendations = []
-
     # Score each product
     for product in products:
+        category = product["category"]
+        brand = product["brand"]
+        color = product["color"]
 
+        trend = trend_scores.get(category, 0)
+
+        cat_score = category_scores.get(category, 0)
+        brand_score = brand_scores.get(brand, 0)
+        color_score = color_scores.get(color, 0)
+
+        personal_score = (
+            cat_score
+           + brand_score
+           + color_score
+        )
         score = 0
         reasons = []
 
         # ---------- Regional Trend ----------
-        category = product["category"]
-
-        trend = trend_scores.get(category, 0)
-
-        score += trend
-
         if trend:
             reasons.append(f"Trending in {region}")
 
         # ---------- Category Affinity ----------
-        cat_score = category_scores.get(category, 0)
-
-        score += cat_score
 
         if cat_score:
             reasons.append("Matches your favourite category")
 
         # ---------- Brand Affinity ----------
-        brand = product["brand"]
-
-        brand_score = brand_scores.get(brand, 0)
-
-        score += brand_score
 
         if brand_score:
             reasons.append("Matches your favourite brand")
-
-        color = product["color"]
-
-        color_score = color_scores.get(color, 0)
-
-        score += color_score
 
         if color_score:
             reasons.append("Matches your favourite colour")
@@ -124,19 +120,17 @@ def build_shelf(user_id: str):
         # ---------- Rating Bonus ----------
         rating_bonus = product["rating"] * 2
 
-        score += rating_bonus
-
         if product["rating"] >= 4.5:
             reasons.append("Highly rated")
 
         # ---------- Discount Bonus ----------
         discount_bonus = product["discount"] / 5
 
-        score += discount_bonus
-
         if product["discount"] >= 20:
             reasons.append("Good discount")
-
+        rating_bonus = product["rating"] * 2
+        discount_bonus = product["discount"] / 5
+        score = (alpha * trend + (1 - alpha) * personal_score + rating_bonus + discount_bonus)
         recommendations.append(
             {
                 "product_id": product["product_id"],
@@ -150,4 +144,4 @@ def build_shelf(user_id: str):
         )
     recommendations.sort(key=lambda x: x["score"],reverse=True)
     logger.info(f"Generated {len(recommendations[:10])} recommendations for user '{user_id}' in region '{region}'")
-    return { "user_id": user_id, "region": region,"recommendations": recommendations[:10]}
+    return { "user_id": user_id, "region": region,"alpha": round(alpha, 2),"recommendations": recommendations[:10]}

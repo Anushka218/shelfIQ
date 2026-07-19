@@ -5,6 +5,7 @@ from fastapi import HTTPException
 
 def get_user_preferences(user_id: str):
     user_event = events_collection.find_one({"user_id": user_id})
+    event_count = len(user_event)
 
     if not user_event:
         logger.warning(f"Affinity request failed: User '{user_id}' not found")
@@ -76,4 +77,4 @@ def get_user_preferences(user_id: str):
             for name, score in counter.most_common(5)
         ]
     logger.info(f"Generated affinity profile for user '{user_id}'")
-    return {"user_id": user_id,"favorite_categories": top(category_counter),"favorite_brands": top(brand_counter),"favorite_colors": top(color_counter),}
+    return {"user_id": user_id,"event_count": event_count,"favorite_categories": top(category_counter),"favorite_brands": top(brand_counter),"favorite_colors": top(color_counter),}
