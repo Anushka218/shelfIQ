@@ -1,7 +1,8 @@
 from app.database import products_collection, events_collection
 from app.services.trend_service import get_region_trends
 from app.services.affinity_service import get_user_preferences
-
+from app.logger import logger
+from fastapi import HTTPException
 
 def to_score_map(items):
     """
@@ -32,11 +33,12 @@ def build_shelf(user_id: str):
             "region": 1
         }
     )
-
+    logger.warning(f"Shelf request failed: User '{user_id}' not found")
     if not user_event:
-        return {
-            "error": "User not found"
-        }
+        raise HTTPException(
+          status_code=404,
+          detail="User not found"
+        )
 
     region = user_event["region"]
     # Get regional trends
@@ -146,12 +148,6 @@ def build_shelf(user_id: str):
                 "reasons": reasons
             }
         )
-    recommendations.sort(
-        key=lambda x: x["score"],
-        reverse=True
-    )
-    return {
-        "user_id": user_id,
-        "region": region,
-        "recommendations": recommendations[:10]
-    }
+    recommendations.sort(key=lambda x: x["score"],reverse=True)
+    logger.info(f"Generated {len(recommendations[:10])} recommendations for user '{user_id}' in region '{region}'")
+    return { "user_id": user_id, "region": region,"recommendations": recommendations[:10]}

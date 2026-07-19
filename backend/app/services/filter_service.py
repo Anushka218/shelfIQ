@@ -1,4 +1,5 @@
 from app.database import products_collection
+from app.logger import logger
 
 def exact_match(value):
     """
@@ -39,6 +40,6 @@ def filter_products(category=None,brand=None,color=None,material=None,occasion=N
       query["rating"] = {
         "$gte": min_rating
       }
-    print("MongoDB Query:", query)
+    logger.info(f"MongoDB Query: {query}")
     products = list(products_collection.find(query,{"_id": 0}))
     return {"filters": query,"count": len(products), "results": products}

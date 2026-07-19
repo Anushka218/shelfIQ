@@ -1,9 +1,10 @@
 from fastapi import FastAPI
-from app.routes import events, products,trends,users,shelf,analytics,search,filter
+from app.routes import events, products,trends,users,shelf,analytics,search,filter,health
+from app.config import APP_NAME, APP_VERSION
+from fastapi.middleware.cors import CORSMiddleware
 
-app = FastAPI(title="ShelfIQ API")
+app = FastAPI(title=APP_NAME, version=APP_VERSION)
 
-app = FastAPI()
 
 @app.get("/")
 def health_check():
@@ -49,4 +50,16 @@ app.include_router(
     filter.router,
     prefix="/api/products/filter",
     tags=["Filters"]
+)
+app.include_router(
+    health.router,
+    prefix="/health",
+    tags=["Health"]
+)
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],  
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
 )

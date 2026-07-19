@@ -1,15 +1,17 @@
 from collections import Counter
 from app.database import events_collection, products_collection
+from fastapi import HTTPException
+from app.logger import logger
 
 def get_region_trends(region: str):
     # Fetch events for the region
     events = list(events_collection.find({"region": region}, {"_id": 0}))
 
     if not events:
-        return {
-            "region": region,
-            "top_categories": []
-        }
+        raise HTTPException(
+          status_code=404,
+          detail="Region not found"
+        )
 
     # Build a lookup: product_id -> category
     product_lookup = {}

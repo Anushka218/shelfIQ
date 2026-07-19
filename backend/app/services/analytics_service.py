@@ -1,6 +1,6 @@
 from collections import Counter
 from app.database import products_collection, events_collection
-
+from app.logger import logger
 def get_analytics():
     total_products = products_collection.count_documents({})
 
@@ -49,7 +49,7 @@ def get_analytics():
         }
         for region, count in region_counter.most_common()
     ]
-
+    logger.info("Analytics dashboard generated")
     return {
         "total_products": total_products,
         "total_users": total_users,

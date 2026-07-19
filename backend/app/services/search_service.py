@@ -1,4 +1,5 @@
 from app.database import products_collection
+from app.logger import logger
 
 def search_products(query: str):
       products = list(
@@ -18,4 +19,5 @@ def search_products(query: str):
           {"_id": 0}
         )
       )
+      logger.info(f"Search '{query}' returned {len(products)} products")
       return {"query": query,"count": len(products),"results": products}
