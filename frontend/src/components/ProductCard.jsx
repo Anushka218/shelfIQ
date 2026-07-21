@@ -6,8 +6,30 @@ const CATEGORY_STICKERS = {
   "Jeans": "👖",
 };
 
+const COLOR_MAP = {
+  "Grey": "#8A8D93",
+  "Navy": "#1F3A5F",
+  "Pink": "#FF3F6C",
+  "Green": "#4CAF50",
+  "Blue": "#2E7DD9",
+  "Dark Blue": "#16294A",
+  "Yellow": "#E8B93B",
+  "White": "#C9CBD1",
+  "Red": "#D9483B",
+  "Black": "#2A2A2A",
+  "Purple": "#8A4FBF",
+  "Orange": "#E8823B",
+};
+
+function getColorFromTitle(title) {
+  const found = Object.keys(COLOR_MAP).find((color) => title.includes(color));
+  return found ? COLOR_MAP[found] : "#FF3F6C";
+}
+
 export default function ProductCard({ product, rank }) {
   const isTop = rank === 1;
+  const stickerColor = getColorFromTitle(product.title);
+
   return (
     <div
       className={`rounded-md overflow-hidden border bg-white transition-shadow hover:shadow-md ${
@@ -15,7 +37,10 @@ export default function ProductCard({ product, rank }) {
       }`}
     >
       <div className="relative h-28 bg-pink-tint flex flex-col items-center justify-center">
-        <span className="w-12 h-12 rounded-full bg-white shadow-md flex items-center justify-center text-2xl rotate-6 border-2 border-white mb-1">
+        <span
+          className="w-12 h-12 rounded-full shadow-md flex items-center justify-center text-2xl rotate-6 border-2 border-white mb-1"
+          style={{ backgroundColor: stickerColor }}
+        >
           {CATEGORY_STICKERS[product.category] || "🛍️"}
         </span>
         <span className="text-xs text-muted">{product.category}</span>
