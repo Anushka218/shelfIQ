@@ -35,7 +35,13 @@ export default function Homepage() {
 
         <InsightBanner region={region} category={shelf?.shelf_order?.[0]} />
 
-        {shelf ? <ShelfGrid shelfOrder={shelf.shelf_order} /> : <p className="text-muted">Loading...</p>}</div>
+        {!shelf ? (
+  <p className="text-muted">Loading...</p>
+) : !shelf.recommendations || shelf.recommendations.length === 0 ? (
+  <p className="text-muted">No data available for this region yet.</p>
+) : (
+  <ShelfGrid recommendations={shelf.recommendations} />
+)}
     </div>
   );
 }
