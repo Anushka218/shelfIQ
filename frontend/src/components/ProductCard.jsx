@@ -14,11 +14,11 @@ export default function ProductCard({ product, rank }) {
         isTop ? "border-pink shadow-sm" : "border-border"
       }`}
     >
-      <div className="relative h-28 bg-pink-tint flex items-center justify-center">
-        <span className="text-xs text-muted px-2 text-center">{product.category}</span>
-        <span className="absolute bottom-2 right-2 w-9 h-9 rounded-full bg-white shadow-md flex items-center justify-center text-lg rotate-6 border-2 border-white">
+      <div className="relative h-28 bg-pink-tint flex flex-col items-center justify-center">
+        <span className="w-12 h-12 rounded-full bg-white shadow-md flex items-center justify-center text-2xl rotate-6 border-2 border-white mb-1">
           {CATEGORY_STICKERS[product.category] || "🛍️"}
         </span>
+        <span className="text-xs text-muted">{product.category}</span>
         <span className="absolute top-2 right-2 w-6 h-6 rounded-full bg-white flex items-center justify-center shadow-sm text-muted text-xs">
           ♡
         </span>
