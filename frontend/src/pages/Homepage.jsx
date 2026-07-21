@@ -29,13 +29,20 @@ export default function Homepage() {
           <PersonaSwitcher persona={persona} onChange={setPersona} />
         </div>
 
-        {shelf?.personalization_applied && (
+        {shelf?.alpha < 1 && (
           <p className="text-xs text-muted mb-3">alpha: {shelf.alpha} · regional vs personal blend</p>
         )}
 
-        <InsightBanner region={region} category={shelf?.shelf_order?.[0]} />
+        <InsightBanner region={region} category={shelf?.recommendations?.[0]?.category} />
 
-        {shelf ? <ShelfGrid shelfOrder={shelf.shelf_order} /> : <p className="text-muted">Loading...</p>}</div>
+        {!shelf ? (
+          <p className="text-muted">Loading...</p>
+        ) : !shelf.recommendations || shelf.recommendations.length === 0 ? (
+          <p className="text-muted">No data available for this region yet.</p>
+        ) : (
+          <ShelfGrid recommendations={shelf.recommendations} />
+        )}
+      </div>
     </div>
   );
 }

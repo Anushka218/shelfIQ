@@ -9,8 +9,8 @@ export default function Dashboard() {
   const [trends, setTrends] = useState([]);
 
   useEffect(() => {
-    getDemand(region).then((d) => setDemand(d.categories));
-    getTrends(region).then((t) => setTrends(t.trends));
+    getDemand(region).then((d) => setDemand(d.demand));
+    getTrends(region).then((t) => setTrends(t.top_categories));
   }, [region]);
 
   const totalEvents = demand.reduce((sum, c) => sum + c.count, 0);

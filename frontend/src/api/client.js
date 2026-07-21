@@ -1,13 +1,14 @@
 import axios from "axios";
 import { mockShelf, mockShelfPersonalized, mockDemand, mockTrends } from "./mockData";
-const USE_MOCK = true; // flip to false later when the real backend is ready
+const USE_MOCK = false; // flip to false later when the real backend is ready
 const BASE_URL = "http://127.0.0.1:8000"; // Person A's backend address
 
 export async function getShelf(region, userId = null) {
   if (USE_MOCK) {
     if (userId) return mockShelfPersonalized;
     return mockShelf;
-  }const url = userId
+  }
+  const url = userId
     ? `${BASE_URL}/api/shelf/${region}?user_id=${userId}`
     : `${BASE_URL}/api/shelf/${region}`;
   const res = await axios.get(url);
