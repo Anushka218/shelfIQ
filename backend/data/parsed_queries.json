@@ -1,0 +1,5888 @@
+{
+    "adidas black canvas sneakers": {
+        "category": "sneakers",
+        "brand": "adidas",
+        "price_limit": null,
+        "color": "black",
+        "occasion": null,
+        "material": "canvas",
+        "gender": null
+    },
+    "adidas black mesh sneakers": {
+        "category": "sneakers",
+        "brand": "adidas",
+        "price_limit": null,
+        "color": "black",
+        "occasion": null,
+        "material": "mesh",
+        "gender": null
+    },
+    "adidas black sneakers": {
+        "category": "sneakers",
+        "brand": "adidas",
+        "price_limit": null,
+        "color": "black",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "adidas black synthetic sneakers": {
+        "category": "sneakers",
+        "brand": "adidas",
+        "price_limit": null,
+        "color": "black",
+        "occasion": null,
+        "material": "synthetic",
+        "gender": null
+    },
+    "adidas sneakers": {
+        "category": "sneakers",
+        "brand": "adidas",
+        "price_limit": null,
+        "color": null,
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "adidas white canvas sneakers": {
+        "category": "sneakers",
+        "brand": "adidas",
+        "price_limit": null,
+        "color": "white",
+        "occasion": null,
+        "material": "canvas",
+        "gender": null
+    },
+    "adidas white mesh sneakers": {
+        "category": "sneakers",
+        "brand": "adidas",
+        "price_limit": null,
+        "color": "white",
+        "occasion": null,
+        "material": "mesh",
+        "gender": null
+    },
+    "adidas white sneakers": {
+        "category": "sneakers",
+        "brand": "adidas",
+        "price_limit": null,
+        "color": "white",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "adidas white synthetic sneakers": {
+        "category": "sneakers",
+        "brand": "adidas",
+        "price_limit": null,
+        "color": "white",
+        "occasion": null,
+        "material": "synthetic",
+        "gender": null
+    },
+    "allen solly blue cotton shirt": {
+        "category": "shirt",
+        "brand": "allen solly",
+        "price_limit": null,
+        "color": "blue",
+        "occasion": null,
+        "material": "cotton",
+        "gender": null
+    },
+    "allen solly blue shirt": {
+        "category": "shirt",
+        "brand": "allen solly",
+        "price_limit": null,
+        "color": "blue",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "allen solly grey cotton shirt": {
+        "category": "shirt",
+        "brand": "allen solly",
+        "price_limit": null,
+        "color": "grey",
+        "occasion": null,
+        "material": "cotton",
+        "gender": null
+    },
+    "allen solly grey linen shirt": {
+        "category": "shirt",
+        "brand": "allen solly",
+        "price_limit": null,
+        "color": "grey",
+        "occasion": null,
+        "material": "linen",
+        "gender": null
+    },
+    "allen solly grey shirt": {
+        "category": "shirt",
+        "brand": "allen solly",
+        "price_limit": null,
+        "color": "grey",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "allen solly olive cotton shirt": {
+        "category": "shirt",
+        "brand": "allen solly",
+        "price_limit": null,
+        "color": "olive",
+        "occasion": null,
+        "material": "cotton",
+        "gender": null
+    },
+    "allen solly olive shirt": {
+        "category": "shirt",
+        "brand": "Allen Solly",
+        "price_limit": null,
+        "color": "olive",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "allen solly shirt": {
+        "category": "shirt",
+        "brand": "allen solly",
+        "price_limit": null,
+        "color": null,
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "allen solly white cotton shirt": {
+        "category": "shirt",
+        "brand": "allen solly",
+        "price_limit": null,
+        "color": "white",
+        "occasion": null,
+        "material": "cotton",
+        "gender": null
+    },
+    "allen solly white shirt": {
+        "category": "shirt",
+        "brand": "allen solly",
+        "price_limit": null,
+        "color": "white",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "anouk black silk saree": {
+        "category": "saree",
+        "brand": null,
+        "price_limit": null,
+        "color": "black",
+        "occasion": null,
+        "material": "silk",
+        "gender": "female"
+    },
+    "anouk blue kurta": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": null,
+        "color": "blue",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "anouk blue rayon kurta": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": null,
+        "color": "blue",
+        "occasion": null,
+        "material": "rayon",
+        "gender": null
+    },
+    "anouk blue silk kurta": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": null,
+        "color": "blue",
+        "occasion": null,
+        "material": "silk",
+        "gender": null
+    },
+    "anouk dark blue kurta": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": null,
+        "color": "dark blue",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "anouk green kurta": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": null,
+        "color": "green",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "anouk green saree": {
+        "category": "saree",
+        "brand": null,
+        "price_limit": null,
+        "color": "green",
+        "occasion": null,
+        "material": null,
+        "gender": "female"
+    },
+    "anouk green silk kurta": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": null,
+        "color": "green",
+        "occasion": null,
+        "material": "silk",
+        "gender": null
+    },
+    "anouk green silk saree": {
+        "category": "saree",
+        "brand": null,
+        "price_limit": null,
+        "color": "green",
+        "occasion": null,
+        "material": "silk",
+        "gender": "female"
+    },
+    "anouk kurta": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": null,
+        "color": null,
+        "occasion": null,
+        "material": null,
+        "gender": "female"
+    },
+    "anouk maroon cotton saree": {
+        "category": "saree",
+        "brand": null,
+        "price_limit": null,
+        "color": "maroon",
+        "occasion": null,
+        "material": "cotton",
+        "gender": "female"
+    },
+    "anouk maroon saree": {
+        "category": "saree",
+        "brand": null,
+        "price_limit": null,
+        "color": "maroon",
+        "occasion": null,
+        "material": null,
+        "gender": "female"
+    },
+    "anouk pink cotton saree": {
+        "category": "saree",
+        "brand": null,
+        "price_limit": null,
+        "color": "pink",
+        "occasion": null,
+        "material": "cotton",
+        "gender": "female"
+    },
+    "anouk pink saree": {
+        "category": "saree",
+        "brand": null,
+        "price_limit": null,
+        "color": "pink",
+        "occasion": null,
+        "material": null,
+        "gender": "female"
+    },
+    "anouk pink silk saree": {
+        "category": "saree",
+        "brand": null,
+        "price_limit": null,
+        "color": "pink",
+        "occasion": null,
+        "material": "silk",
+        "gender": "female"
+    },
+    "anouk purple cotton kurta": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": null,
+        "color": "purple",
+        "occasion": null,
+        "material": "cotton",
+        "gender": null
+    },
+    "anouk red georgette saree": {
+        "category": "saree",
+        "brand": null,
+        "price_limit": null,
+        "color": "red",
+        "occasion": null,
+        "material": "georgette",
+        "gender": "female"
+    },
+    "anouk saree": {
+        "category": "saree",
+        "brand": null,
+        "price_limit": null,
+        "color": null,
+        "occasion": null,
+        "material": null,
+        "gender": "female"
+    },
+    "anouk white kurta": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": null,
+        "color": "white",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "biba blue kurta": {
+        "category": "Kurta",
+        "brand": "Biba",
+        "price_limit": null,
+        "color": "blue",
+        "occasion": null,
+        "material": null,
+        "gender": "female"
+    },
+    "biba blue linen kurta": {
+        "category": "Kurta",
+        "brand": "Biba",
+        "price_limit": null,
+        "color": "blue",
+        "occasion": null,
+        "material": "Linen",
+        "gender": "Female"
+    },
+    "biba blue rayon kurta": {
+        "category": "Kurta",
+        "brand": "Biba",
+        "price_limit": null,
+        "color": "Blue",
+        "occasion": null,
+        "material": "Rayon",
+        "gender": "Female"
+    },
+    "biba grey cotton kurta": {
+        "category": "Kurta",
+        "brand": "Biba",
+        "price_limit": null,
+        "color": "grey",
+        "occasion": null,
+        "material": "cotton",
+        "gender": "Female"
+    },
+    "biba grey kurta": {
+        "category": "Kurta",
+        "brand": "Biba",
+        "price_limit": null,
+        "color": "grey",
+        "occasion": null,
+        "material": null,
+        "gender": "Female"
+    },
+    "biba kurta": {
+        "category": "Kurta",
+        "brand": "Biba",
+        "price_limit": null,
+        "color": null,
+        "occasion": null,
+        "material": null,
+        "gender": "Female"
+    },
+    "biba light blue kurta": {
+        "category": "Kurta",
+        "brand": "Biba",
+        "price_limit": null,
+        "color": "light blue",
+        "occasion": null,
+        "material": null,
+        "gender": "Female"
+    },
+    "biba light blue linen kurta": {
+        "category": "Kurta",
+        "brand": "Biba",
+        "price_limit": null,
+        "color": "light blue",
+        "occasion": null,
+        "material": "Linen",
+        "gender": "Female"
+    },
+    "biba navy kurta": {
+        "category": "Kurta",
+        "brand": "Biba",
+        "price_limit": null,
+        "color": "Navy",
+        "occasion": null,
+        "material": null,
+        "gender": "Female"
+    },
+    "biba navy silk kurta": {
+        "category": "Kurta",
+        "brand": "Biba",
+        "price_limit": null,
+        "color": "Navy",
+        "occasion": null,
+        "material": "Silk",
+        "gender": "Female"
+    },
+    "biba pink rayon kurta": {
+        "category": "Kurta",
+        "brand": "Biba",
+        "price_limit": null,
+        "color": "Pink",
+        "occasion": null,
+        "material": "Rayon",
+        "gender": "Female"
+    },
+    "biba purple cotton kurta": {
+        "category": "Kurta",
+        "brand": "Biba",
+        "price_limit": null,
+        "color": "purple",
+        "occasion": null,
+        "material": "cotton",
+        "gender": "Female"
+    },
+    "biba purple kurta": {
+        "category": "Kurta",
+        "brand": "Biba",
+        "price_limit": null,
+        "color": "purple",
+        "occasion": null,
+        "material": null,
+        "gender": "Female"
+    },
+    "biba purple rayon kurta": {
+        "category": "Kurta",
+        "brand": "Biba",
+        "price_limit": null,
+        "color": "purple",
+        "occasion": null,
+        "material": "rayon",
+        "gender": "Female"
+    },
+    "biba white rayon kurta": {
+        "category": "Kurta",
+        "brand": "Biba",
+        "price_limit": null,
+        "color": "white",
+        "occasion": null,
+        "material": "Rayon",
+        "gender": "Female"
+    },
+    "black canvas sneakers": {
+        "category": "sneakers",
+        "brand": null,
+        "price_limit": null,
+        "color": "black",
+        "occasion": null,
+        "material": "canvas",
+        "gender": null
+    },
+    "black cotton shirt": {
+        "category": "shirt",
+        "brand": null,
+        "price_limit": null,
+        "color": "black",
+        "occasion": null,
+        "material": "cotton",
+        "gender": null
+    },
+    "black denim jeans": {
+        "category": "jeans",
+        "brand": null,
+        "price_limit": null,
+        "color": "black",
+        "occasion": null,
+        "material": "denim",
+        "gender": null
+    },
+    "black georgette saree": {
+        "category": "saree",
+        "brand": null,
+        "price_limit": null,
+        "color": "black",
+        "occasion": null,
+        "material": "georgette",
+        "gender": "female"
+    },
+    "black jeans": {
+        "category": "jeans",
+        "brand": null,
+        "price_limit": null,
+        "color": "black",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "black jeans under 1500": {
+        "category": "jeans",
+        "brand": null,
+        "price_limit": 1500,
+        "color": "black",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "black jeans under 2000": {
+        "category": "jeans",
+        "brand": null,
+        "price_limit": 2000,
+        "color": "black",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "black jeans under 2500": {
+        "category": "jeans",
+        "brand": null,
+        "price_limit": 2500,
+        "color": "black",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "black jeans under 3000": {
+        "category": "jeans",
+        "brand": null,
+        "price_limit": 3000,
+        "color": "black",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "black jeans under 5000": {
+        "category": "jeans",
+        "brand": null,
+        "price_limit": 5000,
+        "color": "black",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "black linen shirt": {
+        "category": "shirt",
+        "brand": null,
+        "price_limit": null,
+        "color": "black",
+        "occasion": null,
+        "material": "linen",
+        "gender": null
+    },
+    "black mesh sneakers": {
+        "category": "sneakers",
+        "brand": null,
+        "price_limit": null,
+        "color": "black",
+        "occasion": null,
+        "material": "mesh",
+        "gender": null
+    },
+    "black saree": {
+        "category": "saree",
+        "brand": null,
+        "price_limit": null,
+        "color": "black",
+        "occasion": null,
+        "material": null,
+        "gender": "female"
+    },
+    "black saree under 1200": {
+        "category": "saree",
+        "brand": null,
+        "price_limit": 1200,
+        "color": "black",
+        "occasion": null,
+        "material": null,
+        "gender": "female"
+    },
+    "black saree under 1500": {
+        "category": "saree",
+        "brand": null,
+        "price_limit": 1500,
+        "color": "black",
+        "occasion": null,
+        "material": null,
+        "gender": "female"
+    },
+    "black saree under 2000": {
+        "category": "saree",
+        "brand": null,
+        "price_limit": 2000,
+        "color": "black",
+        "occasion": null,
+        "material": null,
+        "gender": "female"
+    },
+    "black saree under 2500": {
+        "category": "saree",
+        "brand": null,
+        "price_limit": 2500,
+        "color": "black",
+        "occasion": null,
+        "material": null,
+        "gender": "female"
+    },
+    "black saree under 3000": {
+        "category": "saree",
+        "brand": null,
+        "price_limit": 3000,
+        "color": "black",
+        "occasion": null,
+        "material": null,
+        "gender": "female"
+    },
+    "black saree under 5000": {
+        "category": "saree",
+        "brand": null,
+        "price_limit": 5000,
+        "color": "black",
+        "occasion": null,
+        "material": null,
+        "gender": "female"
+    },
+    "black saree under 7000": {
+        "category": "saree",
+        "brand": null,
+        "price_limit": 7000,
+        "color": "black",
+        "occasion": null,
+        "material": null,
+        "gender": "female"
+    },
+    "black shirt": {
+        "category": "shirt",
+        "brand": null,
+        "price_limit": null,
+        "color": "black",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "black shirt under 1000": {
+        "category": "shirt",
+        "brand": null,
+        "price_limit": 1000,
+        "color": "black",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "black shirt under 1200": {
+        "category": "shirt",
+        "brand": null,
+        "price_limit": 1200,
+        "color": "black",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "black shirt under 1500": {
+        "category": "shirt",
+        "brand": null,
+        "price_limit": 1500,
+        "color": "black",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "black shirt under 2000": {
+        "category": "shirt",
+        "brand": null,
+        "price_limit": 2000,
+        "color": "black",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "black shirt under 2500": {
+        "category": "shirt",
+        "brand": null,
+        "price_limit": 2500,
+        "color": "black",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "black silk saree": {
+        "category": "saree",
+        "brand": null,
+        "price_limit": null,
+        "color": "black",
+        "occasion": null,
+        "material": "silk",
+        "gender": "female"
+    },
+    "black sneakers": {
+        "category": "sneakers",
+        "brand": null,
+        "price_limit": null,
+        "color": "black",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "black sneakers under 1500": {
+        "category": "sneakers",
+        "brand": null,
+        "price_limit": 1500,
+        "color": "black",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "black sneakers under 2000": {
+        "category": "sneakers",
+        "brand": null,
+        "price_limit": 2000,
+        "color": "black",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "black sneakers under 2500": {
+        "category": "sneakers",
+        "brand": null,
+        "price_limit": 2500,
+        "color": "black",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "black sneakers under 3000": {
+        "category": "sneakers",
+        "brand": null,
+        "price_limit": 3000,
+        "color": "black",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "black sneakers under 5000": {
+        "category": "sneakers",
+        "brand": null,
+        "price_limit": 5000,
+        "color": "black",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "black sneakers under 7000": {
+        "category": "sneakers",
+        "brand": null,
+        "price_limit": 7000,
+        "color": "black",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "black synthetic sneakers": {
+        "category": "sneakers",
+        "brand": null,
+        "price_limit": null,
+        "color": "black",
+        "occasion": null,
+        "material": "synthetic",
+        "gender": null
+    },
+    "blue chiffon saree": {
+        "category": "saree",
+        "brand": null,
+        "price_limit": null,
+        "color": "blue",
+        "occasion": null,
+        "material": "chiffon",
+        "gender": "female"
+    },
+    "blue cotton kurta": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": null,
+        "color": "blue",
+        "occasion": null,
+        "material": "cotton",
+        "gender": null
+    },
+    "blue cotton shirt": {
+        "category": "shirt",
+        "brand": null,
+        "price_limit": null,
+        "color": "blue",
+        "occasion": null,
+        "material": "cotton",
+        "gender": null
+    },
+    "blue denim jeans": {
+        "category": "jeans",
+        "brand": null,
+        "price_limit": null,
+        "color": "blue",
+        "occasion": null,
+        "material": "denim",
+        "gender": null
+    },
+    "blue georgette saree": {
+        "category": "saree",
+        "brand": null,
+        "price_limit": null,
+        "color": "blue",
+        "occasion": null,
+        "material": "georgette",
+        "gender": "female"
+    },
+    "blue jeans": {
+        "category": "jeans",
+        "brand": null,
+        "price_limit": null,
+        "color": "blue",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "blue jeans under 1000": {
+        "category": "jeans",
+        "brand": null,
+        "price_limit": 1000,
+        "color": "blue",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "blue jeans under 2000": {
+        "category": "jeans",
+        "brand": null,
+        "price_limit": 2000,
+        "color": "blue",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "blue jeans under 2500": {
+        "category": "jeans",
+        "brand": null,
+        "price_limit": 2500,
+        "color": "blue",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "blue jeans under 3000": {
+        "category": "jeans",
+        "brand": null,
+        "price_limit": 3000,
+        "color": "blue",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "blue kurta": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": null,
+        "color": "blue",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "blue kurta under 1000": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": 1000,
+        "color": "blue",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "blue kurta under 1200": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": 1200,
+        "color": "blue",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "blue kurta under 1500": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": 1500,
+        "color": "blue",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "blue kurta under 2000": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": 2000,
+        "color": "blue",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "blue kurta under 2500": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": 2500,
+        "color": "blue",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "blue kurta under 700": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": 700,
+        "color": "blue",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "blue linen kurta": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": null,
+        "color": "blue",
+        "occasion": null,
+        "material": "linen",
+        "gender": null
+    },
+    "blue linen shirt": {
+        "category": "shirt",
+        "brand": null,
+        "price_limit": null,
+        "color": "blue",
+        "occasion": null,
+        "material": "linen",
+        "gender": null
+    },
+    "blue mesh sneakers": {
+        "category": "sneakers",
+        "brand": null,
+        "price_limit": null,
+        "color": "blue",
+        "occasion": null,
+        "material": "mesh",
+        "gender": null
+    },
+    "blue rayon kurta": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": null,
+        "color": "blue",
+        "occasion": null,
+        "material": "rayon",
+        "gender": null
+    },
+    "blue saree": {
+        "category": "saree",
+        "brand": null,
+        "price_limit": null,
+        "color": "blue",
+        "occasion": null,
+        "material": null,
+        "gender": "female"
+    },
+    "blue saree under 1200": {
+        "category": "saree",
+        "brand": null,
+        "price_limit": 1200,
+        "color": "blue",
+        "occasion": null,
+        "material": null,
+        "gender": "female"
+    },
+    "blue saree under 1500": {
+        "category": "saree",
+        "brand": null,
+        "price_limit": 1500,
+        "color": "blue",
+        "occasion": null,
+        "material": null,
+        "gender": "female"
+    },
+    "blue saree under 2000": {
+        "category": "saree",
+        "brand": null,
+        "price_limit": 2000,
+        "color": "blue",
+        "occasion": null,
+        "material": null,
+        "gender": "female"
+    },
+    "blue saree under 2500": {
+        "category": "saree",
+        "brand": null,
+        "price_limit": 2500,
+        "color": "blue",
+        "occasion": null,
+        "material": null,
+        "gender": "female"
+    },
+    "blue saree under 3000": {
+        "category": "saree",
+        "brand": null,
+        "price_limit": 3000,
+        "color": "blue",
+        "occasion": null,
+        "material": null,
+        "gender": "female"
+    },
+    "blue saree under 5000": {
+        "category": "saree",
+        "brand": null,
+        "price_limit": 5000,
+        "color": "blue",
+        "occasion": null,
+        "material": null,
+        "gender": "female"
+    },
+    "blue saree under 7000": {
+        "category": "saree",
+        "brand": null,
+        "price_limit": 7000,
+        "color": "blue",
+        "occasion": null,
+        "material": null,
+        "gender": "female"
+    },
+    "blue shirt": {
+        "category": "shirt",
+        "brand": null,
+        "price_limit": null,
+        "color": "blue",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "blue shirt under 1000": {
+        "category": "shirt",
+        "brand": null,
+        "price_limit": 1000,
+        "color": "blue",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "blue shirt under 1500": {
+        "category": "shirt",
+        "brand": null,
+        "price_limit": 1500,
+        "color": "blue",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "blue shirt under 2000": {
+        "category": "shirt",
+        "brand": null,
+        "price_limit": 2000,
+        "color": "blue",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "blue shirt under 2500": {
+        "category": "shirt",
+        "brand": null,
+        "price_limit": 2500,
+        "color": "blue",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "blue shirt under 3000": {
+        "category": "shirt",
+        "brand": null,
+        "price_limit": 3000,
+        "color": "blue",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "blue silk kurta": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": null,
+        "color": "blue",
+        "occasion": null,
+        "material": "silk",
+        "gender": null
+    },
+    "blue silk saree": {
+        "category": "saree",
+        "brand": null,
+        "price_limit": null,
+        "color": "blue",
+        "occasion": null,
+        "material": "silk",
+        "gender": "female"
+    },
+    "blue sneakers": {
+        "category": "sneakers",
+        "brand": null,
+        "price_limit": null,
+        "color": "blue",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "blue sneakers under 2500": {
+        "category": "sneakers",
+        "brand": null,
+        "price_limit": 2500,
+        "color": "blue",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "blue sneakers under 3000": {
+        "category": "sneakers",
+        "brand": null,
+        "price_limit": 3000,
+        "color": "blue",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "blue sneakers under 5000": {
+        "category": "sneakers",
+        "brand": null,
+        "price_limit": 5000,
+        "color": "blue",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "blue sneakers under 7000": {
+        "category": "sneakers",
+        "brand": null,
+        "price_limit": 7000,
+        "color": "blue",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "blue synthetic sneakers": {
+        "category": "sneakers",
+        "brand": null,
+        "price_limit": null,
+        "color": "blue",
+        "occasion": null,
+        "material": "synthetic",
+        "gender": null
+    },
+    "canvas sneakers under 2000": {
+        "category": "sneakers",
+        "brand": null,
+        "price_limit": 2000,
+        "color": null,
+        "occasion": null,
+        "material": "canvas",
+        "gender": null
+    },
+    "canvas sneakers under 2500": {
+        "category": "sneakers",
+        "brand": null,
+        "price_limit": 2500,
+        "color": null,
+        "occasion": null,
+        "material": "canvas",
+        "gender": null
+    },
+    "canvas sneakers under 3000": {
+        "category": "sneakers",
+        "brand": null,
+        "price_limit": 3000,
+        "color": null,
+        "occasion": null,
+        "material": "canvas",
+        "gender": null
+    },
+    "canvas sneakers under 5000": {
+        "category": "sneakers",
+        "brand": null,
+        "price_limit": 5000,
+        "color": null,
+        "occasion": null,
+        "material": "canvas",
+        "gender": null
+    },
+    "canvas sneakers under 7000": {
+        "category": "sneakers",
+        "brand": null,
+        "price_limit": 7000,
+        "color": null,
+        "occasion": null,
+        "material": "canvas",
+        "gender": null
+    },
+    "casual canvas sneakers": {
+        "category": "sneakers",
+        "brand": null,
+        "price_limit": null,
+        "color": null,
+        "occasion": "Casual",
+        "material": "canvas",
+        "gender": null
+    },
+    "casual cotton kurta": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": null,
+        "color": null,
+        "occasion": "Casual",
+        "material": "cotton",
+        "gender": null
+    },
+    "casual cotton shirt": {
+        "category": "shirt",
+        "brand": null,
+        "price_limit": null,
+        "color": null,
+        "occasion": "Casual",
+        "material": "cotton",
+        "gender": null
+    },
+    "casual denim jeans": {
+        "category": "jeans",
+        "brand": null,
+        "price_limit": null,
+        "color": "denim",
+        "occasion": "casual",
+        "material": null,
+        "gender": null
+    },
+    "casual jeans": {
+        "category": "jeans",
+        "brand": null,
+        "price_limit": null,
+        "color": null,
+        "occasion": "Casual",
+        "material": null,
+        "gender": null
+    },
+    "casual kurta": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": null,
+        "color": null,
+        "occasion": "Casual",
+        "material": null,
+        "gender": null
+    },
+    "casual linen kurta": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": null,
+        "color": null,
+        "occasion": "Casual",
+        "material": "linen",
+        "gender": null
+    },
+    "casual linen shirt": {
+        "category": "shirt",
+        "brand": null,
+        "price_limit": null,
+        "color": null,
+        "occasion": "Casual",
+        "material": "linen",
+        "gender": null
+    },
+    "casual mesh sneakers": {
+        "category": "sneakers",
+        "brand": null,
+        "price_limit": null,
+        "color": null,
+        "occasion": "casual",
+        "material": "mesh",
+        "gender": null
+    },
+    "casual rayon kurta": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": null,
+        "color": null,
+        "occasion": "Casual",
+        "material": "rayon",
+        "gender": null
+    },
+    "casual shirt": {
+        "category": "shirt",
+        "brand": null,
+        "price_limit": null,
+        "color": null,
+        "occasion": "Casual",
+        "material": null,
+        "gender": null
+    },
+    "casual sneakers": {
+        "category": "sneakers",
+        "brand": null,
+        "price_limit": null,
+        "color": null,
+        "occasion": "Casual",
+        "material": null,
+        "gender": null
+    },
+    "casual synthetic sneakers": {
+        "category": "sneakers",
+        "brand": null,
+        "price_limit": null,
+        "color": null,
+        "occasion": "Casual",
+        "material": "synthetic",
+        "gender": null
+    },
+    "chiffon saree under 1200": {
+        "category": "saree",
+        "brand": null,
+        "price_limit": 1200,
+        "color": null,
+        "occasion": null,
+        "material": "chiffon",
+        "gender": "female"
+    },
+    "chiffon saree under 2500": {
+        "category": "saree",
+        "brand": null,
+        "price_limit": 2500,
+        "color": null,
+        "occasion": null,
+        "material": "chiffon",
+        "gender": "female"
+    },
+    "chiffon saree under 3000": {
+        "category": "saree",
+        "brand": null,
+        "price_limit": 3000,
+        "color": null,
+        "occasion": null,
+        "material": "chiffon",
+        "gender": "female"
+    },
+    "chiffon saree under 5000": {
+        "category": "saree",
+        "brand": null,
+        "price_limit": 5000,
+        "color": null,
+        "occasion": null,
+        "material": "chiffon",
+        "gender": "female"
+    },
+    "chiffon saree under 7000": {
+        "category": "saree",
+        "brand": null,
+        "price_limit": 7000,
+        "color": null,
+        "occasion": null,
+        "material": "chiffon",
+        "gender": "female"
+    },
+    "cotton kurta under 1000": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": 1000,
+        "color": null,
+        "occasion": null,
+        "material": "cotton",
+        "gender": null
+    },
+    "cotton kurta under 1200": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": 1200,
+        "color": null,
+        "occasion": null,
+        "material": "cotton",
+        "gender": null
+    },
+    "cotton kurta under 1500": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": 1500,
+        "color": null,
+        "occasion": null,
+        "material": "cotton",
+        "gender": null
+    },
+    "cotton kurta under 2000": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": 2000,
+        "color": null,
+        "occasion": null,
+        "material": "cotton",
+        "gender": null
+    },
+    "cotton kurta under 2500": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": 2500,
+        "color": null,
+        "occasion": null,
+        "material": "cotton",
+        "gender": null
+    },
+    "cotton kurta under 3000": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": 3000,
+        "color": null,
+        "occasion": null,
+        "material": "cotton",
+        "gender": null
+    },
+    "cotton kurta under 5000": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": 5000,
+        "color": null,
+        "occasion": null,
+        "material": "cotton",
+        "gender": null
+    },
+    "cotton kurta under 700": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": 700,
+        "color": null,
+        "occasion": null,
+        "material": "cotton",
+        "gender": null
+    },
+    "cotton saree under 2500": {
+        "category": "saree",
+        "brand": null,
+        "price_limit": 2500,
+        "color": null,
+        "occasion": null,
+        "material": "cotton",
+        "gender": "female"
+    },
+    "cotton saree under 3000": {
+        "category": "saree",
+        "brand": null,
+        "price_limit": 3000,
+        "color": null,
+        "occasion": null,
+        "material": "cotton",
+        "gender": "female"
+    },
+    "cotton saree under 5000": {
+        "category": "saree",
+        "brand": null,
+        "price_limit": 5000,
+        "color": null,
+        "occasion": null,
+        "material": "cotton",
+        "gender": "female"
+    },
+    "cotton saree under 7000": {
+        "category": "saree",
+        "brand": null,
+        "price_limit": 7000,
+        "color": null,
+        "occasion": null,
+        "material": "cotton",
+        "gender": "female"
+    },
+    "cotton shirt under 1000": {
+        "category": "shirt",
+        "brand": null,
+        "price_limit": 1000,
+        "color": null,
+        "occasion": null,
+        "material": "cotton",
+        "gender": null
+    },
+    "cotton shirt under 1200": {
+        "category": "shirt",
+        "brand": null,
+        "price_limit": 1200,
+        "color": null,
+        "occasion": null,
+        "material": "cotton",
+        "gender": null
+    },
+    "cotton shirt under 1500": {
+        "category": "shirt",
+        "brand": null,
+        "price_limit": 1500,
+        "color": null,
+        "occasion": null,
+        "material": "cotton",
+        "gender": null
+    },
+    "cotton shirt under 2000": {
+        "category": "shirt",
+        "brand": null,
+        "price_limit": 2000,
+        "color": null,
+        "occasion": null,
+        "material": "cotton",
+        "gender": null
+    },
+    "cotton shirt under 2500": {
+        "category": "shirt",
+        "brand": null,
+        "price_limit": 2500,
+        "color": null,
+        "occasion": null,
+        "material": "cotton",
+        "gender": null
+    },
+    "cotton shirt under 3000": {
+        "category": "shirt",
+        "brand": null,
+        "price_limit": 3000,
+        "color": null,
+        "occasion": null,
+        "material": "cotton",
+        "gender": null
+    },
+    "cotton shirt under 5000": {
+        "category": "shirt",
+        "brand": null,
+        "price_limit": 5000,
+        "color": null,
+        "occasion": null,
+        "material": "cotton",
+        "gender": null
+    },
+    "cotton shirt under 7000": {
+        "category": "shirt",
+        "brand": null,
+        "price_limit": 7000,
+        "color": null,
+        "occasion": null,
+        "material": "cotton",
+        "gender": null
+    },
+    "dark blue cotton kurta": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": null,
+        "color": "dark blue",
+        "occasion": null,
+        "material": "cotton",
+        "gender": null
+    },
+    "dark blue kurta": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": null,
+        "color": "dark blue",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "dark blue kurta under 1000": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": 1000,
+        "color": "dark blue",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "dark blue kurta under 1200": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": 1200,
+        "color": "dark blue",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "dark blue kurta under 1500": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": 1500,
+        "color": "dark blue",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "dark blue kurta under 2000": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": 2000,
+        "color": "dark blue",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "dark blue kurta under 2500": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": 2500,
+        "color": "dark blue",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "dark blue kurta under 3000": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": 3000,
+        "color": "dark blue",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "dark blue rayon kurta": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": null,
+        "color": "dark blue",
+        "occasion": null,
+        "material": "rayon",
+        "gender": null
+    },
+    "denim jeans under 1000": {
+        "category": "jeans",
+        "brand": null,
+        "price_limit": 1000,
+        "color": "denim",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "denim jeans under 1500": {
+        "category": "jeans",
+        "brand": null,
+        "price_limit": 1500,
+        "color": "denim",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "denim jeans under 2000": {
+        "category": "jeans",
+        "brand": null,
+        "price_limit": 2000,
+        "color": "denim",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "denim jeans under 2500": {
+        "category": "jeans",
+        "brand": null,
+        "price_limit": 2500,
+        "color": "denim",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "denim jeans under 5000": {
+        "category": "jeans",
+        "brand": null,
+        "price_limit": 5000,
+        "color": null,
+        "occasion": null,
+        "material": "denim",
+        "gender": null
+    },
+    "festive rayon kurta": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": null,
+        "color": null,
+        "occasion": "festive",
+        "material": "rayon",
+        "gender": "male"
+    },
+    "georgette saree under 1500": {
+        "category": "saree",
+        "brand": null,
+        "price_limit": 1500,
+        "color": null,
+        "occasion": null,
+        "material": "georgette",
+        "gender": "female"
+    },
+    "georgette saree under 2000": {
+        "category": "saree",
+        "brand": null,
+        "price_limit": 2000,
+        "color": null,
+        "occasion": null,
+        "material": "georgette",
+        "gender": "female"
+    },
+    "georgette saree under 2500": {
+        "category": "saree",
+        "brand": null,
+        "price_limit": 2500,
+        "color": null,
+        "occasion": null,
+        "material": "georgette",
+        "gender": "female"
+    },
+    "georgette saree under 5000": {
+        "category": "saree",
+        "brand": null,
+        "price_limit": 5000,
+        "color": null,
+        "occasion": null,
+        "material": "georgette",
+        "gender": "female"
+    },
+    "georgette saree under 7000": {
+        "category": "saree",
+        "brand": null,
+        "price_limit": 7000,
+        "color": null,
+        "occasion": null,
+        "material": "georgette",
+        "gender": "female"
+    },
+    "green kurta under 2500": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": 2500,
+        "color": "green",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "green saree under 1200": {
+        "category": "saree",
+        "brand": null,
+        "price_limit": 1200,
+        "color": "green",
+        "occasion": null,
+        "material": null,
+        "gender": "female"
+    },
+    "green saree under 1500": {
+        "category": "saree",
+        "brand": null,
+        "price_limit": 1500,
+        "color": "green",
+        "occasion": null,
+        "material": null,
+        "gender": "female"
+    },
+    "green saree under 2000": {
+        "category": "saree",
+        "brand": null,
+        "price_limit": 2000,
+        "color": "green",
+        "occasion": null,
+        "material": null,
+        "gender": "female"
+    },
+    "green saree under 2500": {
+        "category": "saree",
+        "brand": null,
+        "price_limit": 2500,
+        "color": "green",
+        "occasion": null,
+        "material": null,
+        "gender": "female"
+    },
+    "green saree under 3000": {
+        "category": "saree",
+        "brand": null,
+        "price_limit": 3000,
+        "color": "green",
+        "occasion": null,
+        "material": null,
+        "gender": "female"
+    },
+    "green saree under 5000": {
+        "category": "saree",
+        "brand": null,
+        "price_limit": 5000,
+        "color": "green",
+        "occasion": null,
+        "material": null,
+        "gender": "female"
+    },
+    "green saree under 7000": {
+        "category": "saree",
+        "brand": null,
+        "price_limit": 7000,
+        "color": "green",
+        "occasion": null,
+        "material": null,
+        "gender": "female"
+    },
+    "green silk kurta": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": null,
+        "color": "green",
+        "occasion": null,
+        "material": "silk",
+        "gender": null
+    },
+    "grey canvas sneakers": {
+        "category": "sneakers",
+        "brand": null,
+        "price_limit": null,
+        "color": "grey",
+        "occasion": null,
+        "material": "canvas",
+        "gender": null
+    },
+    "grey denim jeans": {
+        "category": "jeans",
+        "brand": null,
+        "price_limit": null,
+        "color": "grey",
+        "occasion": null,
+        "material": "denim",
+        "gender": null
+    },
+    "grey jeans": {
+        "category": "jeans",
+        "brand": null,
+        "price_limit": null,
+        "color": "grey",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "grey jeans under 1500": {
+        "category": "jeans",
+        "brand": null,
+        "price_limit": 1500,
+        "color": "grey",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "grey jeans under 2000": {
+        "category": "jeans",
+        "brand": null,
+        "price_limit": 2000,
+        "color": "grey",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "grey jeans under 3000": {
+        "category": "jeans",
+        "brand": null,
+        "price_limit": 3000,
+        "color": "grey",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "grey kurta": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": null,
+        "color": "grey",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "grey kurta under 1000": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": 1000,
+        "color": "grey",
+        "occasion": null,
+        "material": null,
+        "gender": "male"
+    },
+    "grey kurta under 1200": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": 1200,
+        "color": "grey",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "grey kurta under 3000": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": 3000,
+        "color": "grey",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "grey kurta under 5000": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": 5000,
+        "color": "grey",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "denim jeans under 3000": {
+        "category": "jeans",
+        "brand": "None",
+        "price_limit": 3000,
+        "color": "None",
+        "occasion": "None",
+        "material": "denim",
+        "gender": "None"
+    },
+    "georgette saree under 1200": {
+        "category": "saree",
+        "brand": "None",
+        "price_limit": 1200,
+        "color": "None",
+        "occasion": "None",
+        "material": "georgette",
+        "gender": "Women"
+    },
+    "festive cotton saree": {
+        "category": "saree",
+        "brand": null,
+        "price_limit": null,
+        "color": null,
+        "occasion": "festive",
+        "material": "cotton",
+        "gender": "female"
+    },
+    "festive kurta": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": null,
+        "color": null,
+        "occasion": "Festive",
+        "material": null,
+        "gender": null
+    },
+    "festive saree": {
+        "category": "saree",
+        "brand": null,
+        "price_limit": null,
+        "color": null,
+        "occasion": "Festive",
+        "material": null,
+        "gender": "female"
+    },
+    "festive silk kurta": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": null,
+        "color": null,
+        "occasion": "Festive",
+        "material": "silk",
+        "gender": null
+    },
+    "festive silk saree": {
+        "category": "saree",
+        "brand": null,
+        "price_limit": null,
+        "color": null,
+        "occasion": "festive",
+        "material": "silk",
+        "gender": "female"
+    },
+    "georgette saree under 3000": {
+        "category": "saree",
+        "brand": null,
+        "price_limit": 3000,
+        "color": null,
+        "occasion": null,
+        "material": "georgette",
+        "gender": "female"
+    },
+    "green chiffon saree": {
+        "category": "saree",
+        "brand": null,
+        "price_limit": null,
+        "color": "green",
+        "occasion": null,
+        "material": "chiffon",
+        "gender": "female"
+    },
+    "green cotton kurta": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": null,
+        "color": "green",
+        "occasion": null,
+        "material": "cotton",
+        "gender": null
+    },
+    "green cotton saree": {
+        "category": "saree",
+        "brand": null,
+        "price_limit": null,
+        "color": "green",
+        "occasion": null,
+        "material": "cotton",
+        "gender": "female"
+    },
+    "green georgette saree": {
+        "category": "saree",
+        "brand": null,
+        "price_limit": null,
+        "color": "green",
+        "occasion": null,
+        "material": "georgette",
+        "gender": "female"
+    },
+    "green kurta": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": null,
+        "color": "green",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "green kurta under 1200": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": 1200,
+        "color": "green",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "green kurta under 1500": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": 1500,
+        "color": "green",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "green kurta under 2000": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": 2000,
+        "color": "green",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "green kurta under 3000": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": 3000,
+        "color": "green",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "green linen kurta": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": null,
+        "color": "green",
+        "occasion": null,
+        "material": "linen",
+        "gender": null
+    },
+    "green saree": {
+        "category": "saree",
+        "brand": null,
+        "price_limit": null,
+        "color": "green",
+        "occasion": null,
+        "material": null,
+        "gender": "female"
+    },
+    "green silk saree": {
+        "category": "saree",
+        "brand": null,
+        "price_limit": null,
+        "color": "green",
+        "occasion": null,
+        "material": "silk",
+        "gender": "female"
+    },
+    "grey cotton kurta": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": null,
+        "color": "grey",
+        "occasion": null,
+        "material": "cotton",
+        "gender": null
+    },
+    "grey cotton shirt": {
+        "category": "shirt",
+        "brand": null,
+        "price_limit": null,
+        "color": "grey",
+        "occasion": null,
+        "material": "cotton",
+        "gender": null
+    },
+    "grey jeans under 2500": {
+        "category": "jeans",
+        "brand": null,
+        "price_limit": 2500,
+        "color": "grey",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "grey kurta under 2000": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": 2000,
+        "color": "grey",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "grey kurta under 2500": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": 2500,
+        "color": "grey",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "grey kurta under 700": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": 700,
+        "color": "grey",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "grey linen shirt": {
+        "category": "shirt",
+        "brand": null,
+        "price_limit": null,
+        "color": "grey",
+        "occasion": null,
+        "material": "linen",
+        "gender": null
+    },
+    "grey mesh sneakers": {
+        "category": "sneakers",
+        "brand": null,
+        "price_limit": null,
+        "color": "grey",
+        "occasion": null,
+        "material": "mesh",
+        "gender": null
+    },
+    "grey shirt": {
+        "category": "shirt",
+        "brand": null,
+        "price_limit": null,
+        "color": "grey",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "grey shirt under 1200": {
+        "category": "shirt",
+        "brand": null,
+        "price_limit": 1200,
+        "color": "grey",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "grey shirt under 1500": {
+        "category": "shirt",
+        "brand": null,
+        "price_limit": 1500,
+        "color": "grey",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "grey shirt under 2000": {
+        "category": "shirt",
+        "brand": null,
+        "price_limit": 2000,
+        "color": "grey",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "grey shirt under 2500": {
+        "category": "shirt",
+        "brand": null,
+        "price_limit": 2500,
+        "color": "grey",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "grey shirt under 3000": {
+        "category": "shirt",
+        "brand": null,
+        "price_limit": 3000,
+        "color": "grey",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "grey shirt under 5000": {
+        "category": "shirt",
+        "brand": null,
+        "price_limit": 5000,
+        "color": "grey",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "grey shirt under 7000": {
+        "category": "shirt",
+        "brand": null,
+        "price_limit": 7000,
+        "color": "grey",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "grey silk kurta": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": null,
+        "color": "grey",
+        "occasion": null,
+        "material": "silk",
+        "gender": null
+    },
+    "grey sneakers": {
+        "category": "sneakers",
+        "brand": null,
+        "price_limit": null,
+        "color": "grey",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "grey sneakers under 2000": {
+        "category": "sneakers",
+        "brand": null,
+        "price_limit": 2000,
+        "color": "grey",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "grey sneakers under 2500": {
+        "category": "sneakers",
+        "brand": null,
+        "price_limit": 2500,
+        "color": "grey",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "grey sneakers under 3000": {
+        "category": "sneakers",
+        "brand": null,
+        "price_limit": 3000,
+        "color": "grey",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "grey sneakers under 5000": {
+        "category": "sneakers",
+        "brand": null,
+        "price_limit": 5000,
+        "color": "grey",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "grey sneakers under 7000": {
+        "category": "sneakers",
+        "brand": null,
+        "price_limit": 7000,
+        "color": "grey",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "grey synthetic sneakers": {
+        "category": "sneakers",
+        "brand": null,
+        "price_limit": null,
+        "color": "grey",
+        "occasion": null,
+        "material": "synthetic",
+        "gender": null
+    },
+    "highlander black cotton shirt": {
+        "category": "shirt",
+        "brand": "Highlander",
+        "price_limit": null,
+        "color": "black",
+        "occasion": null,
+        "material": "cotton",
+        "gender": null
+    },
+    "highlander black shirt": {
+        "category": "shirt",
+        "brand": "Highlander",
+        "price_limit": null,
+        "color": "black",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "highlander blue cotton shirt": {
+        "category": "shirt",
+        "brand": "Highlander",
+        "price_limit": null,
+        "color": "blue",
+        "occasion": null,
+        "material": "cotton",
+        "gender": null
+    },
+    "highlander blue linen shirt": {
+        "category": "shirt",
+        "brand": "Highlander",
+        "price_limit": null,
+        "color": "blue",
+        "occasion": null,
+        "material": "linen",
+        "gender": null
+    },
+    "highlander blue shirt": {
+        "category": "shirt",
+        "brand": "Highlander",
+        "price_limit": null,
+        "color": "blue",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "highlander grey cotton shirt": {
+        "category": "shirt",
+        "brand": "Highlander",
+        "price_limit": null,
+        "color": "grey",
+        "occasion": null,
+        "material": "cotton",
+        "gender": null
+    },
+    "highlander grey shirt": {
+        "category": "shirt",
+        "brand": "Highlander",
+        "price_limit": null,
+        "color": "grey",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "highlander olive cotton shirt": {
+        "category": "shirt",
+        "brand": "Highlander",
+        "price_limit": null,
+        "color": "olive",
+        "occasion": null,
+        "material": "cotton",
+        "gender": null
+    },
+    "highlander olive shirt": {
+        "category": "shirt",
+        "brand": "Highlander",
+        "price_limit": null,
+        "color": "olive",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "highlander shirt": {
+        "category": "shirt",
+        "brand": "Highlander",
+        "price_limit": null,
+        "color": null,
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "highlander white cotton shirt": {
+        "category": "shirt",
+        "brand": "Highlander",
+        "price_limit": null,
+        "color": "white",
+        "occasion": null,
+        "material": "cotton",
+        "gender": null
+    },
+    "highlander white shirt": {
+        "category": "shirt",
+        "brand": "Highlander",
+        "price_limit": null,
+        "color": "white",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "hrx black canvas sneakers": {
+        "category": "sneakers",
+        "brand": "hrx",
+        "price_limit": null,
+        "color": "black",
+        "occasion": null,
+        "material": "canvas",
+        "gender": null
+    },
+    "hrx black mesh sneakers": {
+        "category": "sneakers",
+        "brand": "hrx",
+        "price_limit": null,
+        "color": "black",
+        "occasion": null,
+        "material": "mesh",
+        "gender": null
+    },
+    "hrx black sneakers": {
+        "category": "sneakers",
+        "brand": "hrx",
+        "price_limit": null,
+        "color": "black",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "hrx black synthetic sneakers": {
+        "category": "sneakers",
+        "brand": "hrx",
+        "price_limit": null,
+        "color": "black",
+        "occasion": null,
+        "material": "synthetic",
+        "gender": null
+    },
+    "hrx blue sneakers": {
+        "category": "sneakers",
+        "brand": "hrx",
+        "price_limit": null,
+        "color": "blue",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "hrx grey mesh sneakers": {
+        "category": "sneakers",
+        "brand": "hrx",
+        "price_limit": null,
+        "color": "grey",
+        "occasion": null,
+        "material": "mesh",
+        "gender": null
+    },
+    "hrx grey sneakers": {
+        "category": "sneakers",
+        "brand": "hrx",
+        "price_limit": null,
+        "color": "grey",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "hrx grey synthetic sneakers": {
+        "category": "sneakers",
+        "brand": "hrx",
+        "price_limit": null,
+        "color": "grey",
+        "occasion": null,
+        "material": "synthetic",
+        "gender": null
+    },
+    "hrx sneakers": {
+        "category": "sneakers",
+        "brand": "HRX",
+        "price_limit": null,
+        "color": null,
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "hrx white mesh sneakers": {
+        "category": "sneakers",
+        "brand": "hrx",
+        "price_limit": null,
+        "color": "white",
+        "occasion": null,
+        "material": "mesh",
+        "gender": null
+    },
+    "hrx white sneakers": {
+        "category": "sneakers",
+        "brand": "hrx",
+        "price_limit": null,
+        "color": "white",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "jeans": {
+        "category": "jeans",
+        "brand": null,
+        "price_limit": null,
+        "color": null,
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "jeans under 1000": {
+        "category": "jeans",
+        "brand": null,
+        "price_limit": 1000,
+        "color": null,
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "jeans under 1200": {
+        "category": "jeans",
+        "brand": null,
+        "price_limit": 1200,
+        "color": null,
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "jeans under 1500": {
+        "category": "jeans",
+        "brand": null,
+        "price_limit": 1500,
+        "color": null,
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "jeans under 2000": {
+        "category": "jeans",
+        "brand": null,
+        "price_limit": 2000,
+        "color": null,
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "jeans under 2500": {
+        "category": "jeans",
+        "brand": null,
+        "price_limit": 2500,
+        "color": null,
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "jeans under 3000": {
+        "category": "jeans",
+        "brand": null,
+        "price_limit": 3000,
+        "color": null,
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "jeans under 5000": {
+        "category": "jeans",
+        "brand": null,
+        "price_limit": 5000,
+        "color": null,
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "kalini black georgette saree": {
+        "category": "saree",
+        "brand": null,
+        "price_limit": null,
+        "color": "black",
+        "occasion": null,
+        "material": "georgette",
+        "gender": "female"
+    },
+    "kalini black saree": {
+        "category": "saree",
+        "brand": null,
+        "price_limit": null,
+        "color": "black",
+        "occasion": null,
+        "material": null,
+        "gender": "female"
+    },
+    "kalini black silk saree": {
+        "category": "saree",
+        "brand": null,
+        "price_limit": null,
+        "color": "black",
+        "occasion": null,
+        "material": "silk",
+        "gender": "female"
+    },
+    "kalini blue saree": {
+        "category": "saree",
+        "brand": null,
+        "price_limit": null,
+        "color": "blue",
+        "occasion": null,
+        "material": null,
+        "gender": "female"
+    },
+    "kalini blue silk saree": {
+        "category": "saree",
+        "brand": null,
+        "price_limit": null,
+        "color": "blue",
+        "occasion": null,
+        "material": "silk",
+        "gender": "female"
+    },
+    "kalini green cotton saree": {
+        "category": "saree",
+        "brand": null,
+        "price_limit": null,
+        "color": "green",
+        "occasion": null,
+        "material": "cotton",
+        "gender": "female"
+    },
+    "kalini green saree": {
+        "category": "saree",
+        "brand": null,
+        "price_limit": null,
+        "color": "green",
+        "occasion": null,
+        "material": null,
+        "gender": "female"
+    },
+    "kalini pink georgette saree": {
+        "category": "saree",
+        "brand": null,
+        "price_limit": null,
+        "color": "pink",
+        "occasion": null,
+        "material": "georgette",
+        "gender": "female"
+    },
+    "kalini pink saree": {
+        "category": "saree",
+        "brand": null,
+        "price_limit": null,
+        "color": "pink",
+        "occasion": null,
+        "material": null,
+        "gender": "female"
+    },
+    "kalini pink silk saree": {
+        "category": "saree",
+        "brand": null,
+        "price_limit": null,
+        "color": "pink",
+        "occasion": null,
+        "material": "silk",
+        "gender": "female"
+    },
+    "kalini red georgette saree": {
+        "category": "saree",
+        "brand": null,
+        "price_limit": null,
+        "color": "red",
+        "occasion": null,
+        "material": "georgette",
+        "gender": "female"
+    },
+    "kalini red saree": {
+        "category": "saree",
+        "brand": null,
+        "price_limit": null,
+        "color": "red",
+        "occasion": null,
+        "material": null,
+        "gender": "female"
+    },
+    "kalini red silk saree": {
+        "category": "saree",
+        "brand": null,
+        "price_limit": null,
+        "color": "red",
+        "occasion": null,
+        "material": "silk",
+        "gender": "female"
+    },
+    "kalini saree": {
+        "category": "saree",
+        "brand": null,
+        "price_limit": null,
+        "color": null,
+        "occasion": null,
+        "material": null,
+        "gender": "female"
+    },
+    "kurta": {
+        "category": "Kurta",
+        "brand": null,
+        "price_limit": null,
+        "color": null,
+        "occasion": null,
+        "material": null,
+        "gender": "Male"
+    },
+    "kurta under 1000": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": 1000,
+        "color": null,
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "kurta under 1200": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": 1200,
+        "color": null,
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "kurta under 1500": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": 1500,
+        "color": null,
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "kurta under 2000": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": 2000,
+        "color": null,
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "kurta under 2500": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": 2500,
+        "color": null,
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "kurta under 3000": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": 3000,
+        "color": null,
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "kurta under 5000": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": 5000,
+        "color": null,
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "kurta under 700": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": 700,
+        "color": null,
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "levis black denim jeans": {
+        "category": "jeans",
+        "brand": "levis",
+        "price_limit": null,
+        "color": "black",
+        "occasion": null,
+        "material": "denim",
+        "gender": null
+    },
+    "levis black jeans": {
+        "category": "jeans",
+        "brand": "levis",
+        "price_limit": null,
+        "color": "black",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "levis blue denim jeans": {
+        "category": "jeans",
+        "brand": "levis",
+        "price_limit": null,
+        "color": "blue",
+        "occasion": null,
+        "material": "denim",
+        "gender": null
+    },
+    "levis blue jeans": {
+        "category": "jeans",
+        "brand": "levis",
+        "price_limit": null,
+        "color": "blue",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "levis grey denim jeans": {
+        "category": "jeans",
+        "brand": "levis",
+        "price_limit": null,
+        "color": "grey",
+        "occasion": null,
+        "material": "denim",
+        "gender": null
+    },
+    "levis grey jeans": {
+        "category": "jeans",
+        "brand": "levis",
+        "price_limit": null,
+        "color": "grey",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "levis jeans": {
+        "category": "jeans",
+        "brand": "levis",
+        "price_limit": null,
+        "color": null,
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "libas blue cotton kurta": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": null,
+        "color": "blue",
+        "occasion": null,
+        "material": "cotton",
+        "gender": null
+    },
+    "libas blue kurta": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": null,
+        "color": "blue",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "libas dark blue kurta": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": null,
+        "color": "dark blue",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "libas dark blue rayon kurta": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": null,
+        "color": "dark blue",
+        "occasion": null,
+        "material": "rayon",
+        "gender": null
+    },
+    "libas green kurta": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": null,
+        "color": "green",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "libas grey kurta": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": null,
+        "color": "grey",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "libas grey rayon kurta": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": null,
+        "color": "grey",
+        "occasion": null,
+        "material": "rayon",
+        "gender": null
+    },
+    "libas grey silk kurta": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": null,
+        "color": "grey",
+        "occasion": null,
+        "material": "silk",
+        "gender": null
+    },
+    "libas kurta": {
+        "category": "Kurta",
+        "brand": null,
+        "price_limit": null,
+        "color": null,
+        "occasion": null,
+        "material": null,
+        "gender": "Male"
+    },
+    "libas navy kurta": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": null,
+        "color": "navy",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "libas pink cotton kurta": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": null,
+        "color": "pink",
+        "occasion": null,
+        "material": "cotton",
+        "gender": null
+    },
+    "libas pink kurta": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": null,
+        "color": "pink",
+        "occasion": null,
+        "material": null,
+        "gender": "female"
+    },
+    "libas purple kurta": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": null,
+        "color": "purple",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "libas purple rayon kurta": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": null,
+        "color": "purple",
+        "occasion": null,
+        "material": "rayon",
+        "gender": null
+    },
+    "libas purple silk kurta": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": null,
+        "color": "purple",
+        "occasion": null,
+        "material": "silk",
+        "gender": null
+    },
+    "light blue kurta": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": null,
+        "color": "light blue",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "light blue kurta under 1000": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": 1000,
+        "color": "light blue",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "light blue kurta under 1200": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": 1200,
+        "color": "light blue",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "light blue kurta under 1500": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": 1500,
+        "color": "light blue",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "light blue linen kurta": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": null,
+        "color": "light blue",
+        "occasion": null,
+        "material": "linen",
+        "gender": null
+    },
+    "linen kurta under 1000": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": 1000,
+        "color": null,
+        "occasion": null,
+        "material": "linen",
+        "gender": null
+    },
+    "linen kurta under 1200": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": 1200,
+        "color": null,
+        "occasion": null,
+        "material": "linen",
+        "gender": null
+    },
+    "linen kurta under 1500": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": 1500,
+        "color": null,
+        "occasion": null,
+        "material": "linen",
+        "gender": null
+    },
+    "linen kurta under 2000": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": 2000,
+        "color": null,
+        "occasion": null,
+        "material": "linen",
+        "gender": null
+    },
+    "linen kurta under 2500": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": 2500,
+        "color": null,
+        "occasion": null,
+        "material": "linen",
+        "gender": null
+    },
+    "linen shirt under 1000": {
+        "category": "shirt",
+        "brand": null,
+        "price_limit": 1000,
+        "color": null,
+        "occasion": null,
+        "material": "linen",
+        "gender": null
+    },
+    "linen shirt under 1200": {
+        "category": "shirt",
+        "brand": null,
+        "price_limit": 1200,
+        "color": null,
+        "occasion": null,
+        "material": "linen",
+        "gender": null
+    },
+    "linen shirt under 1500": {
+        "category": "shirt",
+        "brand": null,
+        "price_limit": 1500,
+        "color": null,
+        "occasion": null,
+        "material": "linen",
+        "gender": null
+    },
+    "linen shirt under 2000": {
+        "category": "shirt",
+        "brand": null,
+        "price_limit": 2000,
+        "color": null,
+        "occasion": null,
+        "material": "linen",
+        "gender": null
+    },
+    "linen shirt under 2500": {
+        "category": "shirt",
+        "brand": null,
+        "price_limit": 2500,
+        "color": null,
+        "occasion": null,
+        "material": "linen",
+        "gender": null
+    },
+    "linen shirt under 3000": {
+        "category": "shirt",
+        "brand": null,
+        "price_limit": 3000,
+        "color": null,
+        "occasion": null,
+        "material": "linen",
+        "gender": null
+    },
+    "louis philippe black shirt": {
+        "category": "shirt",
+        "brand": "louis philippe",
+        "price_limit": null,
+        "color": "black",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "louis philippe blue cotton shirt": {
+        "category": "shirt",
+        "brand": "louis philippe",
+        "price_limit": null,
+        "color": "blue",
+        "occasion": null,
+        "material": "cotton",
+        "gender": null
+    },
+    "louis philippe blue linen shirt": {
+        "category": "shirt",
+        "brand": "louis philippe",
+        "price_limit": null,
+        "color": "blue",
+        "occasion": null,
+        "material": "linen",
+        "gender": null
+    },
+    "louis philippe blue shirt": {
+        "category": "shirt",
+        "brand": "louis philippe",
+        "price_limit": null,
+        "color": "blue",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "louis philippe grey cotton shirt": {
+        "category": "shirt",
+        "brand": "louis philippe",
+        "price_limit": null,
+        "color": "grey",
+        "occasion": null,
+        "material": "cotton",
+        "gender": null
+    },
+    "louis philippe grey linen shirt": {
+        "category": "shirt",
+        "brand": "louis philippe",
+        "price_limit": null,
+        "color": "grey",
+        "occasion": null,
+        "material": "linen",
+        "gender": "male"
+    },
+    "louis philippe grey shirt": {
+        "category": "shirt",
+        "brand": "louis philippe",
+        "price_limit": null,
+        "color": "grey",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "louis philippe olive cotton shirt": {
+        "category": "shirt",
+        "brand": "louis philippe",
+        "price_limit": null,
+        "color": "olive",
+        "occasion": null,
+        "material": "cotton",
+        "gender": null
+    },
+    "louis philippe olive linen shirt": {
+        "category": "shirt",
+        "brand": "louis philippe",
+        "price_limit": null,
+        "color": "olive",
+        "occasion": null,
+        "material": "linen",
+        "gender": null
+    },
+    "louis philippe olive shirt": {
+        "category": "shirt",
+        "brand": "louis philippe",
+        "price_limit": null,
+        "color": "olive",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "louis philippe shirt": {
+        "category": "shirt",
+        "brand": "louis philippe",
+        "price_limit": null,
+        "color": null,
+        "occasion": null,
+        "material": null,
+        "gender": "male"
+    },
+    "louis philippe white cotton shirt": {
+        "category": "shirt",
+        "brand": "louis philippe",
+        "price_limit": null,
+        "color": "white",
+        "occasion": null,
+        "material": "cotton",
+        "gender": null
+    },
+    "louis philippe white linen shirt": {
+        "category": "shirt",
+        "brand": "louis philippe",
+        "price_limit": null,
+        "color": "white",
+        "occasion": null,
+        "material": "linen",
+        "gender": "male"
+    },
+    "louis philippe white shirt": {
+        "category": "shirt",
+        "brand": "louis philippe",
+        "price_limit": null,
+        "color": "white",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "maroon cotton saree": {
+        "category": "saree",
+        "brand": null,
+        "price_limit": null,
+        "color": "maroon",
+        "occasion": null,
+        "material": "cotton",
+        "gender": "female"
+    },
+    "maroon saree": {
+        "category": "saree",
+        "brand": null,
+        "price_limit": null,
+        "color": "maroon",
+        "occasion": null,
+        "material": null,
+        "gender": "female"
+    },
+    "maroon saree under 3000": {
+        "category": "saree",
+        "brand": null,
+        "price_limit": 3000,
+        "color": "maroon",
+        "occasion": null,
+        "material": null,
+        "gender": "female"
+    },
+    "maroon saree under 5000": {
+        "category": "saree",
+        "brand": null,
+        "price_limit": 5000,
+        "color": "maroon",
+        "occasion": null,
+        "material": null,
+        "gender": "female"
+    },
+    "maroon saree under 7000": {
+        "category": "saree",
+        "brand": null,
+        "price_limit": 7000,
+        "color": "maroon",
+        "occasion": null,
+        "material": null,
+        "gender": "female"
+    },
+    "men cotton shirt": {
+        "category": "shirt",
+        "brand": null,
+        "price_limit": null,
+        "color": null,
+        "occasion": null,
+        "material": "cotton",
+        "gender": "men"
+    },
+    "men linen shirt": {
+        "category": "shirt",
+        "brand": null,
+        "price_limit": null,
+        "color": null,
+        "occasion": null,
+        "material": "linen",
+        "gender": "men"
+    },
+    "mesh sneakers under 2000": {
+        "category": "sneakers",
+        "brand": null,
+        "price_limit": 2000,
+        "color": null,
+        "occasion": null,
+        "material": "mesh",
+        "gender": null
+    },
+    "mesh sneakers under 2500": {
+        "category": "sneakers",
+        "brand": null,
+        "price_limit": 2500,
+        "color": null,
+        "occasion": null,
+        "material": "mesh",
+        "gender": null
+    },
+    "mesh sneakers under 3000": {
+        "category": "sneakers",
+        "brand": null,
+        "price_limit": 3000,
+        "color": null,
+        "occasion": null,
+        "material": "mesh",
+        "gender": null
+    },
+    "mesh sneakers under 5000": {
+        "category": "sneakers",
+        "brand": null,
+        "price_limit": 5000,
+        "color": null,
+        "occasion": null,
+        "material": "mesh",
+        "gender": null
+    },
+    "mesh sneakers under 7000": {
+        "category": "sneakers",
+        "brand": null,
+        "price_limit": 7000,
+        "color": null,
+        "occasion": null,
+        "material": "mesh",
+        "gender": null
+    },
+    "mitera black saree": {
+        "category": "saree",
+        "brand": null,
+        "price_limit": null,
+        "color": "black",
+        "occasion": null,
+        "material": null,
+        "gender": "female"
+    },
+    "mitera black silk saree": {
+        "category": "saree",
+        "brand": null,
+        "price_limit": null,
+        "color": "black",
+        "occasion": null,
+        "material": "silk",
+        "gender": "female"
+    },
+    "mitera blue georgette saree": {
+        "category": "saree",
+        "brand": null,
+        "price_limit": null,
+        "color": "blue",
+        "occasion": null,
+        "material": "georgette",
+        "gender": "female"
+    },
+    "mitera blue saree": {
+        "category": "saree",
+        "brand": null,
+        "price_limit": null,
+        "color": "blue",
+        "occasion": null,
+        "material": null,
+        "gender": "female"
+    },
+    "mitera blue silk saree": {
+        "category": "saree",
+        "brand": null,
+        "price_limit": null,
+        "color": "blue",
+        "occasion": null,
+        "material": "silk",
+        "gender": "female"
+    },
+    "mitera green chiffon saree": {
+        "category": "saree",
+        "brand": null,
+        "price_limit": null,
+        "color": "green",
+        "occasion": null,
+        "material": "chiffon",
+        "gender": "female"
+    },
+    "mitera green saree": {
+        "category": "saree",
+        "brand": null,
+        "price_limit": null,
+        "color": "green",
+        "occasion": null,
+        "material": null,
+        "gender": "female"
+    },
+    "mitera green silk saree": {
+        "category": "saree",
+        "brand": null,
+        "price_limit": null,
+        "color": "green",
+        "occasion": null,
+        "material": "silk",
+        "gender": "female"
+    },
+    "mitera pink georgette saree": {
+        "category": "saree",
+        "brand": null,
+        "price_limit": null,
+        "color": "pink",
+        "occasion": null,
+        "material": "georgette",
+        "gender": "female"
+    },
+    "mitera pink saree": {
+        "category": "saree",
+        "brand": null,
+        "price_limit": null,
+        "color": "pink",
+        "occasion": null,
+        "material": null,
+        "gender": "female"
+    },
+    "mitera red georgette saree": {
+        "category": "saree",
+        "brand": null,
+        "price_limit": null,
+        "color": "red",
+        "occasion": null,
+        "material": "georgette",
+        "gender": "female"
+    },
+    "mitera red saree": {
+        "category": "saree",
+        "brand": null,
+        "price_limit": null,
+        "color": "red",
+        "occasion": null,
+        "material": null,
+        "gender": "female"
+    },
+    "mitera red silk saree": {
+        "category": "saree",
+        "brand": null,
+        "price_limit": null,
+        "color": "red",
+        "occasion": null,
+        "material": "silk",
+        "gender": "female"
+    },
+    "mitera saree": {
+        "category": "saree",
+        "brand": "mitera",
+        "price_limit": null,
+        "color": null,
+        "occasion": null,
+        "material": null,
+        "gender": "female"
+    },
+    "navy kurta": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": null,
+        "color": "navy",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "navy kurta under 1000": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": 1000,
+        "color": "navy",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "navy kurta under 1200": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": 1200,
+        "color": "navy",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "navy kurta under 1500": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": 1500,
+        "color": "navy",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "navy kurta under 700": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": 700,
+        "color": "navy",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "navy linen kurta": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": null,
+        "color": "navy",
+        "occasion": null,
+        "material": "linen",
+        "gender": null
+    },
+    "navy rayon kurta": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": null,
+        "color": "navy",
+        "occasion": null,
+        "material": "rayon",
+        "gender": null
+    },
+    "nike black canvas sneakers": {
+        "category": "sneakers",
+        "brand": "nike",
+        "price_limit": null,
+        "color": "black",
+        "occasion": null,
+        "material": "canvas",
+        "gender": null
+    },
+    "nike black mesh sneakers": {
+        "category": "sneakers",
+        "brand": "nike",
+        "price_limit": null,
+        "color": "black",
+        "occasion": null,
+        "material": "mesh",
+        "gender": null
+    },
+    "nike black sneakers": {
+        "category": "sneakers",
+        "brand": "nike",
+        "price_limit": null,
+        "color": "black",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "nike black synthetic sneakers": {
+        "category": "sneakers",
+        "brand": "nike",
+        "price_limit": null,
+        "color": "black",
+        "occasion": null,
+        "material": "synthetic",
+        "gender": null
+    },
+    "nike blue sneakers": {
+        "category": "sneakers",
+        "brand": "nike",
+        "price_limit": null,
+        "color": "blue",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "nike blue synthetic sneakers": {
+        "category": "sneakers",
+        "brand": "nike",
+        "price_limit": null,
+        "color": "blue",
+        "occasion": null,
+        "material": "synthetic",
+        "gender": null
+    },
+    "nike grey sneakers": {
+        "category": "sneakers",
+        "brand": "nike",
+        "price_limit": null,
+        "color": "grey",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "nike grey synthetic sneakers": {
+        "category": "sneakers",
+        "brand": "nike",
+        "price_limit": null,
+        "color": "grey",
+        "occasion": null,
+        "material": "synthetic",
+        "gender": null
+    },
+    "nike sneakers": {
+        "category": "sneakers",
+        "brand": "nike",
+        "price_limit": null,
+        "color": null,
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "nike white canvas sneakers": {
+        "category": "sneakers",
+        "brand": "nike",
+        "price_limit": null,
+        "color": "white",
+        "occasion": null,
+        "material": "canvas",
+        "gender": null
+    },
+    "nike white mesh sneakers": {
+        "category": "sneakers",
+        "brand": "nike",
+        "price_limit": null,
+        "color": "white",
+        "occasion": null,
+        "material": "mesh",
+        "gender": null
+    },
+    "nike white sneakers": {
+        "category": "sneakers",
+        "brand": "nike",
+        "price_limit": null,
+        "color": "white",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "nike white synthetic sneakers": {
+        "category": "sneakers",
+        "brand": "nike",
+        "price_limit": null,
+        "color": "white",
+        "occasion": null,
+        "material": "synthetic",
+        "gender": null
+    },
+    "office cotton kurta": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": null,
+        "color": null,
+        "occasion": "office",
+        "material": "cotton",
+        "gender": null
+    },
+    "office cotton shirt": {
+        "category": "shirt",
+        "brand": null,
+        "price_limit": null,
+        "color": null,
+        "occasion": "office",
+        "material": "cotton",
+        "gender": null
+    },
+    "office kurta": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": null,
+        "color": null,
+        "occasion": "office",
+        "material": null,
+        "gender": null
+    },
+    "office linen shirt": {
+        "category": "shirt",
+        "brand": null,
+        "price_limit": null,
+        "color": "linen",
+        "occasion": "office",
+        "material": "linen",
+        "gender": null
+    },
+    "office rayon kurta": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": null,
+        "color": null,
+        "occasion": "office",
+        "material": "rayon",
+        "gender": null
+    },
+    "office shirt": {
+        "category": "shirt",
+        "brand": null,
+        "price_limit": null,
+        "color": null,
+        "occasion": "office",
+        "material": null,
+        "gender": null
+    },
+    "olive cotton shirt": {
+        "category": "shirt",
+        "brand": null,
+        "price_limit": null,
+        "color": "olive",
+        "occasion": null,
+        "material": "cotton",
+        "gender": null
+    },
+    "olive linen shirt": {
+        "category": "shirt",
+        "brand": null,
+        "price_limit": null,
+        "color": "olive",
+        "occasion": null,
+        "material": "linen",
+        "gender": null
+    },
+    "olive shirt": {
+        "category": "shirt",
+        "brand": null,
+        "price_limit": null,
+        "color": "olive",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "olive shirt under 1000": {
+        "category": "shirt",
+        "brand": null,
+        "price_limit": 1000,
+        "color": "olive",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "olive shirt under 1200": {
+        "category": "shirt",
+        "brand": null,
+        "price_limit": 1200,
+        "color": "olive",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "olive shirt under 1500": {
+        "category": "shirt",
+        "brand": null,
+        "price_limit": 1500,
+        "color": "olive",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "olive shirt under 2000": {
+        "category": "shirt",
+        "brand": null,
+        "price_limit": 2000,
+        "color": "olive",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "olive shirt under 2500": {
+        "category": "shirt",
+        "brand": null,
+        "price_limit": 2500,
+        "color": "olive",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "olive shirt under 3000": {
+        "category": "shirt",
+        "brand": null,
+        "price_limit": 3000,
+        "color": "olive",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "party chiffon saree": {
+        "category": "saree",
+        "brand": null,
+        "price_limit": null,
+        "color": null,
+        "occasion": "party",
+        "material": "chiffon",
+        "gender": "female"
+    },
+    "party georgette saree": {
+        "category": "saree",
+        "brand": null,
+        "price_limit": null,
+        "color": null,
+        "occasion": "party",
+        "material": "georgette",
+        "gender": "female"
+    },
+    "party saree": {
+        "category": "saree",
+        "brand": null,
+        "price_limit": null,
+        "color": null,
+        "occasion": "party",
+        "material": null,
+        "gender": "female"
+    },
+    "party silk saree": {
+        "category": "saree",
+        "brand": null,
+        "price_limit": null,
+        "color": null,
+        "occasion": "party",
+        "material": "silk",
+        "gender": "female"
+    },
+    "pepe jeans black denim jeans": {
+        "category": "jeans",
+        "brand": "pepe",
+        "price_limit": null,
+        "color": "black",
+        "occasion": null,
+        "material": "denim",
+        "gender": null
+    },
+    "pepe jeans black jeans": {
+        "category": "jeans",
+        "brand": "pepe",
+        "price_limit": null,
+        "color": "black",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "pepe jeans blue denim jeans": {
+        "category": "jeans",
+        "brand": "pepe",
+        "price_limit": null,
+        "color": "blue",
+        "occasion": null,
+        "material": "denim",
+        "gender": null
+    },
+    "pepe jeans blue jeans": {
+        "category": "jeans",
+        "brand": "pepe",
+        "price_limit": null,
+        "color": "blue",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "pepe jeans grey denim jeans": {
+        "category": "jeans",
+        "brand": "pepe",
+        "price_limit": null,
+        "color": "grey",
+        "occasion": null,
+        "material": "denim",
+        "gender": null
+    },
+    "pepe jeans jeans": {
+        "category": "jeans",
+        "brand": "pepe",
+        "price_limit": null,
+        "color": null,
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "pink chiffon saree": {
+        "category": "saree",
+        "brand": null,
+        "price_limit": null,
+        "color": "pink",
+        "occasion": null,
+        "material": "chiffon",
+        "gender": "female"
+    },
+    "pink cotton kurta": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": null,
+        "color": "pink",
+        "occasion": null,
+        "material": "cotton",
+        "gender": null
+    },
+    "pink cotton saree": {
+        "category": "saree",
+        "brand": null,
+        "price_limit": null,
+        "color": "pink",
+        "occasion": null,
+        "material": "cotton",
+        "gender": "female"
+    },
+    "pink georgette saree": {
+        "category": "saree",
+        "brand": null,
+        "price_limit": null,
+        "color": "pink",
+        "occasion": null,
+        "material": "georgette",
+        "gender": "female"
+    },
+    "pink kurta": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": null,
+        "color": "pink",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "pink kurta under 1200": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": 1200,
+        "color": "pink",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "pink kurta under 1500": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": 1500,
+        "color": "pink",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "pink kurta under 2000": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": 2000,
+        "color": "pink",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "pink kurta under 2500": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": 2500,
+        "color": "pink",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "pink kurta under 3000": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": 3000,
+        "color": "pink",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "pink kurta under 5000": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": 5000,
+        "color": "pink",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "pink linen kurta": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": null,
+        "color": "pink",
+        "occasion": null,
+        "material": "linen",
+        "gender": null
+    },
+    "pink rayon kurta": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": null,
+        "color": "pink",
+        "occasion": null,
+        "material": "rayon",
+        "gender": null
+    },
+    "pink saree": {
+        "category": "saree",
+        "brand": null,
+        "price_limit": null,
+        "color": "pink",
+        "occasion": null,
+        "material": null,
+        "gender": "female"
+    },
+    "pink saree under 1500": {
+        "category": "saree",
+        "brand": null,
+        "price_limit": 1500,
+        "color": "pink",
+        "occasion": null,
+        "material": null,
+        "gender": "female"
+    },
+    "pink saree under 2000": {
+        "category": "saree",
+        "brand": null,
+        "price_limit": 2000,
+        "color": "pink",
+        "occasion": null,
+        "material": null,
+        "gender": "female"
+    },
+    "pink saree under 2500": {
+        "category": "saree",
+        "brand": null,
+        "price_limit": 2500,
+        "color": "pink",
+        "occasion": null,
+        "material": null,
+        "gender": "female"
+    },
+    "pink saree under 3000": {
+        "category": "saree",
+        "brand": null,
+        "price_limit": 3000,
+        "color": "pink",
+        "occasion": null,
+        "material": null,
+        "gender": "female"
+    },
+    "pink saree under 5000": {
+        "category": "saree",
+        "brand": null,
+        "price_limit": 5000,
+        "color": "pink",
+        "occasion": null,
+        "material": null,
+        "gender": "female"
+    },
+    "pink saree under 7000": {
+        "category": "saree",
+        "brand": null,
+        "price_limit": 7000,
+        "color": "pink",
+        "occasion": null,
+        "material": null,
+        "gender": "female"
+    },
+    "pink silk kurta": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": null,
+        "color": "pink",
+        "occasion": null,
+        "material": "silk",
+        "gender": null
+    },
+    "pink silk saree": {
+        "category": "saree",
+        "brand": null,
+        "price_limit": null,
+        "color": "pink",
+        "occasion": null,
+        "material": "silk",
+        "gender": "female"
+    },
+    "puma black sneakers": {
+        "category": "sneakers",
+        "brand": "puma",
+        "price_limit": null,
+        "color": "black",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "puma black synthetic sneakers": {
+        "category": "sneakers",
+        "brand": "puma",
+        "price_limit": null,
+        "color": "black",
+        "occasion": null,
+        "material": "synthetic",
+        "gender": null
+    },
+    "puma grey canvas sneakers": {
+        "category": "sneakers",
+        "brand": "puma",
+        "price_limit": null,
+        "color": "grey",
+        "occasion": null,
+        "material": "canvas",
+        "gender": null
+    },
+    "puma grey mesh sneakers": {
+        "category": "sneakers",
+        "brand": "puma",
+        "price_limit": null,
+        "color": "grey",
+        "occasion": null,
+        "material": "mesh",
+        "gender": null
+    },
+    "puma grey sneakers": {
+        "category": "sneakers",
+        "brand": "puma",
+        "price_limit": null,
+        "color": "grey",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "puma grey synthetic sneakers": {
+        "category": "sneakers",
+        "brand": "puma",
+        "price_limit": null,
+        "color": "grey",
+        "occasion": null,
+        "material": "synthetic",
+        "gender": null
+    },
+    "puma sneakers": {
+        "category": "sneakers",
+        "brand": "puma",
+        "price_limit": null,
+        "color": null,
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "puma white mesh sneakers": {
+        "category": "sneakers",
+        "brand": "puma",
+        "price_limit": null,
+        "color": "white",
+        "occasion": null,
+        "material": "mesh",
+        "gender": null
+    },
+    "puma white sneakers": {
+        "category": "sneakers",
+        "brand": "puma",
+        "price_limit": null,
+        "color": "white",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "puma white synthetic sneakers": {
+        "category": "sneakers",
+        "brand": "puma",
+        "price_limit": null,
+        "color": "white",
+        "occasion": null,
+        "material": "synthetic",
+        "gender": null
+    },
+    "purple cotton kurta": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": null,
+        "color": "purple",
+        "occasion": null,
+        "material": "cotton",
+        "gender": null
+    },
+    "purple kurta": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": null,
+        "color": "purple",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "purple kurta under 1200": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": 1200,
+        "color": "purple",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "purple kurta under 1500": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": 1500,
+        "color": "purple",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "purple kurta under 2000": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": 2000,
+        "color": "purple",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "purple kurta under 2500": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": 2500,
+        "color": "purple",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "purple kurta under 3000": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": 3000,
+        "color": "purple",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "purple kurta under 5000": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": 5000,
+        "color": "purple",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "purple kurta under 700": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": 700,
+        "color": "purple",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "purple rayon kurta": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": null,
+        "color": "purple",
+        "occasion": null,
+        "material": "rayon",
+        "gender": null
+    },
+    "purple silk kurta": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": null,
+        "color": "purple",
+        "occasion": null,
+        "material": "silk",
+        "gender": null
+    },
+    "rayon kurta under 1000": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": 1000,
+        "color": null,
+        "occasion": null,
+        "material": "rayon",
+        "gender": null
+    },
+    "rayon kurta under 1200": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": 1200,
+        "color": null,
+        "occasion": null,
+        "material": "rayon",
+        "gender": null
+    },
+    "rayon kurta under 1500": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": 1500,
+        "color": null,
+        "occasion": null,
+        "material": "rayon",
+        "gender": null
+    },
+    "rayon kurta under 2000": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": 2000,
+        "color": null,
+        "occasion": null,
+        "material": "rayon",
+        "gender": null
+    },
+    "rayon kurta under 2500": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": 2500,
+        "color": null,
+        "occasion": null,
+        "material": "rayon",
+        "gender": null
+    },
+    "rayon kurta under 3000": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": 3000,
+        "color": null,
+        "occasion": null,
+        "material": "rayon",
+        "gender": null
+    },
+    "rayon kurta under 700": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": 700,
+        "color": null,
+        "occasion": null,
+        "material": "rayon",
+        "gender": null
+    },
+    "red chiffon saree": {
+        "category": "saree",
+        "brand": null,
+        "price_limit": null,
+        "color": "red",
+        "occasion": null,
+        "material": "chiffon",
+        "gender": "female"
+    },
+    "red cotton saree": {
+        "category": "saree",
+        "brand": null,
+        "price_limit": null,
+        "color": "red",
+        "occasion": null,
+        "material": "cotton",
+        "gender": "female"
+    },
+    "red georgette saree": {
+        "category": "saree",
+        "brand": null,
+        "price_limit": null,
+        "color": "red",
+        "occasion": null,
+        "material": "georgette",
+        "gender": "female"
+    },
+    "red saree": {
+        "category": "saree",
+        "brand": null,
+        "price_limit": null,
+        "color": "red",
+        "occasion": null,
+        "material": null,
+        "gender": "female"
+    },
+    "red saree under 1200": {
+        "category": "saree",
+        "brand": null,
+        "price_limit": 1200,
+        "color": "red",
+        "occasion": null,
+        "material": null,
+        "gender": "female"
+    },
+    "red saree under 1500": {
+        "category": "saree",
+        "brand": null,
+        "price_limit": 1500,
+        "color": "red",
+        "occasion": null,
+        "material": null,
+        "gender": "female"
+    },
+    "red saree under 2000": {
+        "category": "saree",
+        "brand": null,
+        "price_limit": 2000,
+        "color": "red",
+        "occasion": null,
+        "material": null,
+        "gender": "female"
+    },
+    "red saree under 2500": {
+        "category": "saree",
+        "brand": null,
+        "price_limit": 2500,
+        "color": "red",
+        "occasion": null,
+        "material": null,
+        "gender": "female"
+    },
+    "red saree under 3000": {
+        "category": "saree",
+        "brand": null,
+        "price_limit": 3000,
+        "color": "red",
+        "occasion": null,
+        "material": null,
+        "gender": "female"
+    },
+    "red saree under 5000": {
+        "category": "saree",
+        "brand": null,
+        "price_limit": 5000,
+        "color": "red",
+        "occasion": null,
+        "material": null,
+        "gender": "female"
+    },
+    "red saree under 7000": {
+        "category": "saree",
+        "brand": null,
+        "price_limit": 7000,
+        "color": "red",
+        "occasion": null,
+        "material": null,
+        "gender": "female"
+    },
+    "red silk saree": {
+        "category": "saree",
+        "brand": null,
+        "price_limit": null,
+        "color": "red",
+        "occasion": null,
+        "material": "silk",
+        "gender": "female"
+    },
+    "roadster black cotton shirt": {
+        "category": "shirt",
+        "brand": null,
+        "price_limit": null,
+        "color": "black",
+        "occasion": null,
+        "material": "cotton",
+        "gender": null
+    },
+    "roadster black denim jeans": {
+        "category": "jeans",
+        "brand": "roadster",
+        "price_limit": null,
+        "color": "black",
+        "occasion": null,
+        "material": "denim",
+        "gender": null
+    },
+    "roadster black jeans": {
+        "category": "jeans",
+        "brand": "roadster",
+        "price_limit": null,
+        "color": "black",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "roadster black shirt": {
+        "category": "shirt",
+        "brand": "Roadster",
+        "price_limit": null,
+        "color": "black",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "roadster blue cotton shirt": {
+        "category": "shirt",
+        "brand": null,
+        "price_limit": null,
+        "color": "blue",
+        "occasion": null,
+        "material": "cotton",
+        "gender": "male"
+    },
+    "roadster blue denim jeans": {
+        "category": "jeans",
+        "brand": "roadster",
+        "price_limit": null,
+        "color": "blue",
+        "occasion": null,
+        "material": "denim",
+        "gender": null
+    },
+    "roadster blue jeans": {
+        "category": "jeans",
+        "brand": "Roadster",
+        "price_limit": null,
+        "color": "blue",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "roadster blue shirt": {
+        "category": "shirt",
+        "brand": "Roadster",
+        "price_limit": null,
+        "color": "blue",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "roadster grey jeans": {
+        "category": "jeans",
+        "brand": "roadster",
+        "price_limit": null,
+        "color": "grey",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "roadster jeans": {
+        "category": "jeans",
+        "brand": "Roadster",
+        "price_limit": null,
+        "color": null,
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "roadster olive cotton shirt": {
+        "category": "shirt",
+        "brand": null,
+        "price_limit": null,
+        "color": "olive",
+        "occasion": null,
+        "material": "cotton",
+        "gender": null
+    },
+    "roadster olive linen shirt": {
+        "category": "shirt",
+        "brand": null,
+        "price_limit": null,
+        "color": "olive",
+        "occasion": null,
+        "material": "linen",
+        "gender": null
+    },
+    "roadster olive shirt": {
+        "category": "shirt",
+        "brand": "roadster",
+        "price_limit": null,
+        "color": "olive",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "roadster shirt": {
+        "category": "shirt",
+        "brand": "Roadster",
+        "price_limit": null,
+        "color": null,
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "roadster white linen shirt": {
+        "category": "shirt",
+        "brand": null,
+        "price_limit": null,
+        "color": "white",
+        "occasion": null,
+        "material": "linen",
+        "gender": "male"
+    },
+    "roadster white shirt": {
+        "category": "shirt",
+        "brand": "Roadster",
+        "price_limit": null,
+        "color": "white",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "sangria black saree": {
+        "category": "saree",
+        "brand": null,
+        "price_limit": null,
+        "color": "black",
+        "occasion": null,
+        "material": null,
+        "gender": "female"
+    },
+    "sangria blue chiffon saree": {
+        "category": "saree",
+        "brand": null,
+        "price_limit": null,
+        "color": "sangria blue",
+        "occasion": null,
+        "material": "chiffon",
+        "gender": "female"
+    },
+    "sangria blue cotton kurta": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": null,
+        "color": "sangria blue",
+        "occasion": null,
+        "material": "cotton",
+        "gender": null
+    },
+    "sangria blue georgette saree": {
+        "category": "saree",
+        "brand": null,
+        "price_limit": null,
+        "color": "sangria blue",
+        "occasion": null,
+        "material": "georgette",
+        "gender": "female"
+    },
+    "sangria blue kurta": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": null,
+        "color": "sangria blue",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "sangria blue saree": {
+        "category": "saree",
+        "brand": null,
+        "price_limit": null,
+        "color": "blue",
+        "occasion": null,
+        "material": null,
+        "gender": "female"
+    },
+    "sangria blue silk saree": {
+        "category": "saree",
+        "brand": null,
+        "price_limit": null,
+        "color": "sangria blue",
+        "occasion": null,
+        "material": "silk",
+        "gender": "female"
+    },
+    "sangria dark blue cotton kurta": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": null,
+        "color": "dark blue",
+        "occasion": null,
+        "material": "cotton",
+        "gender": null
+    },
+    "sangria dark blue kurta": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": null,
+        "color": "dark blue",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "sangria dark blue rayon kurta": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": null,
+        "color": "dark blue",
+        "occasion": null,
+        "material": "rayon",
+        "gender": null
+    },
+    "sangria green silk saree": {
+        "category": "saree",
+        "brand": null,
+        "price_limit": null,
+        "color": "green",
+        "occasion": null,
+        "material": "silk",
+        "gender": "female"
+    },
+    "sangria grey cotton kurta": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": null,
+        "color": "grey",
+        "occasion": null,
+        "material": "cotton",
+        "gender": null
+    },
+    "sangria grey kurta": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": null,
+        "color": "grey",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "sangria kurta": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": null,
+        "color": null,
+        "occasion": null,
+        "material": null,
+        "gender": "female"
+    },
+    "sangria pink chiffon saree": {
+        "category": "saree",
+        "brand": null,
+        "price_limit": null,
+        "color": "sangria pink",
+        "occasion": null,
+        "material": "chiffon",
+        "gender": "female"
+    },
+    "sangria pink kurta": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": null,
+        "color": "sangria pink",
+        "occasion": null,
+        "material": null,
+        "gender": "female"
+    },
+    "sangria pink saree": {
+        "category": "saree",
+        "brand": null,
+        "price_limit": null,
+        "color": "pink",
+        "occasion": null,
+        "material": null,
+        "gender": "female"
+    },
+    "sangria pink silk kurta": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": null,
+        "color": "sangria pink",
+        "occasion": null,
+        "material": "silk",
+        "gender": null
+    },
+    "sangria purple cotton kurta": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": null,
+        "color": "purple",
+        "occasion": null,
+        "material": "cotton",
+        "gender": null
+    },
+    "sangria purple kurta": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": null,
+        "color": "purple",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "sangria red chiffon saree": {
+        "category": "saree",
+        "brand": null,
+        "price_limit": null,
+        "color": "sangria red",
+        "occasion": null,
+        "material": "chiffon",
+        "gender": "female"
+    },
+    "sangria red cotton saree": {
+        "category": "saree",
+        "brand": null,
+        "price_limit": null,
+        "color": "sangria red",
+        "occasion": null,
+        "material": "cotton",
+        "gender": "female"
+    },
+    "sangria red saree": {
+        "category": "saree",
+        "brand": null,
+        "price_limit": null,
+        "color": "sangria red",
+        "occasion": null,
+        "material": null,
+        "gender": "female"
+    },
+    "sangria red silk saree": {
+        "category": "saree",
+        "brand": null,
+        "price_limit": null,
+        "color": "sangria red",
+        "occasion": null,
+        "material": "silk",
+        "gender": "female"
+    },
+    "sangria saree": {
+        "category": "saree",
+        "brand": null,
+        "price_limit": null,
+        "color": null,
+        "occasion": null,
+        "material": null,
+        "gender": "female"
+    },
+    "saree": {
+        "category": "saree",
+        "brand": null,
+        "price_limit": null,
+        "color": null,
+        "occasion": null,
+        "material": null,
+        "gender": "female"
+    },
+    "saree under 1200": {
+        "category": "saree",
+        "brand": null,
+        "price_limit": 1200,
+        "color": null,
+        "occasion": null,
+        "material": null,
+        "gender": "female"
+    },
+    "saree under 1500": {
+        "category": "saree",
+        "brand": null,
+        "price_limit": 1500,
+        "color": null,
+        "occasion": null,
+        "material": null,
+        "gender": "female"
+    },
+    "saree under 2000": {
+        "category": "saree",
+        "brand": null,
+        "price_limit": 2000,
+        "color": null,
+        "occasion": null,
+        "material": null,
+        "gender": "female"
+    },
+    "saree under 2500": {
+        "category": "saree",
+        "brand": null,
+        "price_limit": 2500,
+        "color": null,
+        "occasion": null,
+        "material": null,
+        "gender": "female"
+    },
+    "saree under 3000": {
+        "category": "saree",
+        "brand": null,
+        "price_limit": 3000,
+        "color": null,
+        "occasion": null,
+        "material": null,
+        "gender": "female"
+    },
+    "saree under 5000": {
+        "category": "saree",
+        "brand": null,
+        "price_limit": 5000,
+        "color": null,
+        "occasion": null,
+        "material": null,
+        "gender": "female"
+    },
+    "saree under 7000": {
+        "category": "saree",
+        "brand": null,
+        "price_limit": 7000,
+        "color": null,
+        "occasion": null,
+        "material": null,
+        "gender": "female"
+    },
+    "shirt": {
+        "category": "shirt",
+        "brand": null,
+        "price_limit": null,
+        "color": null,
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "shirt under 1000": {
+        "category": "shirt",
+        "brand": null,
+        "price_limit": 1000,
+        "color": null,
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "shirt under 1200": {
+        "category": "shirt",
+        "brand": null,
+        "price_limit": 1200,
+        "color": null,
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "shirt under 1500": {
+        "category": "shirt",
+        "brand": null,
+        "price_limit": 1500,
+        "color": null,
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "shirt under 2000": {
+        "category": "shirt",
+        "brand": null,
+        "price_limit": 2000,
+        "color": null,
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "shirt under 2500": {
+        "category": "shirt",
+        "brand": null,
+        "price_limit": 2500,
+        "color": null,
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "shirt under 3000": {
+        "category": "shirt",
+        "brand": null,
+        "price_limit": 3000,
+        "color": null,
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "shirt under 5000": {
+        "category": "shirt",
+        "brand": null,
+        "price_limit": 5000,
+        "color": null,
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "shirt under 7000": {
+        "category": "shirt",
+        "brand": null,
+        "price_limit": 7000,
+        "color": null,
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "silk kurta under 1000": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": 1000,
+        "color": null,
+        "occasion": null,
+        "material": "silk",
+        "gender": null
+    },
+    "silk kurta under 1200": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": 1200,
+        "color": null,
+        "occasion": null,
+        "material": "silk",
+        "gender": null
+    },
+    "silk kurta under 1500": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": 1500,
+        "color": null,
+        "occasion": null,
+        "material": "silk",
+        "gender": null
+    },
+    "silk kurta under 2000": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": 2000,
+        "color": null,
+        "occasion": null,
+        "material": "silk",
+        "gender": null
+    },
+    "silk kurta under 2500": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": 2500,
+        "color": null,
+        "occasion": null,
+        "material": "silk",
+        "gender": null
+    },
+    "silk kurta under 3000": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": 3000,
+        "color": null,
+        "occasion": null,
+        "material": "silk",
+        "gender": null
+    },
+    "silk kurta under 5000": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": 5000,
+        "color": null,
+        "occasion": null,
+        "material": "silk",
+        "gender": null
+    },
+    "silk kurta under 700": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": 700,
+        "color": null,
+        "occasion": null,
+        "material": "silk",
+        "gender": null
+    },
+    "silk saree under 1200": {
+        "category": "saree",
+        "brand": null,
+        "price_limit": 1200,
+        "color": null,
+        "occasion": null,
+        "material": "silk",
+        "gender": "female"
+    },
+    "silk saree under 1500": {
+        "category": "saree",
+        "brand": null,
+        "price_limit": 1500,
+        "color": null,
+        "occasion": null,
+        "material": "silk",
+        "gender": "female"
+    },
+    "silk saree under 2000": {
+        "category": "saree",
+        "brand": null,
+        "price_limit": 2000,
+        "color": null,
+        "occasion": null,
+        "material": "silk",
+        "gender": "female"
+    },
+    "silk saree under 2500": {
+        "category": "saree",
+        "brand": null,
+        "price_limit": 2500,
+        "color": null,
+        "occasion": null,
+        "material": "silk",
+        "gender": "female"
+    },
+    "silk saree under 3000": {
+        "category": "saree",
+        "brand": null,
+        "price_limit": 3000,
+        "color": null,
+        "occasion": null,
+        "material": "silk",
+        "gender": "female"
+    },
+    "silk saree under 5000": {
+        "category": "saree",
+        "brand": null,
+        "price_limit": 5000,
+        "color": null,
+        "occasion": null,
+        "material": "silk",
+        "gender": "female"
+    },
+    "silk saree under 7000": {
+        "category": "saree",
+        "brand": null,
+        "price_limit": 7000,
+        "color": null,
+        "occasion": null,
+        "material": "silk",
+        "gender": "female"
+    },
+    "sneakers": {
+        "category": "sneakers",
+        "brand": null,
+        "price_limit": null,
+        "color": null,
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "sneakers under 1500": {
+        "category": "sneakers",
+        "brand": null,
+        "price_limit": 1500,
+        "color": null,
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "sneakers under 2000": {
+        "category": "sneakers",
+        "brand": null,
+        "price_limit": 2000,
+        "color": null,
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "sneakers under 2500": {
+        "category": "sneakers",
+        "brand": null,
+        "price_limit": 2500,
+        "color": null,
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "sneakers under 3000": {
+        "category": "sneakers",
+        "brand": null,
+        "price_limit": 3000,
+        "color": null,
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "sneakers under 5000": {
+        "category": "sneakers",
+        "brand": null,
+        "price_limit": 5000,
+        "color": null,
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "sneakers under 7000": {
+        "category": "sneakers",
+        "brand": null,
+        "price_limit": 7000,
+        "color": null,
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "sports mesh sneakers": {
+        "category": "sneakers",
+        "brand": null,
+        "price_limit": null,
+        "color": null,
+        "occasion": "sports",
+        "material": "mesh",
+        "gender": null
+    },
+    "sports sneakers": {
+        "category": "sneakers",
+        "brand": null,
+        "price_limit": null,
+        "color": null,
+        "occasion": "sports",
+        "material": null,
+        "gender": null
+    },
+    "sports synthetic sneakers": {
+        "category": "sneakers",
+        "brand": null,
+        "price_limit": null,
+        "color": null,
+        "occasion": "sports",
+        "material": "synthetic",
+        "gender": null
+    },
+    "synthetic sneakers under 1500": {
+        "category": "sneakers",
+        "brand": null,
+        "price_limit": 1500,
+        "color": null,
+        "occasion": null,
+        "material": "synthetic",
+        "gender": null
+    },
+    "synthetic sneakers under 2000": {
+        "category": "sneakers",
+        "brand": null,
+        "price_limit": 2000,
+        "color": null,
+        "occasion": null,
+        "material": "synthetic",
+        "gender": null
+    },
+    "synthetic sneakers under 2500": {
+        "category": "sneakers",
+        "brand": null,
+        "price_limit": 2500,
+        "color": null,
+        "occasion": null,
+        "material": "synthetic",
+        "gender": null
+    },
+    "synthetic sneakers under 3000": {
+        "category": "sneakers",
+        "brand": null,
+        "price_limit": 3000,
+        "color": null,
+        "occasion": null,
+        "material": "synthetic",
+        "gender": null
+    },
+    "synthetic sneakers under 5000": {
+        "category": "sneakers",
+        "brand": null,
+        "price_limit": 5000,
+        "color": null,
+        "occasion": null,
+        "material": "synthetic",
+        "gender": null
+    },
+    "synthetic sneakers under 7000": {
+        "category": "sneakers",
+        "brand": null,
+        "price_limit": 7000,
+        "color": null,
+        "occasion": null,
+        "material": "synthetic",
+        "gender": null
+    },
+    "unisex canvas sneakers": {
+        "category": "sneakers",
+        "brand": null,
+        "price_limit": null,
+        "color": null,
+        "occasion": null,
+        "material": "canvas",
+        "gender": "unisex"
+    },
+    "unisex denim jeans": {
+        "category": "jeans",
+        "brand": null,
+        "price_limit": null,
+        "color": null,
+        "occasion": null,
+        "material": "denim",
+        "gender": "unisex"
+    },
+    "unisex mesh sneakers": {
+        "category": "sneakers",
+        "brand": null,
+        "price_limit": null,
+        "color": null,
+        "occasion": null,
+        "material": "mesh",
+        "gender": "unisex"
+    },
+    "unisex synthetic sneakers": {
+        "category": "sneakers",
+        "brand": null,
+        "price_limit": null,
+        "color": null,
+        "occasion": null,
+        "material": "synthetic",
+        "gender": "unisex"
+    },
+    "w blue kurta": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": null,
+        "color": "blue",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "w blue silk kurta": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": null,
+        "color": "blue",
+        "occasion": null,
+        "material": "silk",
+        "gender": null
+    },
+    "w green cotton kurta": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": null,
+        "color": "green",
+        "occasion": null,
+        "material": "cotton",
+        "gender": null
+    },
+    "w green kurta": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": null,
+        "color": "green",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "w kurta": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": null,
+        "color": null,
+        "occasion": null,
+        "material": null,
+        "gender": "male"
+    },
+    "w navy linen kurta": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": null,
+        "color": "navy",
+        "occasion": null,
+        "material": "linen",
+        "gender": null
+    },
+    "w pink kurta": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": null,
+        "color": "pink",
+        "occasion": null,
+        "material": null,
+        "gender": "female"
+    },
+    "w pink linen kurta": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": null,
+        "color": "pink",
+        "occasion": null,
+        "material": "linen",
+        "gender": null
+    },
+    "w purple cotton kurta": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": null,
+        "color": "purple",
+        "occasion": null,
+        "material": "cotton",
+        "gender": null
+    },
+    "w purple kurta": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": null,
+        "color": "purple",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "w white cotton kurta": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": null,
+        "color": "white",
+        "occasion": null,
+        "material": "cotton",
+        "gender": null
+    },
+    "w white kurta": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": null,
+        "color": "white",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "w yellow cotton kurta": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": null,
+        "color": "yellow",
+        "occasion": null,
+        "material": "cotton",
+        "gender": null
+    },
+    "w yellow kurta": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": null,
+        "color": "yellow",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "wedding georgette saree": {
+        "category": "saree",
+        "brand": null,
+        "price_limit": null,
+        "color": null,
+        "occasion": "wedding",
+        "material": "georgette",
+        "gender": "female"
+    },
+    "wedding saree": {
+        "category": "saree",
+        "brand": null,
+        "price_limit": null,
+        "color": null,
+        "occasion": "wedding",
+        "material": null,
+        "gender": "female"
+    },
+    "wedding silk saree": {
+        "category": "saree",
+        "brand": null,
+        "price_limit": null,
+        "color": null,
+        "occasion": "wedding",
+        "material": "silk",
+        "gender": "female"
+    },
+    "white canvas sneakers": {
+        "category": "sneakers",
+        "brand": null,
+        "price_limit": null,
+        "color": "white",
+        "occasion": null,
+        "material": "canvas",
+        "gender": null
+    },
+    "white cotton kurta": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": null,
+        "color": "white",
+        "occasion": null,
+        "material": "cotton",
+        "gender": null
+    },
+    "white cotton shirt": {
+        "category": "shirt",
+        "brand": null,
+        "price_limit": null,
+        "color": "white",
+        "occasion": null,
+        "material": "cotton",
+        "gender": null
+    },
+    "white kurta": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": null,
+        "color": "white",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "white kurta under 1200": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": 1200,
+        "color": "white",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "white kurta under 1500": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": 1500,
+        "color": "white",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "white kurta under 2000": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": 2000,
+        "color": "white",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "white kurta under 2500": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": 2500,
+        "color": "white",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "white kurta under 3000": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": 3000,
+        "color": "white",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "white kurta under 700": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": 700,
+        "color": "white",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "white linen shirt": {
+        "category": "shirt",
+        "brand": null,
+        "price_limit": null,
+        "color": "white",
+        "occasion": null,
+        "material": "linen",
+        "gender": null
+    },
+    "white mesh sneakers": {
+        "category": "sneakers",
+        "brand": null,
+        "price_limit": null,
+        "color": "white",
+        "occasion": null,
+        "material": "mesh",
+        "gender": null
+    },
+    "white rayon kurta": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": null,
+        "color": "white",
+        "occasion": null,
+        "material": "rayon",
+        "gender": null
+    },
+    "white shirt": {
+        "category": "shirt",
+        "brand": null,
+        "price_limit": null,
+        "color": "white",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "white shirt under 1000": {
+        "category": "shirt",
+        "brand": null,
+        "price_limit": 1000,
+        "color": "white",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "white shirt under 1200": {
+        "category": "shirt",
+        "brand": null,
+        "price_limit": 1200,
+        "color": "white",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "white shirt under 1500": {
+        "category": "shirt",
+        "brand": null,
+        "price_limit": 1500,
+        "color": "white",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "white shirt under 2000": {
+        "category": "shirt",
+        "brand": null,
+        "price_limit": 2000,
+        "color": "white",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "white shirt under 2500": {
+        "category": "shirt",
+        "brand": null,
+        "price_limit": 2500,
+        "color": "white",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "white shirt under 3000": {
+        "category": "shirt",
+        "brand": null,
+        "price_limit": 3000,
+        "color": "white",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "white shirt under 5000": {
+        "category": "shirt",
+        "brand": null,
+        "price_limit": 5000,
+        "color": "white",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "white shirt under 7000": {
+        "category": "shirt",
+        "brand": null,
+        "price_limit": 7000,
+        "color": "white",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "white sneakers": {
+        "category": "sneakers",
+        "brand": null,
+        "price_limit": null,
+        "color": "white",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "white sneakers under 2000": {
+        "category": "sneakers",
+        "brand": null,
+        "price_limit": 2000,
+        "color": "white",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "white sneakers under 2500": {
+        "category": "sneakers",
+        "brand": null,
+        "price_limit": 2500,
+        "color": "white",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "white sneakers under 3000": {
+        "category": "sneakers",
+        "brand": null,
+        "price_limit": 3000,
+        "color": "white",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "white sneakers under 5000": {
+        "category": "sneakers",
+        "brand": null,
+        "price_limit": 5000,
+        "color": "white",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "white sneakers under 7000": {
+        "category": "sneakers",
+        "brand": null,
+        "price_limit": 7000,
+        "color": "white",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "white synthetic sneakers": {
+        "category": "sneakers",
+        "brand": null,
+        "price_limit": null,
+        "color": "white",
+        "occasion": null,
+        "material": "synthetic",
+        "gender": null
+    },
+    "women chiffon saree": {
+        "category": "saree",
+        "brand": null,
+        "price_limit": null,
+        "color": null,
+        "occasion": null,
+        "material": "chiffon",
+        "gender": "female"
+    },
+    "women cotton kurta": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": null,
+        "color": null,
+        "occasion": null,
+        "material": "cotton",
+        "gender": "female"
+    },
+    "women cotton saree": {
+        "category": "saree",
+        "brand": null,
+        "price_limit": null,
+        "color": null,
+        "occasion": null,
+        "material": "cotton",
+        "gender": "female"
+    },
+    "women georgette saree": {
+        "category": "saree",
+        "brand": null,
+        "price_limit": null,
+        "color": null,
+        "occasion": null,
+        "material": "georgette",
+        "gender": "female"
+    },
+    "women linen kurta": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": null,
+        "color": null,
+        "occasion": null,
+        "material": "linen",
+        "gender": "female"
+    },
+    "women rayon kurta": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": null,
+        "color": null,
+        "occasion": null,
+        "material": "rayon",
+        "gender": "female"
+    },
+    "women silk kurta": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": null,
+        "color": null,
+        "occasion": null,
+        "material": "silk",
+        "gender": "female"
+    },
+    "women silk saree": {
+        "category": "saree",
+        "brand": null,
+        "price_limit": null,
+        "color": null,
+        "occasion": null,
+        "material": "silk",
+        "gender": "female"
+    },
+    "wrangler black denim jeans": {
+        "category": "jeans",
+        "brand": "Wrangler",
+        "price_limit": null,
+        "color": "black",
+        "occasion": null,
+        "material": "denim",
+        "gender": null
+    },
+    "wrangler blue denim jeans": {
+        "category": "jeans",
+        "brand": "Wrangler",
+        "price_limit": null,
+        "color": "blue",
+        "occasion": null,
+        "material": "denim",
+        "gender": null
+    },
+    "wrangler grey denim jeans": {
+        "category": "jeans",
+        "brand": "Wrangler",
+        "price_limit": null,
+        "color": "grey",
+        "occasion": null,
+        "material": "denim",
+        "gender": null
+    },
+    "wrangler grey jeans": {
+        "category": "jeans",
+        "brand": "Wrangler",
+        "price_limit": null,
+        "color": "grey",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "wrangler jeans": {
+        "category": "jeans",
+        "brand": "Wrangler",
+        "price_limit": null,
+        "color": null,
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "yellow cotton kurta": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": null,
+        "color": "yellow",
+        "occasion": null,
+        "material": "cotton",
+        "gender": null
+    },
+    "yellow kurta": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": null,
+        "color": "yellow",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "yellow kurta under 2000": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": 2000,
+        "color": "yellow",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "yellow kurta under 2500": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": 2500,
+        "color": "yellow",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    },
+    "yellow kurta under 3000": {
+        "category": "kurta",
+        "brand": null,
+        "price_limit": 3000,
+        "color": "yellow",
+        "occasion": null,
+        "material": null,
+        "gender": null
+    }
+}

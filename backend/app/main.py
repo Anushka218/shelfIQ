@@ -3,6 +3,8 @@ from app.routes import events, products,trends,users,shelf,analytics,search,filt
 from app.routes.demand import router as demand_router
 from app.config import APP_NAME, APP_VERSION
 from fastapi.middleware.cors import CORSMiddleware
+from app.routes.seller import router as seller_router
+
 
 app = FastAPI(title=APP_NAME, version=APP_VERSION)
 
@@ -65,3 +67,4 @@ app.add_middleware(
     allow_headers=["*"],
 )
 app.include_router(demand_router)
+app.include_router(seller_router)

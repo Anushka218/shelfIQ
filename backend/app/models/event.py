@@ -1,4 +1,6 @@
 from pydantic import BaseModel
+from typing import Optional
+from app.ai.schemas import ParsedQuery
 
 
 class Event(BaseModel):
@@ -7,6 +9,9 @@ class Event(BaseModel):
     region: str
     timestamp: str
     search_query: str
+
+    parsed_query:ParsedQuery
+
     product_id: str
     clicked: bool
     wishlisted: bool
