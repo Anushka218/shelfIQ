@@ -1,11 +1,3 @@
-const CATEGORY_STICKERS = {
-  "Kurta": "👘",
-  "Saree": "🥻",
-  "Sneakers": "👟",
-  "Shirt": "👔",
-  "Jeans": "👖",
-};
-
 const COLOR_MAP = {
   "Grey": "#8A8D93",
   "Navy": "#1F3A5F",
@@ -26,9 +18,34 @@ function getColorFromTitle(title) {
   return found ? COLOR_MAP[found] : "#FF3F6C";
 }
 
+function CategoryIcon({ category, color }) {
+  if (category === "Sneakers") {
+    return (
+      <svg viewBox="0 0 24 24" width="26" height="26">
+        <path fill={color} d="M2 18h20v3H2v-3zm0-3c0-2 2-4 5-5l7-3c2 3 5 4 8 3l1 4-2 1H2z" />
+      </svg>
+    );
+  }
+  if (category === "Jeans") {
+    return (
+      <svg viewBox="0 0 24 24" width="26" height="26">
+        <path fill={color} d="M7 2h10l1 20h-4l-1-9-1 9H7L7 2z" />
+      </svg>
+    );
+  }
+  return (
+    <svg viewBox="0 0 24 24" width="26" height="26">
+      <path
+        fill={color}
+        d="M9 2l3 2 3-2 3 3-2 3v14H8V8L6 5l3-3z"
+      />
+    </svg>
+  );
+}
+
 export default function ProductCard({ product, rank }) {
   const isTop = rank === 1;
-  const stickerColor = getColorFromTitle(product.title);
+  const iconColor = getColorFromTitle(product.title);
 
   return (
     <div
@@ -37,13 +54,9 @@ export default function ProductCard({ product, rank }) {
       }`}
     >
       <div className="relative h-28 bg-pink-tint flex flex-col items-center justify-center">
-        <span
-          className="w-12 h-12 rounded-full shadow-md flex items-center justify-center text-2xl rotate-6 border-2 border-white mb-1"
-          style={{ backgroundColor: stickerColor }}
-        >
-          {CATEGORY_STICKERS[product.category] || "🛍️"}
+        <span className="w-12 h-12 rounded-full bg-white shadow-md flex items-center justify-center rotate-6 border-2 border-white">
+          <CategoryIcon category={product.category} color={iconColor} />
         </span>
-        <span className="text-xs text-muted">{product.category}</span>
         <span className="absolute top-2 right-2 w-6 h-6 rounded-full bg-white flex items-center justify-center shadow-sm text-muted text-xs">
           ♡
         </span>
