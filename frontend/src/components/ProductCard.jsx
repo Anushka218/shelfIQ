@@ -1,3 +1,11 @@
+const CATEGORY_STICKERS = {
+  "Kurta": "👘",
+  "Saree": "🥻",
+  "Sneakers": "👟",
+  "Shirt": "👔",
+  "Jeans": "👖",
+};
+
 export default function ProductCard({ product, rank }) {
   const isTop = rank === 1;
   return (
@@ -8,6 +16,9 @@ export default function ProductCard({ product, rank }) {
     >
       <div className="relative h-28 bg-pink-tint flex items-center justify-center">
         <span className="text-xs text-muted px-2 text-center">{product.category}</span>
+        <span className="absolute bottom-2 right-2 w-9 h-9 rounded-full bg-white shadow-md flex items-center justify-center text-lg rotate-6 border-2 border-white">
+          {CATEGORY_STICKERS[product.category] || "🛍️"}
+        </span>
         <span className="absolute top-2 right-2 w-6 h-6 rounded-full bg-white flex items-center justify-center shadow-sm text-muted text-xs">
           ♡
         </span>
