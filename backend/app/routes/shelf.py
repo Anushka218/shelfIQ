@@ -2,13 +2,14 @@ from fastapi import APIRouter
 from app.models.shelf import ShelfResponse
 from app.services.shelf_service import build_shelf
 from app.services.explain_service import explain_recommendation
+from typing import Optional
 
 router = APIRouter()
 
 
-@router.get("/{user_id}", response_model=ShelfResponse)
-def get_shelf(user_id: str):
-    return build_shelf(user_id)
+@router.get("/{region}")
+def get_shelf(region: str,user_id:Optional[str] = None):
+    return build_shelf(region,user_id)
 
 @router.get(
     "/{user_id}/explain/{product_id}"

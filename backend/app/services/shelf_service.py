@@ -1,8 +1,9 @@
-from app.database import products_collection, events_collection
+from app.database import products_collection
 from app.services.trend_service import get_region_trends
 from app.services.affinity_service import get_user_preferences
 from app.logger import logger
-from fastapi import HTTPException
+from typing import Optional
+
 
 def to_score_map(items):
     """
@@ -24,50 +25,27 @@ def to_score_map(items):
     }
 
 
-def build_shelf(user_id: str):
-    # Find user's region
-    user_event = events_collection.find_one(
-        {"user_id": user_id},
-        {
-            "_id": 0,
-            "region": 1
-        }
-    )
-    if not user_event:
-        logger.warning(f"Shelf request failed: User '{user_id}' not found")
-        raise HTTPException(
-          status_code=404,
-          detail="User not found"
-        )
-
-    region = user_event["region"]
+def build_shelf(region: str,user_id: Optional[str] = None):
     # Get regional trends
     trend_data = get_region_trends(region)
 
-    # Get user affinity
-   
-    affinity_data = get_user_preferences(user_id)
-    event_count = affinity_data["event_count"]
-
-    alpha = max(0.5,1 - event_count / 20)
+    if user_id:
+       affinity_data = get_user_preferences(user_id)
+       event_count = affinity_data["event_count"]
+       alpha = max( 0.5, 1 - event_count / 20)
+       category_scores = to_score_map(affinity_data["favorite_categories"])
+       brand_scores = to_score_map(affinity_data["favorite_brands"])
+       color_scores = to_score_map(  affinity_data["favorite_colors"])
+    else:
+       alpha = 1.0
+       category_scores = {}
+       brand_scores = {}
+       color_scores = {}
     # Convert results into dictionaries
     trend_scores = {
         item["category"]: item["score"]
         for item in trend_data["top_categories"]
     }
-
-    category_scores = to_score_map(
-        affinity_data["favorite_categories"]
-    )
-
-    brand_scores = to_score_map(
-        affinity_data["favorite_brands"]
-    )
-
-    color_scores = to_score_map(
-        affinity_data["favorite_colors"]
-    )
-    # Fetch products available in the user's region
     products = list(
         products_collection.find(
             {
@@ -117,14 +95,8 @@ def build_shelf(user_id: str):
         if color_score:
             reasons.append("Matches your favourite colour")
 
-        # ---------- Rating Bonus ----------
-        rating_bonus = product["rating"] * 2
-
         if product["rating"] >= 4.5:
             reasons.append("Highly rated")
-
-        # ---------- Discount Bonus ----------
-        discount_bonus = product["discount"] / 5
 
         if product["discount"] >= 20:
             reasons.append("Good discount")
