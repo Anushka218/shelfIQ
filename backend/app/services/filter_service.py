@@ -1,4 +1,5 @@
 from app.database import products_collection
+from app.utils.region import normalize_region
 from app.logger import logger
 
 def exact_match(value):
@@ -28,6 +29,7 @@ def filter_products(category=None,brand=None,color=None,material=None,occasion=N
     if gender:
        query["gender"] = exact_match(gender)
     if region:
+        region = normalize_region(region)
         query["available_regions"] = exact_match(region)
     price_filter = {}
     if min_price is not None:
