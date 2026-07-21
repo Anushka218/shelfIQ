@@ -1,6 +1,7 @@
 from collections import Counter
 from app.database import events_collection, products_collection
 from fastapi import HTTPException
+from app.utils.region import normalize_region
 from app.logger import logger
 
 def get_region_trends(region: str):
@@ -48,6 +49,6 @@ def get_region_trends(region: str):
             "score": count
         })
     return {
-        "region": region,
+        "region": normalize_region(region),
         "top_categories": top_categories
     }

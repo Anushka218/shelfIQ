@@ -1,5 +1,5 @@
 from collections import Counter
-
+from app.utils.region import normalize_region
 from app.database import events_collection, products_collection
 
 
@@ -36,7 +36,7 @@ def get_region_demand(region: str):
             counter[category] += 1
 
     return {
-        "region": region,
+        "region": normalize_region(region),
         "demand": [
             {
                 "category": category,
