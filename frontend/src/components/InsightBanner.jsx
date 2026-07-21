@@ -4,17 +4,24 @@ import { getExplanation } from "../api/client";
 export default function InsightBanner({ region, category }) {
   const [explanation, setExplanation] = useState(null);
   const [loading, setLoading] = useState(true);
+  const [failed, setFailed] = useState(false);
 
   useEffect(() => {
     if (!category) return;
     setLoading(true);
-    getExplanation(region, category).then((data) => {
-      setExplanation(data.explanation);
-      setLoading(false);
-    });
+    setFailed(false);
+    getExplanation(region, category)
+      .then((data) => {
+        setExplanation(data.explanation);
+        setLoading(false);
+      })
+      .catch(() => {
+        setFailed(true);
+        setLoading(false);
+      });
   }, [region, category]);
 
-  if (!category) return null;
+  if (!category || failed) return null;
 
   return (
     <div className="bg-pink-tint border border-pink/20 rounded-md p-4 mb-6 flex items-start gap-3">
