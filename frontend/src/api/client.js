@@ -50,3 +50,8 @@ export async function getSellerDashboard(region) {
   const res = await axios.get(`${BASE_URL}/seller/dashboard?region=${region}`);
   return res.data;
 }
+
+export async function searchProducts(query) {
+  const res = await axios.get(`${BASE_URL}/api/search/?q=${encodeURIComponent(query)}`);
+  return res.data;
+}
