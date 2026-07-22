@@ -6,7 +6,14 @@ from app.logger import logger
 
 def get_region_trends(region: str):
     # Fetch events for the region
-    events = list(events_collection.find({"region": region}, {"_id": 0}))
+    region = normalize_region(region)
+
+    events = list(
+        events_collection.find(
+            {"region": region},
+            {"_id": 0}
+        )
+    )
 
     if not events:
         raise HTTPException(
@@ -49,6 +56,6 @@ def get_region_trends(region: str):
             "score": count
         })
     return {
-        "region": normalize_region(region),
+        "region":region, 
         "top_categories": top_categories
     }

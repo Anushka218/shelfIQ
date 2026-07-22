@@ -12,13 +12,15 @@ def get_shelf(region: str,user_id:Optional[str] = None):
     return build_shelf(region,user_id)
 
 @router.get(
-    "/{user_id}/explain/{product_id}"
+    "/explain/{region}/{product_id}"
 )
 def explain_product(
-    user_id: str,
-    product_id: str
+    region: str,
+    product_id: str,
+     user_id: Optional[str] = None
 ):
     return explain_recommendation(
-        user_id,
-        product_id
+        region,
+        product_id,
+        user_id
     )

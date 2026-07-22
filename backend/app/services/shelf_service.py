@@ -28,6 +28,7 @@ def to_score_map(items):
 
 def build_shelf(region: str,user_id: Optional[str] = None):
     # Get regional trends
+    region = normalize_region(region)
     trend_data = get_region_trends(region)
 
     if user_id:
@@ -117,4 +118,4 @@ def build_shelf(region: str,user_id: Optional[str] = None):
         )
     recommendations.sort(key=lambda x: x["score"],reverse=True)
     logger.info(f"Generated {len(recommendations[:10])} recommendations for user '{user_id}' in region '{region}'")
-    return { "user_id": user_id, "region": normalize_region(region),"alpha": round(alpha, 2),"recommendations": recommendations[:10]}
+    return { "user_id": user_id, "region": region,"alpha": round(alpha, 2),"recommendations": recommendations[:10]}
