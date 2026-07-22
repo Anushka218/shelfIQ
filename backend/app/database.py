@@ -8,3 +8,4 @@ client = MongoClient(MONGO_URI)
 db = client[DATABASE_NAME]
 products_collection = db["products"]
 events_collection = db["events"]
+prospective_sellers_collection = db["prospective_sellers"]
