@@ -84,7 +84,7 @@ export default function Homepage() {
               <p className="text-xs text-muted mb-3">alpha: {shelf.alpha} · regional vs personal blend</p>
             )}
 
-            <InsightBanner region={region} category={shelf?.recommendations?.[0]?.category} />
+            <InsightBanner region={region} product={shelf?.recommendations?.[0]} userId={persona.user_id} />
 
             {!shelf ? (
               <p className="text-muted">Loading...</p>
