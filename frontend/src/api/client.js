@@ -29,11 +29,14 @@ export async function getTrends(region) {
   return res.data;
 }
 
-export async function getExplanation(region, category) {
+export async function getExplanation(region, productId, userId = null) {
   if (USE_MOCK) {
-    return { region, category, explanation: `${category} is trending in ${region} (mock explanation).` };
+    return { region, product_id: productId, reasons: ["Trending in your area", "Good discount"] };
   }
-  const res = await axios.get(`${BASE_URL}/api/explain/${region}/${category}`);
+  const url = userId
+    ? `${BASE_URL}/api/shelf/explain/${region}/${productId}?user_id=${userId}`
+    : `${BASE_URL}/api/shelf/explain/${region}/${productId}`;
+  const res = await axios.get(url);
   return res.data;
 }
 
