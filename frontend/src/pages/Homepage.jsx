@@ -80,10 +80,6 @@ export default function Homepage() {
               <PersonaSwitcher persona={persona} onChange={setPersona} />
             </div>
 
-            {shelf?.alpha < 1 && (
-              <p className="text-xs text-muted mb-3">alpha: {shelf.alpha} · regional vs personal blend</p>
-            )}
-
             <InsightBanner region={region} product={shelf?.recommendations?.[0]} userId={persona.user_id} />
 
             {!shelf ? (
