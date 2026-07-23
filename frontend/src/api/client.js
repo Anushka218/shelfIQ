@@ -69,6 +69,6 @@ export async function filterProducts(filters) {
 }
 
 export async function getPlatformAnalytics() {
-  const res = await axios.get(`${BASE_URL}/api/analytics/api/`);
+  const res = await axios.get(`${BASE_URL}/api/analytics/`);
   return res.data;
 }
