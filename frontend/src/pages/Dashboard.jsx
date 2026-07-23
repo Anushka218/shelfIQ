@@ -1,16 +1,18 @@
 import { useEffect, useState } from "react";
 import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, CartesianGrid } from "recharts";
-import { getDemand, getTrends } from "../api/client";
+import { getDemand, getTrends, getPlatformAnalytics } from "../api/client";
 import RegionSelector from "../components/RegionSelector";
+import { SkeletonStat } from "../components/SkeletonCard";
 
-export default function Dashboard() {
-  const [region, setRegion] = useState("Lucknow");
+export default function Dashboard({ region, setRegion }) {
   const [demand, setDemand] = useState([]);
   const [trends, setTrends] = useState([]);
+  const [analytics, setAnalytics] = useState(null);
 
   useEffect(() => {
     getDemand(region).then((d) => setDemand(d.demand));
     getTrends(region).then((t) => setTrends(t.top_categories));
+    getPlatformAnalytics().then(setAnalytics);
   }, [region]);
 
   const totalEvents = demand.reduce((sum, c) => sum + c.count, 0);
@@ -25,10 +27,40 @@ export default function Dashboard() {
         <RegionSelector region={region} onChange={setRegion} />
       </div>
 
+      <div className="grid grid-cols-4 gap-4 mb-6">
+        {analytics ? (
+          <>
+            <div className="bg-white border border-border rounded-md p-4">
+              <div className="text-[11px] font-bold text-muted uppercase tracking-wide mb-1">Total products</div>
+              <div className="text-2xl font-extrabold text-ink">{analytics.total_products}</div>
+            </div>
+            <div className="bg-white border border-border rounded-md p-4">
+              <div className="text-[11px] font-bold text-muted uppercase tracking-wide mb-1">Total users</div>
+              <div className="text-2xl font-extrabold text-ink">{analytics.total_users}</div>
+            </div>
+            <div className="bg-white border border-border rounded-md p-4">
+              <div className="text-[11px] font-bold text-muted uppercase tracking-wide mb-1">Total events</div>
+              <div className="text-2xl font-extrabold text-ink">{analytics.total_events}</div>
+            </div>
+            <div className="bg-white border border-border rounded-md p-4">
+              <div className="text-[11px] font-bold text-muted uppercase tracking-wide mb-1">Regions live</div>
+              <div className="text-2xl font-extrabold text-ink">{analytics.total_regions}</div>
+            </div>
+          </>
+        ) : (
+          <>
+            <SkeletonStat />
+            <SkeletonStat />
+            <SkeletonStat />
+            <SkeletonStat />
+          </>
+        )}
+      </div>
+
       <div className="grid grid-cols-3 gap-4 mb-6">
         <div className="bg-white border border-border rounded-md p-4">
           <div className="text-[11px] font-bold text-muted uppercase tracking-wide mb-1">
-            Total events
+            Total events (region)
           </div>
           <div className="text-2xl font-extrabold text-ink">{totalEvents}</div>
         </div>

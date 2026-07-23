@@ -7,14 +7,14 @@ import GapsAndSellers from "./pages/GapsAndSellers";
 
 function App() {
   const [page, setPage] = useState("shelf");
+  const [region, setRegion] = useState("Lucknow");
 
   return (
     <div className="min-h-screen">
       <Navbar page={page} onNavigate={setPage} />
-      {page === "shelf" && <Homepage />}
-      {page === "dashboard" && <Dashboard />}
-      {page === "gaps" && <GapsAndSellers />}
-      {page === "gaps" && <GapsAndSellers />}
+      {page === "shelf" && <Homepage region={region} setRegion={setRegion} />}
+      {page === "dashboard" && <Dashboard region={region} setRegion={setRegion} />}
+      {page === "gaps" && <GapsAndSellers region={region} setRegion={setRegion} />}
       {page === "browse" && <Browse />}
     </div>
   );

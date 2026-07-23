@@ -1,3 +1,6 @@
+import { useState } from "react";
+import { isWishlisted, toggleWishlist } from "../api/wishlist";
+
 const COLOR_MAP = {
   "Grey": "#8A8D93",
   "Navy": "#1F3A5F",
@@ -46,6 +49,12 @@ function CategoryIcon({ category, color }) {
 export default function ProductCard({ product, rank }) {
   const isTop = rank === 1;
   const iconColor = getColorFromTitle(product.title);
+  const [wishlisted, setWishlisted] = useState(() => isWishlisted(product.product_id));
+
+  function handleWishlistClick(e) {
+    e.stopPropagation();
+    setWishlisted(toggleWishlist(product.product_id));
+  }
 
   return (
     <div
@@ -57,9 +66,14 @@ export default function ProductCard({ product, rank }) {
         <span className="w-12 h-12 rounded-full bg-white shadow-md flex items-center justify-center rotate-6 border-2 border-white">
           <CategoryIcon category={product.category} color={iconColor} />
         </span>
-        <span className="absolute top-2 right-2 w-6 h-6 rounded-full bg-white flex items-center justify-center shadow-sm text-muted text-xs">
-          ♡
-        </span>
+        <button
+          onClick={handleWishlistClick}
+          className={`absolute top-2 right-2 w-6 h-6 rounded-full bg-white flex items-center justify-center shadow-sm text-xs transition-colors ${
+            wishlisted ? "text-pink" : "text-muted"
+          }`}
+        >
+          {wishlisted ? "♥" : "♡"}
+        </button>
         <span
           className={`absolute top-2 left-2 text-[10px] font-bold px-1.5 py-0.5 rounded ${
             isTop ? "bg-pink text-white" : "bg-ink text-white"

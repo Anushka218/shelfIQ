@@ -1,3 +1,4 @@
+import { SkeletonGrid } from "../components/SkeletonCard";
 import InsightBanner from "../components/InsightBanner";
 import { useEffect, useState } from "react";
 import { getShelf, searchProducts } from "../api/client";
@@ -5,8 +6,7 @@ import ShelfGrid from "../components/ShelfGrid";
 import RegionSelector from "../components/RegionSelector";
 import PersonaSwitcher from "../components/PersonaSwitcher";
 
-export default function Homepage() {
-  const [region, setRegion] = useState("Lucknow");
+export default function Homepage({ region, setRegion }) {
   const [persona, setPersona] = useState({ label: "Default", user_id: null });
   const [shelf, setShelf] = useState(null);
 
@@ -83,7 +83,7 @@ export default function Homepage() {
             <InsightBanner region={region} product={shelf?.recommendations?.[0]} userId={persona.user_id} />
 
             {!shelf ? (
-              <p className="text-muted">Loading...</p>
+              <SkeletonGrid />
             ) : !shelf.recommendations || shelf.recommendations.length === 0 ? (
               <p className="text-muted">No data available for this region yet.</p>
             ) : (
