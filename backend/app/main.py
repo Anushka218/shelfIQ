@@ -4,7 +4,9 @@ from app.routes.demand import router as demand_router
 from app.config import APP_NAME, APP_VERSION
 from fastapi.middleware.cors import CORSMiddleware
 from app.routes.seller import router as seller_router
-
+from app.routes.auth import router as auth_router
+from app.routes.user import router as user_router
+from app.routes.admin import router as admin_router
 
 app = FastAPI(title=APP_NAME, version=APP_VERSION)
 
@@ -68,3 +70,6 @@ app.add_middleware(
 )
 app.include_router(demand_router)
 app.include_router(seller_router)
+app.include_router(auth_router)
+app.include_router(user_router)
+app.include_router(admin_router)
