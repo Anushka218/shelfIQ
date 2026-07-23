@@ -58,3 +58,12 @@ export async function searchProducts(query) {
   const res = await axios.get(`${BASE_URL}/api/search/?q=${encodeURIComponent(query)}`);
   return res.data;
 }
+
+export async function filterProducts(filters) {
+  const params = new URLSearchParams();
+  Object.entries(filters).forEach(([key, value]) => {
+    if (value) params.append(key, value);
+  });
+  const res = await axios.get(`${BASE_URL}/api/products/filter/?${params.toString()}`);
+  return res.data;
+}

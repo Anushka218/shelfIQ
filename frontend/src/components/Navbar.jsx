@@ -3,6 +3,7 @@ export default function Navbar({ page, onNavigate }) {
     { key: "shelf", label: "SHELF" },
     { key: "dashboard", label: "DASHBOARD" },
     { key: "gaps", label: "GAPS & SELLERS" },
+    { key: "browse", label: "BROWSE" },
   ];
 
   return (
