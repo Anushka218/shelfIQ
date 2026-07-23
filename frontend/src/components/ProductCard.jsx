@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { isWishlisted, toggleWishlist } from "../api/wishlist";
+import { useToast } from "../components/ToastContext";
 
 const COLOR_MAP = {
   "Grey": "#8A8D93",
@@ -50,10 +51,13 @@ export default function ProductCard({ product, rank }) {
   const isTop = rank === 1;
   const iconColor = getColorFromTitle(product.title);
   const [wishlisted, setWishlisted] = useState(() => isWishlisted(product.product_id));
+  const showToast = useToast();
 
   function handleWishlistClick(e) {
     e.stopPropagation();
-    setWishlisted(toggleWishlist(product.product_id));
+    const newState = toggleWishlist(product.product_id);
+    setWishlisted(newState);
+    showToast(newState ? "Added to wishlist ♥" : "Removed from wishlist");
   }
 
   return (
