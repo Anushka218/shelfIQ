@@ -1,3 +1,4 @@
+import Browse from "./pages/Browse";
 import { useState } from "react";
 import Navbar from "./components/Navbar";
 import Homepage from "./pages/Homepage";
@@ -13,6 +14,8 @@ function App() {
       {page === "shelf" && <Homepage />}
       {page === "dashboard" && <Dashboard />}
       {page === "gaps" && <GapsAndSellers />}
+      {page === "gaps" && <GapsAndSellers />}
+      {page === "browse" && <Browse />}
     </div>
   );
 }
