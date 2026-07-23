@@ -5,8 +5,7 @@ import ShelfGrid from "../components/ShelfGrid";
 import RegionSelector from "../components/RegionSelector";
 import PersonaSwitcher from "../components/PersonaSwitcher";
 
-export default function Homepage() {
-  const [region, setRegion] = useState("Lucknow");
+export default function Homepage({ region, setRegion }) {
   const [persona, setPersona] = useState({ label: "Default", user_id: null });
   const [shelf, setShelf] = useState(null);
 

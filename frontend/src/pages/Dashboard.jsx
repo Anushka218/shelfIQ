@@ -3,8 +3,7 @@ import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, CartesianGri
 import { getDemand, getTrends, getPlatformAnalytics } from "../api/client";
 import RegionSelector from "../components/RegionSelector";
 
-export default function Dashboard() {
-  const [region, setRegion] = useState("Lucknow");
+export default function Dashboard({ region, setRegion }) {
   const [demand, setDemand] = useState([]);
   const [trends, setTrends] = useState([]);
   const [analytics, setAnalytics] = useState(null);

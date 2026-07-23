@@ -2,8 +2,7 @@ import { useEffect, useState } from "react";
 import { getSellerDashboard } from "../api/client";
 import RegionSelector from "../components/RegionSelector";
 
-export default function GapsAndSellers() {
-  const [region, setRegion] = useState("Lucknow");
+export default function GapsAndSellers({ region, setRegion }) {
   const [data, setData] = useState(null);
 
   useEffect(() => {
