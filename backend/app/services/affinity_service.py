@@ -5,7 +5,7 @@ from fastapi import HTTPException
 
 def get_user_preferences(user_id: str):
     user_event = events_collection.find_one({"user_id": user_id})
-    event_count = len(user_event)
+    
 
     if not user_event:
         logger.warning(f"Affinity request failed: User '{user_id}' not found")
@@ -13,6 +13,7 @@ def get_user_preferences(user_id: str):
             status_code=404,
             detail="User not found"
         )
+    event_count = len(user_event)
     category_counter = Counter()
     brand_counter = Counter()
     color_counter = Counter()

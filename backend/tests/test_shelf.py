@@ -1,10 +1,5 @@
-
-
-
 def test_shelf(client):
-    response = client.get(
-        "/api/shelf/user_001"
-    )
+    response = client.get("/api/shelf/Lucknow")
 
     assert response.status_code == 200
 
