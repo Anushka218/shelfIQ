@@ -1,3 +1,4 @@
+import { SkeletonGrid } from "../components/SkeletonCard";
 import InsightBanner from "../components/InsightBanner";
 import { useEffect, useState } from "react";
 import { getShelf, searchProducts } from "../api/client";
@@ -82,7 +83,7 @@ export default function Homepage({ region, setRegion }) {
             <InsightBanner region={region} product={shelf?.recommendations?.[0]} userId={persona.user_id} />
 
             {!shelf ? (
-              <p className="text-muted">Loading...</p>
+              <SkeletonGrid />
             ) : !shelf.recommendations || shelf.recommendations.length === 0 ? (
               <p className="text-muted">No data available for this region yet.</p>
             ) : (
