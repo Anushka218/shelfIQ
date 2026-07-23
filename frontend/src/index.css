@@ -43,7 +43,7 @@ body {
   background-color: #3A2430 !important;
 }
 
-.dark .bg-\[\#F5F5F6\] {
+.dark [class*="F5F5F6"] {
   background-color: #1A1D29 !important;
 }
 
