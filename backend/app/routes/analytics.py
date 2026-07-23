@@ -3,7 +3,6 @@ from app.models.analytics import AnalyticsResponse
 from app.services.analytics_service import get_analytics
 
 router = APIRouter(
-    prefix="/api",
     tags=["Analytics"]
 )
 
