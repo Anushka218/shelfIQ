@@ -17,3 +17,37 @@ body {
   background-color: #F5F5F6;
   color: var(--color-ink);
 }
+
+.dark body {
+  background-color: #12141c;
+  color: #F5F5F6;
+}
+
+.dark .bg-white {
+  background-color: #1E2130 !important;
+}
+
+.dark .text-ink {
+  color: #F5F5F6 !important;
+}
+
+.dark .text-muted {
+  color: #9A9CA8 !important;
+}
+
+.dark .border-border {
+  border-color: #33364A !important;
+}
+
+.dark .bg-pink-tint {
+  background-color: #3A2430 !important;
+}
+
+.dark .bg-\[\#F5F5F6\] {
+  background-color: #1A1D29 !important;
+}
+
+.dark input,
+.dark select {
+  color: #F5F5F6;
+}
