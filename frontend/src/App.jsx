@@ -14,7 +14,6 @@ function App() {
       {page === "shelf" && <Homepage />}
       {page === "dashboard" && <Dashboard />}
       {page === "gaps" && <GapsAndSellers />}
-      {page === "gaps" && <GapsAndSellers />}
       {page === "browse" && <Browse />}
     </div>
   );
