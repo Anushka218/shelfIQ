@@ -1,9 +1,11 @@
 import { useState } from "react";
 import { loginUser } from "../api/client";
 import { useAuth } from "../components/AuthContext";
+import { useToast } from "../components/ToastContext";
 
 export default function Login({ onNavigate }) {
   const { login } = useAuth();
+  const showToast = useToast();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
@@ -16,9 +18,12 @@ export default function Login({ onNavigate }) {
     try {
       const data = await loginUser({ email, password });
       login(data.access_token, data.user);
+      showToast(`Welcome back, ${data.user.name}! 👋`);
       onNavigate(data.user.role === "admin" ? "dashboard" : "shelf");
     } catch (err) {
-      setError(err.response?.data?.detail || "Login failed. Check your credentials.");
+      const message = err.response?.data?.detail || "Login failed. Check your credentials.";
+      setError(message);
+      showToast(message);
     } finally {
       setLoading(false);
     }

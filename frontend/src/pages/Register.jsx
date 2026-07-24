@@ -1,12 +1,14 @@
 import { useState } from "react";
 import { registerUser, loginUser } from "../api/client";
 import { useAuth } from "../components/AuthContext";
+import { useToast } from "../components/ToastContext";
 
 const REGIONS = ["Lucknow", "Coimbatore", "Jaipur", "Indore", "Patna", "Nagpur"];
 const GENDERS = ["Male", "Female"];
 
 export default function Register({ onNavigate }) {
   const { login } = useAuth();
+  const showToast = useToast();
   const [form, setForm] = useState({
     name: "",
     email: "",
@@ -29,9 +31,12 @@ export default function Register({ onNavigate }) {
       await registerUser(form);
       const data = await loginUser({ email: form.email, password: form.password });
       login(data.access_token, data.user);
+      showToast(`Account created! Welcome, ${data.user.name} 🎉`);
       onNavigate(data.user.role === "admin" ? "dashboard" : "shelf");
     } catch (err) {
-      setError(err.response?.data?.detail || "Registration failed. Try again.");
+      const message = err.response?.data?.detail || "Registration failed. Try again.";
+      setError(message);
+      showToast(message);
     } finally {
       setLoading(false);
     }
