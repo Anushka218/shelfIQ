@@ -10,3 +10,4 @@ class ParsedQuery(BaseModel):
     occasion: Optional[str] = None
     material: Optional[str] = None
     gender: Optional[str] = None
+    

@@ -8,11 +8,11 @@ class Event(BaseModel):
     user_id: str
     region: str
     timestamp: str
-    search_query: str
+    search_query: Optional[str]=None
 
-    parsed_query:ParsedQuery
+    parsed_query:Optional[ParsedQuery]=None
 
-    product_id: str
-    clicked: bool
-    wishlisted: bool
-    purchased: bool
+    product_id: Optional[str]
+    clicked: bool=False
+    wishlisted: bool=False
+    purchased: bool=False
