@@ -1,5 +1,5 @@
-from fastapi import APIRouter
-
+from fastapi import APIRouter,Depends
+from app.dependencies import get_current_admin
 from app.services.seller_service import get_seller_dashboard
 
 router = APIRouter(
@@ -9,6 +9,6 @@ router = APIRouter(
 
 
 @router.get("/dashboard")
-def seller_dashboard(region: str):
+def seller_dashboard(region: str,current_admin=Depends(get_current_admin)):
 
     return get_seller_dashboard(region)

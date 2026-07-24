@@ -1,26 +1,32 @@
-from fastapi import APIRouter
+from fastapi import APIRouter,Depends
 from app.models.shelf import ShelfResponse
 from app.services.shelf_service import build_shelf
 from app.services.explain_service import explain_recommendation
 from typing import Optional
+from app.dependencies import get_current_user
 
-router = APIRouter()
-
-
-@router.get("/{region}")
-def get_shelf(region: str,user_id:Optional[str] = None):
-    return build_shelf(region,user_id)
-
-@router.get(
-    "/explain/{region}/{product_id}"
+router = APIRouter(
+    prefix="/user/shelf",
+    tags=["Shelf"],
 )
+
+
+@router.get("/")
+def get_shelf(
+    current_user=Depends(get_current_user),
+):
+    return build_shelf(
+        current_user["region"],
+        str(current_user["_id"]),
+    )
+
+@router.get("/explain/{product_id}")
 def explain_product(
-    region: str,
     product_id: str,
-     user_id: Optional[str] = None
+    current_user=Depends(get_current_user),
 ):
     return explain_recommendation(
-        region,
+        current_user["region"],
         product_id,
-        user_id
+        str(current_user["_id"]),
     )
