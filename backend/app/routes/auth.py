@@ -39,18 +39,3 @@ def login(user: UserLogin):
             detail=str(e),
         )
 
-
-
-@router.get("/admin")
-def admin_dashboard(
-    admin=Depends(get_current_admin),
-):
-    return {
-        "message": "Welcome Admin",
-        "admin": {
-            "id": str(admin["_id"]),
-            "name": admin["name"],
-            "email": admin["email"],
-            "role": admin["role"],
-        },
-    }

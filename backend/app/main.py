@@ -1,8 +1,8 @@
 from fastapi import FastAPI
-from app.routes import events, products,trends,users,shelf,analytics,search,filter,health
+from fastapi.middleware.cors import CORSMiddleware
+from app.routes import ( analytics, events, filter, health, products, search,shelf,trends,)
 from app.routes.demand import router as demand_router
 from app.config import APP_NAME, APP_VERSION
-from fastapi.middleware.cors import CORSMiddleware
 from app.routes.seller import router as seller_router
 from app.routes.auth import router as auth_router
 from app.routes.users import router as user_router
@@ -30,11 +30,6 @@ app.include_router(
     trends.router,
     prefix="/api/trends",
     tags=["Trends"]
-)
-app.include_router(
-    users.router,
-    prefix="/api/users",
-    tags=["Users"]
 )
 app.include_router(
     shelf.router,
@@ -68,8 +63,8 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
-app.include_router(demand_router)
-app.include_router(seller_router)
 app.include_router(auth_router)
 app.include_router(user_router)
 app.include_router(admin_router)
+app.include_router(demand_router)
+app.include_router(seller_router)
