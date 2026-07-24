@@ -1,5 +1,3 @@
-import ThemeToggle from "./ThemeToggle";
-
 export default function Navbar({ page, onNavigate }) {
   const tabs = [
     { key: "shelf", label: "SHELF" },
@@ -28,7 +26,6 @@ export default function Navbar({ page, onNavigate }) {
           </button>
         ))}
       </div>
-      <ThemeToggle />
       <div className="w-7 h-7 rounded-full bg-pink flex items-center justify-center text-[10px] text-white font-bold">
         JD
       </div>
