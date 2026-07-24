@@ -26,28 +26,44 @@ def to_score_map(items):
     }
 
 
-def build_shelf(region: str,user_id: Optional[str] = None):
-    # Get regional trends
+def build_shelf(region: str, user_id: Optional[str] = None):
+    print("=" * 50)
+    print("Incoming region:", region)
+
+    # Normalize region
     region = normalize_region(region)
+    print("Normalized region:", region)
+
+    # Get regional trends
     trend_data = get_region_trends(region)
+    print("Trend data region:", trend_data.get("region"))
 
     if user_id:
-       affinity_data = get_user_preferences(user_id)
-       event_count = affinity_data["event_count"]
-       alpha = max( 0.5, 1 - event_count / 20)
-       category_scores = to_score_map(affinity_data["favorite_categories"])
-       brand_scores = to_score_map(affinity_data["favorite_brands"])
-       color_scores = to_score_map(  affinity_data["favorite_colors"])
+        affinity_data = get_user_preferences(user_id)
+        event_count = affinity_data["event_count"]
+
+        alpha = max(0.5, 1 - event_count / 20)
+
+        category_scores = to_score_map(
+            affinity_data["favorite_categories"]
+        )
+        brand_scores = to_score_map(
+            affinity_data["favorite_brands"]
+        )
+        color_scores = to_score_map(
+            affinity_data["favorite_colors"]
+        )
     else:
-       alpha = 1.0
-       category_scores = {}
-       brand_scores = {}
-       color_scores = {}
-    # Convert results into dictionaries
+        alpha = 1.0
+        category_scores = {}
+        brand_scores = {}
+        color_scores = {}
+
     trend_scores = {
         item["category"]: item["score"]
         for item in trend_data["top_categories"]
     }
+
     products = list(
         products_collection.find(
             {
@@ -59,8 +75,12 @@ def build_shelf(region: str,user_id: Optional[str] = None):
         )
     )
 
+    print("Products found:", len(products))
+    if products:
+        print("First product:", products[0]["title"])
+
     recommendations = []
-    # Score each product
+
     for product in products:
         category = product["category"]
         brand = product["brand"]
@@ -74,22 +94,17 @@ def build_shelf(region: str,user_id: Optional[str] = None):
 
         personal_score = (
             cat_score
-           + brand_score
-           + color_score
+            + brand_score
+            + color_score
         )
-        score = 0
+
         reasons = []
 
-        # ---------- Regional Trend ----------
         if trend:
-            reasons.append(f"Trending in {region}")
-
-        # ---------- Category Affinity ----------
+            reasons.append(f"Trending near you")
 
         if cat_score:
             reasons.append("Matches your favourite category")
-
-        # ---------- Brand Affinity ----------
 
         if brand_score:
             reasons.append("Matches your favourite brand")
@@ -102,9 +117,17 @@ def build_shelf(region: str,user_id: Optional[str] = None):
 
         if product["discount"] >= 20:
             reasons.append("Good discount")
+
         rating_bonus = product["rating"] * 2
         discount_bonus = product["discount"] / 5
-        score = (alpha * trend + (1 - alpha) * personal_score + rating_bonus + discount_bonus)
+
+        score = (
+            alpha * trend
+            + (1 - alpha) * personal_score
+            + rating_bonus
+            + discount_bonus
+        )
+
         recommendations.append(
             {
                 "product_id": product["product_id"],
@@ -113,9 +136,25 @@ def build_shelf(region: str,user_id: Optional[str] = None):
                 "category": product["category"],
                 "price": product["price"],
                 "score": round(score, 2),
-                "reasons": reasons
+                "reasons": reasons,
             }
         )
-    recommendations.sort(key=lambda x: x["score"],reverse=True)
-    logger.info(f"Generated {len(recommendations[:10])} recommendations for user '{user_id}' in region '{region}'")
-    return { "user_id": user_id, "region": region,"alpha": round(alpha, 2),"recommendations": recommendations[:10]}
+
+    recommendations.sort(
+        key=lambda x: x["score"],
+        reverse=True,
+    )
+
+    logger.info(
+        f"Generated {len(recommendations[:10])} recommendations for user '{user_id}' in region '{region}'"
+    )
+
+    print("Returning", len(recommendations[:10]), "recommendations")
+    print("=" * 50)
+
+    return {
+        "user_id": user_id,
+        "region": region,
+        "alpha": round(alpha, 2),
+        "recommendations": recommendations[:10],
+    }

@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { getExplanation } from "../api/client";
 
-export default function InsightBanner({ region, product, userId }) {
+export default function InsightBanner({ product }) {
   const [reasons, setReasons] = useState(null);
   const [loading, setLoading] = useState(true);
   const [failed, setFailed] = useState(false);
@@ -10,7 +10,7 @@ export default function InsightBanner({ region, product, userId }) {
     if (!product) return;
     setLoading(true);
     setFailed(false);
-    getExplanation(region, product.product_id, userId)
+    getExplanation(product.product_id)
       .then((data) => {
         setReasons(data.reasons || []);
         setLoading(false);
@@ -19,7 +19,7 @@ export default function InsightBanner({ region, product, userId }) {
         setFailed(true);
         setLoading(false);
       });
-  }, [region, product, userId]);
+  }, [product]);
 
   if (!product || failed) return null;
 

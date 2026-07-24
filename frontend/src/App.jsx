@@ -1,60 +1,41 @@
-import Browse from "./pages/Browse";
 import { useState } from "react";
+import { AuthProvider, useAuth } from "./components/AuthContext";
 import Navbar from "./components/Navbar";
 import Homepage from "./pages/Homepage";
 import Dashboard from "./pages/Dashboard";
 import GapsAndSellers from "./pages/GapsAndSellers";
+import Browse from "./pages/Browse";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
-import { AuthProvider, useAuth } from "./components/AuthContext";
-import { RegionProvider } from "./context/RegionContext";
+import Profile from "./pages/Profile";
 
 function AppContent() {
   const [page, setPage] = useState("browse");
-
-  const { user, isAuthenticated } = useAuth();
-
-  function handleNavigation(nextPage) {
-    if (nextPage === "dashboard" || nextPage === "gaps") {
-      if (!isAuthenticated || user?.role !== "admin") {
-        setPage("browse");
-        return;
-      }
-    }
-
-    if (nextPage === "shelf") {
-      if (!isAuthenticated) {
-        setPage("login");
-        return;
-      }
-    }
-
-    setPage(nextPage);
-  }
+  const { isAuthenticated, user } = useAuth();
+  const [region, setRegion] = useState("Lucknow");
 
   return (
     <div className="min-h-screen">
-      <Navbar page={page} onNavigate={handleNavigation} />
+      <Navbar page={page} onNavigate={setPage} />
 
-      {page === "shelf" && <Homepage />}
-
-      {page === "dashboard" && user?.role === "admin" && (
-        <Dashboard />
-      )}
-
-      {page === "gaps" && user?.role === "admin" && (
-        <GapsAndSellers />
-      )}
+      {page === "login" && <Login onNavigate={setPage} />}
+      {page === "register" && <Register onNavigate={setPage} />}
 
       {page === "browse" && <Browse />}
 
-      {page === "login" && (
-        <Login onNavigate={handleNavigation} />
+      {page === "shelf" && isAuthenticated && user?.role !== "admin" && (
+        <Homepage region={region} setRegion={setRegion} />
       )}
 
-      {page === "register" && (
-        <Register onNavigate={handleNavigation} />
+      {page === "dashboard" && isAuthenticated && user?.role === "admin" && (
+        <Dashboard region={region} setRegion={setRegion} />
       )}
+
+      {page === "gaps" && isAuthenticated && user?.role === "admin" && (
+        <GapsAndSellers region={region} setRegion={setRegion} />
+      )}
+
+      {page === "profile" && isAuthenticated && <Profile />}
     </div>
   );
 }
@@ -62,9 +43,7 @@ function AppContent() {
 function App() {
   return (
     <AuthProvider>
-      <RegionProvider>
-        <AppContent />
-      </RegionProvider>
+      <AppContent />
     </AuthProvider>
   );
 }

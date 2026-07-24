@@ -48,7 +48,7 @@ def explain_recommendation(region: str, product_id: str,user_id: Optional[str] =
     final_score = ( alpha * trend + (1 - alpha) * personal_score  + rating_bonus + discount_bonus)
     reasons = []
     if trend > 0:
-       reasons.append(f"Trending in {region}")
+       reasons.append(f"Trending near you")
     if category_affinity > 0:
        reasons.append("Matches your favourite category")   
     if brand_affinity > 0:
