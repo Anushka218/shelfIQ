@@ -2,7 +2,7 @@ import axios from "axios";
 import { mockShelf, mockShelfPersonalized, mockDemand, mockTrends } from "./mockData";
 
 const USE_MOCK = false;
-const BASE_URL = import.meta.env.VITE_BACKEND_URL || "http://127.0.0.1:8000";
+const BASE_URL = import.meta.env.VITE_BACKEND_URL || "https://shelfiq-backend-hyv3.onrender.com";
 
 function getAuthHeaders() {
   const token = localStorage.getItem("shelfiq_token");
