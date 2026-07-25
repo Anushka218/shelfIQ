@@ -119,13 +119,19 @@ export default function ProductCard({ product, rank }) {
         <h3 className="text-sm font-bold text-ink truncate">{product.title}</h3>
         <p className="text-xs text-muted mb-1">{product.brand}</p>
         <p className="text-sm font-semibold text-ink mb-2">₹{product.price}</p>
-        <div className="flex flex-wrap gap-1">
+        <div className="flex flex-wrap gap-1 mb-2">
           {product.reasons?.slice(0, 2).map((r) => (
             <span key={r} className="text-[10px] bg-[#E7F8F3] text-green px-1.5 py-0.5 rounded">
               {r}
             </span>
           ))}
         </div>
+        <button
+          onClick={(e) => e.stopPropagation()}
+          className="w-full bg-pink text-white text-xs font-bold py-2 rounded hover:opacity-90 transition-opacity"
+        >
+          BUY NOW
+        </button>
       </div>
     </div>
   );

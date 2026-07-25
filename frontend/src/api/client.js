@@ -105,3 +105,23 @@ export async function getProfile() {
   });
   return res.data;
 }
+export async function markPurchase(productId) {
+  const res = await axios.post(`${BASE_URL}/user/purchase/${productId}`, {}, {
+    headers: getAuthHeaders(),
+  });
+  return res.data;
+}
+
+export async function markClicked(productId) {
+  const res = await axios.post(`${BASE_URL}/user/click/${productId}`, {}, {
+    headers: getAuthHeaders(),
+  });
+  return res.data;
+}
+
+export async function toggleWishlistBackend(productId) {
+  const res = await axios.post(`${BASE_URL}/user/wishlist/${productId}`, {}, {
+    headers: getAuthHeaders(),
+  });
+  return res.data;
+}
