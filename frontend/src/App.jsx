@@ -21,10 +21,10 @@ function AppContent() {
       {page === "login" && <Login onNavigate={setPage} />}
       {page === "register" && <Register onNavigate={setPage} />}
 
-      {page === "browse" && <Browse />}
+      {page === "browse" && <Browse onNavigate={setPage} />}
 
       {page === "shelf" && isAuthenticated && user?.role !== "admin" && (
-        <Homepage region={region} setRegion={setRegion} />
+        <Homepage region={region} setRegion={setRegion} onNavigate={setPage} />
       )}
 
       {page === "dashboard" && isAuthenticated && user?.role === "admin" && (
