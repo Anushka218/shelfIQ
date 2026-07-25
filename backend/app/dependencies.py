@@ -5,12 +5,17 @@ from jose import JWTError, jwt
 from app.config import SECRET_KEY, ALGORITHM
 from app.database import users_collection
 
-security = HTTPBearer()
+security = HTTPBearer(auto_error=False)
 
 
 def get_current_user(
     credentials: HTTPAuthorizationCredentials = Depends(security),
 ):
+    if credentials is None:
+        raise HTTPException(
+             status_code=status.HTTP_401_UNAUTHORIZED,
+             detail="Not authenticated",
+        )
     token = credentials.credentials
 
     try:
@@ -53,3 +58,31 @@ def get_current_admin(
             detail="Admin access required",
         )
     return current_user
+
+
+def get_current_user_optional(
+    credentials: HTTPAuthorizationCredentials = Depends(security),
+):
+    if credentials is None:
+        return None
+
+    token = credentials.credentials
+
+    try:
+        payload = jwt.decode(
+            token,
+            SECRET_KEY,
+            algorithms=[ALGORITHM],
+        )
+
+        email = payload.get("sub")
+
+        if email is None:
+            return None
+
+    except JWTError:
+        return None
+
+    user = users_collection.find_one({"email": email})
+
+    return user

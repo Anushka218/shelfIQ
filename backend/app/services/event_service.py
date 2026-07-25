@@ -5,18 +5,27 @@ from app.ai.schemas import ParsedQuery
 from app.database import events_collection
 
 
-def create_event(user, product_id):
-    """
-    Create a new event document for a user-product interaction.
-    """
+def create_event(
+    user=None,
+    product_id=None,
+    search_query="",
+    parsed_query=None,
+):
     event = {
         "event_id": f"E{uuid4().hex[:8].upper()}",
-        "user_id": str(user["_id"]),
-        "region": user["region"],
+        "user_id": str(user["_id"]) if user else None,
+        "region": user["region"] if user else None,
         "timestamp": datetime.utcnow().isoformat(),
-        "search_query": "",
-        "parsed_query": ParsedQuery().model_dump(),
+
+        "search_query": search_query,
+        "parsed_query": (
+            parsed_query.model_dump()
+            if parsed_query
+            else ParsedQuery().model_dump()
+        ),
+
         "product_id": product_id,
+
         "clicked": False,
         "wishlisted": False,
         "purchased": False,
@@ -138,3 +147,18 @@ def mark_clicked(user, product_id):
         "clicked": True,
         "message": "Click recorded successfully"
     }
+
+
+def create_search_event(
+    user,
+    search_query: str,
+    parsed_query=None,
+):
+    """
+    Create a search event for a user's search query.
+    """
+    return create_event(
+        user=user,
+        search_query=search_query,
+        parsed_query=parsed_query,
+    )
