@@ -1,13 +1,11 @@
-import { SkeletonGrid } from "../components/SkeletonCard";
-import InsightBanner from "../components/InsightBanner";
 import { useEffect, useState } from "react";
 import { getShelf, searchProducts } from "../api/client";
 import ShelfGrid from "../components/ShelfGrid";
+import InsightBanner from "../components/InsightBanner";
 import RegionSelector from "../components/RegionSelector";
-import PersonaSwitcher from "../components/PersonaSwitcher";
+import { SkeletonGrid } from "../components/SkeletonCard";
 
 export default function Homepage({ region, setRegion }) {
-  const [persona, setPersona] = useState({ label: "Default", user_id: null });
   const [shelf, setShelf] = useState(null);
 
   const [searchInput, setSearchInput] = useState("");
@@ -15,8 +13,9 @@ export default function Homepage({ region, setRegion }) {
   const [searching, setSearching] = useState(false);
 
   useEffect(() => {
-    getShelf(region, persona.user_id).then(setShelf);
-  }, [region, persona]);
+    setShelf(null);
+    getShelf(region).then(setShelf);
+  }, [region]);
 
   function handleSearchSubmit(e) {
     e.preventDefault();
@@ -25,10 +24,9 @@ export default function Homepage({ region, setRegion }) {
       return;
     }
     setSearching(true);
-    searchProducts(searchInput).then((data) => {
-      setSearchResults(data);
-      setSearching(false);
-    });
+    searchProducts(searchInput)
+      .then(setSearchResults)
+      .finally(() => setSearching(false));
   }
 
   function clearSearch() {
@@ -39,7 +37,10 @@ export default function Homepage({ region, setRegion }) {
   return (
     <div>
       <div className="bg-white border-b border-border px-6 py-3 flex items-center gap-4">
-        <form onSubmit={handleSearchSubmit} className="flex-1 flex items-center gap-2 bg-[#F5F5F6] rounded px-3 py-2">
+        <form
+          onSubmit={handleSearchSubmit}
+          className="flex-1 flex items-center gap-2 bg-[#F5F5F6] rounded px-3 py-2"
+        >
           <span className="text-muted text-sm">🔍</span>
           <input
             type="text"
@@ -53,7 +54,9 @@ export default function Homepage({ region, setRegion }) {
               ✕
             </button>
           )}
+          {searching && <span className="text-xs text-muted">Searching...</span>}
         </form>
+
         <RegionSelector region={region} onChange={setRegion} />
       </div>
 
@@ -64,10 +67,11 @@ export default function Homepage({ region, setRegion }) {
               <h2 className="text-sm font-bold text-ink">
                 {searchResults.count} results for "{searchResults.query}"
               </h2>
-              <button onClick={clearSearch} className="text-xs text-pink font-bold">
-                Clear search
+              <button onClick={clearSearch} className="text-xs font-bold text-pink">
+                Clear Search
               </button>
             </div>
+
             {searchResults.results.length === 0 ? (
               <p className="text-muted text-sm">No products found.</p>
             ) : (
@@ -76,16 +80,12 @@ export default function Homepage({ region, setRegion }) {
           </>
         ) : (
           <>
-            <div className="flex items-center gap-2 mb-5">
-              <PersonaSwitcher persona={persona} onChange={setPersona} />
-            </div>
-
-            <InsightBanner region={region} product={shelf?.recommendations?.[0]} userId={persona.user_id} />
+            <InsightBanner region={region} product={shelf?.recommendations?.[0]} />
 
             {!shelf ? (
               <SkeletonGrid />
-            ) : !shelf.recommendations || shelf.recommendations.length === 0 ? (
-              <p className="text-muted">No data available for this region yet.</p>
+            ) : shelf.recommendations?.length === 0 ? (
+              <p className="text-muted">No recommendations available for this region.</p>
             ) : (
               <ShelfGrid recommendations={shelf.recommendations} />
             )}

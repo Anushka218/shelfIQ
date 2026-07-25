@@ -1,22 +1,50 @@
-import Browse from "./pages/Browse";
 import { useState } from "react";
+import { AuthProvider, useAuth } from "./components/AuthContext";
 import Navbar from "./components/Navbar";
 import Homepage from "./pages/Homepage";
 import Dashboard from "./pages/Dashboard";
 import GapsAndSellers from "./pages/GapsAndSellers";
+import Browse from "./pages/Browse";
+import Login from "./pages/Login";
+import Register from "./pages/Register";
+import Profile from "./pages/Profile";
 
-function App() {
-  const [page, setPage] = useState("shelf");
+function AppContent() {
+  const [page, setPage] = useState("browse");
+  const { isAuthenticated, user } = useAuth();
   const [region, setRegion] = useState("Lucknow");
 
   return (
     <div className="min-h-screen">
       <Navbar page={page} onNavigate={setPage} />
-      {page === "shelf" && <Homepage region={region} setRegion={setRegion} />}
-      {page === "dashboard" && <Dashboard region={region} setRegion={setRegion} />}
-      {page === "gaps" && <GapsAndSellers region={region} setRegion={setRegion} />}
+
+      {page === "login" && <Login onNavigate={setPage} />}
+      {page === "register" && <Register onNavigate={setPage} />}
+
       {page === "browse" && <Browse />}
+
+      {page === "shelf" && isAuthenticated && user?.role !== "admin" && (
+        <Homepage region={region} setRegion={setRegion} />
+      )}
+
+      {page === "dashboard" && isAuthenticated && user?.role === "admin" && (
+        <Dashboard region={region} setRegion={setRegion} />
+      )}
+
+      {page === "gaps" && isAuthenticated && user?.role === "admin" && (
+        <GapsAndSellers region={region} setRegion={setRegion} />
+      )}
+
+      {page === "profile" && isAuthenticated && <Profile />}
     </div>
+  );
+}
+
+function App() {
+  return (
+    <AuthProvider>
+      <AppContent />
+    </AuthProvider>
   );
 }
 

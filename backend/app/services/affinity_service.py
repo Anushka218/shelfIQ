@@ -1,19 +1,22 @@
 from collections import Counter
+
 from app.logger import logger
 from app.database import events_collection, products_collection
-from fastapi import HTTPException
+
 
 def get_user_preferences(user_id: str):
-    user_event = events_collection.find_one({"user_id": user_id})
-    
-
-    if not user_event:
-        logger.warning(f"Affinity request failed: User '{user_id}' not found")
-        raise HTTPException(
-            status_code=404,
-            detail="User not found"
+    # Fetch all events of the user
+    events = list(
+        events_collection.find(
+            {"user_id": user_id},
+            {"_id": 0},
         )
-    event_count = len(user_event)
+    )
+
+    # A new user may have no events.
+    # That is valid, so we return empty preferences instead of 404.
+    event_count = len(events)
+
     category_counter = Counter()
     brand_counter = Counter()
     color_counter = Counter()
@@ -35,39 +38,51 @@ def get_user_preferences(user_id: str):
     for product in products:
         product_lookup[product["product_id"]] = product
 
-    # Fetch user events
-    events = list(events_collection.find({"user_id": user_id}, {"_id": 0},))
-
+    # If the user has no interactions yet
     if not events:
-        logger.info(f"User '{user_id}' has no interactions")
+        logger.info(
+            f"User '{user_id}' has no interactions yet"
+        )
+
         return {
             "user_id": user_id,
+            "event_count": 0,
             "favorite_categories": [],
             "favorite_brands": [],
             "favorite_colors": [],
         }
 
-    # Process events
+    # Process user events
     for event in events:
         score = 1
 
-        if event["clicked"]:
+        if event.get("clicked"):
             score += 2
 
-        if event["wishlisted"]:
+        if event.get("wishlisted"):
             score += 3
 
-        if event["purchased"]:
+        if event.get("purchased"):
             score += 5
 
-        product = product_lookup.get(event["product_id"])
+        product = product_lookup.get(
+            event.get("product_id")
+        )
 
         if not product:
             continue
 
-        category_counter[product["category"]] += score
-        brand_counter[product["brand"]] += score
-        color_counter[product["color"]] += score
+        category_counter[
+            product["category"]
+        ] += score
+
+        brand_counter[
+            product["brand"]
+        ] += score
+
+        color_counter[
+            product["color"]
+        ] += score
 
     def top(counter):
         return [
@@ -77,5 +92,21 @@ def get_user_preferences(user_id: str):
             }
             for name, score in counter.most_common(5)
         ]
-    logger.info(f"Generated affinity profile for user '{user_id}'")
-    return {"user_id": user_id,"event_count": event_count,"favorite_categories": top(category_counter),"favorite_brands": top(brand_counter),"favorite_colors": top(color_counter),}
+
+    logger.info(
+        f"Generated affinity profile for user '{user_id}'"
+    )
+
+    return {
+        "user_id": user_id,
+        "event_count": event_count,
+        "favorite_categories": top(
+            category_counter
+        ),
+        "favorite_brands": top(
+            brand_counter
+        ),
+        "favorite_colors": top(
+            color_counter
+        ),
+    }

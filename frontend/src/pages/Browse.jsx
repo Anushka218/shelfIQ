@@ -1,12 +1,15 @@
 import { useEffect, useState } from "react";
 import { filterProducts } from "../api/client";
 import ShelfGrid from "../components/ShelfGrid";
+import RegionSelector from "../components/RegionSelector";
 
 const CATEGORIES = ["Kurta", "Saree", "Sneakers", "Shirt", "Jeans"];
 const GENDERS = ["Women", "Men"];
 const SEASONS = ["Summer", "Spring", "All Season"];
 
 export default function Browse() {
+  const [region, setRegion] = useState("Lucknow");
+
   const [filters, setFilters] = useState({
     category: "",
     gender: "",
@@ -14,6 +17,7 @@ export default function Browse() {
     min_price: "",
     max_price: "",
   });
+
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(false);
 
@@ -23,10 +27,9 @@ export default function Browse() {
 
   function applyFilters() {
     setLoading(true);
-    filterProducts(filters).then((res) => {
-      setData(res);
-      setLoading(false);
-    });
+    filterProducts(filters)
+      .then((res) => setData(res))
+      .finally(() => setLoading(false));
   }
 
   useEffect(() => {
@@ -34,8 +37,14 @@ export default function Browse() {
   }, []);
 
   return (
-    <div className="max-w-5xl mx-auto p-6">
-      <h1 className="text-lg font-bold text-ink mb-4">Browse catalog</h1>
+    <div className="max-w-6xl mx-auto p-6">
+      <div className="flex items-center justify-between mb-6">
+        <div>
+          <h1 className="text-xl font-bold text-ink">Browse Catalog</h1>
+          <p className="text-sm text-muted">Explore products across regions</p>
+        </div>
+        <RegionSelector region={region} onChange={setRegion} />
+      </div>
 
       <div className="bg-white border border-border rounded-md p-4 mb-6 flex flex-wrap gap-3 items-end">
         <div>
@@ -72,7 +81,7 @@ export default function Browse() {
           </select>
         </div>
         <div>
-          <label className="text-[10px] font-bold text-muted uppercase block mb-1">Min price</label>
+          <label className="text-[10px] font-bold text-muted uppercase block mb-1">Min Price</label>
           <input
             type="number"
             value={filters.min_price}
@@ -82,7 +91,7 @@ export default function Browse() {
           />
         </div>
         <div>
-          <label className="text-[10px] font-bold text-muted uppercase block mb-1">Max price</label>
+          <label className="text-[10px] font-bold text-muted uppercase block mb-1">Max Price</label>
           <input
             type="number"
             value={filters.max_price}
@@ -93,7 +102,7 @@ export default function Browse() {
         </div>
         <button
           onClick={applyFilters}
-          className="bg-pink text-white text-sm font-bold px-4 py-1.5 rounded"
+          className="bg-pink text-white text-sm font-bold px-4 py-2 rounded"
         >
           Apply
         </button>

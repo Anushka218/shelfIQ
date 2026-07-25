@@ -4,39 +4,46 @@ import { mockShelf, mockShelfPersonalized, mockDemand, mockTrends } from "./mock
 const USE_MOCK = false;
 const BASE_URL = import.meta.env.VITE_BACKEND_URL || "http://127.0.0.1:8000";
 
-export async function getShelf(region, userId = null) {
-  if (USE_MOCK) {
-    if (userId) return mockShelfPersonalized;
-    return mockShelf;
-  }
+function getAuthHeaders() {
+  const token = localStorage.getItem("shelfiq_token");
+  return token ? { Authorization: `Bearer ${token}` } : {};
+}
 
-  const url = userId
-    ? `${BASE_URL}/api/shelf/${region}?user_id=${userId}`
-    : `${BASE_URL}/api/shelf/${region}`;
-  const res = await axios.get(url);
+export async function getShelf(region) {
+  if (USE_MOCK) return mockShelf;
+
+  const selectedRegion = region || localStorage.getItem("region") || "Lucknow";
+
+  const res = await axios.get(`${BASE_URL}/api/shelf/user/shelf/`, {
+    params: { region: selectedRegion },
+    headers: getAuthHeaders(),
+  });
   return res.data;
 }
 
 export async function getDemand(region) {
   if (USE_MOCK) return mockDemand;
-  const res = await axios.get(`${BASE_URL}/api/demand/${region}`);
+  const res = await axios.get(`${BASE_URL}/api/demand/${region}`, {
+    headers: getAuthHeaders(),
+  });
   return res.data;
 }
 
 export async function getTrends(region) {
   if (USE_MOCK) return mockTrends;
-  const res = await axios.get(`${BASE_URL}/api/trends/${region}`);
+  const res = await axios.get(`${BASE_URL}/api/trends/${region}`, {
+    headers: getAuthHeaders(),
+  });
   return res.data;
 }
 
-export async function getExplanation(region, productId, userId = null) {
+export async function getExplanation(productId) {
   if (USE_MOCK) {
-    return { region, product_id: productId, reasons: ["Trending in your area", "Good discount"] };
+    return { product_id: productId, reasons: ["Trending in your area", "Good discount"] };
   }
-  const url = userId
-    ? `${BASE_URL}/api/shelf/explain/${region}/${productId}?user_id=${userId}`
-    : `${BASE_URL}/api/shelf/explain/${region}/${productId}`;
-  const res = await axios.get(url);
+  const res = await axios.get(`${BASE_URL}/api/shelf/user/shelf/explain/${productId}`, {
+    headers: getAuthHeaders(),
+  });
   return res.data;
 }
 
@@ -50,12 +57,18 @@ export async function getSellerDashboard(region) {
       summary: { total_insights: 0 },
     };
   }
-  const res = await axios.get(`${BASE_URL}/seller/dashboard?region=${region}`);
+  const selectedRegion = region || localStorage.getItem("region") || "Lucknow";
+  const res = await axios.get(`${BASE_URL}/seller/dashboard`, {
+    params: { region: selectedRegion },
+    headers: getAuthHeaders(),
+  });
   return res.data;
 }
 
 export async function searchProducts(query) {
-  const res = await axios.get(`${BASE_URL}/api/search/?q=${encodeURIComponent(query)}`);
+  const res = await axios.get(`${BASE_URL}/api/search/`, {
+    params: { q: query },
+  });
   return res.data;
 }
 
@@ -69,6 +82,46 @@ export async function filterProducts(filters) {
 }
 
 export async function getPlatformAnalytics() {
-  const res = await axios.get(`${BASE_URL}/api/analytics/`);
+  const res = await axios.get(`${BASE_URL}/api/analytics/`, {
+    headers: getAuthHeaders(),
+  });
+  return res.data;
+}
+
+export async function registerUser({ name, email, password, region, gender }) {
+  const res = await axios.post(`${BASE_URL}/auth/register`, {
+    name, email, password, region, gender,
+  });
+  return res.data;
+}
+
+export async function loginUser({ email, password }) {
+  const res = await axios.post(`${BASE_URL}/auth/login`, { email, password });
+  return res.data;
+}
+export async function getProfile() {
+  const res = await axios.get(`${BASE_URL}/user/profile`, {
+    headers: getAuthHeaders(),
+  });
+  return res.data;
+}
+export async function markPurchase(productId) {
+  const res = await axios.post(`${BASE_URL}/user/purchase/${productId}`, {}, {
+    headers: getAuthHeaders(),
+  });
+  return res.data;
+}
+
+export async function markClicked(productId) {
+  const res = await axios.post(`${BASE_URL}/user/click/${productId}`, {}, {
+    headers: getAuthHeaders(),
+  });
+  return res.data;
+}
+
+export async function toggleWishlistBackend(productId) {
+  const res = await axios.post(`${BASE_URL}/user/wishlist/${productId}`, {}, {
+    headers: getAuthHeaders(),
+  });
   return res.data;
 }
