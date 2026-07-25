@@ -7,7 +7,7 @@ const CATEGORIES = ["Kurta", "Saree", "Sneakers", "Shirt", "Jeans"];
 const GENDERS = ["Women", "Men"];
 const SEASONS = ["Summer", "Spring", "All Season"];
 
-export default function Browse() {
+export default function Browse({ onNavigate }) {
   const [region, setRegion] = useState("Lucknow");
 
   const [filters, setFilters] = useState({
@@ -116,7 +116,7 @@ export default function Browse() {
           {data.results.length === 0 ? (
             <p className="text-muted text-sm">No products match these filters.</p>
           ) : (
-            <ShelfGrid recommendations={data.results} />
+            <ShelfGrid recommendations={data.results} onNavigate={onNavigate} />
           )}
         </>
       ) : null}

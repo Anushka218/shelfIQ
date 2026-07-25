@@ -5,7 +5,7 @@ import InsightBanner from "../components/InsightBanner";
 import RegionSelector from "../components/RegionSelector";
 import { SkeletonGrid } from "../components/SkeletonCard";
 
-export default function Homepage({ region, setRegion }) {
+export default function Homepage({ region, setRegion, onNavigate }) {
   const [shelf, setShelf] = useState(null);
 
   const [searchInput, setSearchInput] = useState("");
@@ -75,7 +75,7 @@ export default function Homepage({ region, setRegion }) {
             {searchResults.results.length === 0 ? (
               <p className="text-muted text-sm">No products found.</p>
             ) : (
-              <ShelfGrid recommendations={searchResults.results} />
+              <ShelfGrid recommendations={searchResults.results} onNavigate={onNavigate} />
             )}
           </>
         ) : (
@@ -87,7 +87,7 @@ export default function Homepage({ region, setRegion }) {
             ) : shelf.recommendations?.length === 0 ? (
               <p className="text-muted">No recommendations available for this region.</p>
             ) : (
-              <ShelfGrid recommendations={shelf.recommendations} />
+              <ShelfGrid recommendations={shelf.recommendations} onNavigate={onNavigate} />
             )}
           </>
         )}

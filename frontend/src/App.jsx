@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { AuthProvider, useAuth } from "./components/AuthContext";
 import Navbar from "./components/Navbar";
 import Homepage from "./pages/Homepage";
@@ -10,32 +10,75 @@ import Register from "./pages/Register";
 import Profile from "./pages/Profile";
 
 function AppContent() {
-  const [page, setPage] = useState("browse");
+  const [page, setPage] = useState(() => {
+    return localStorage.getItem("currentPage") || "browse";
+  });
+
   const { isAuthenticated, user } = useAuth();
-  const [region, setRegion] = useState("Lucknow");
+
+  const [region, setRegion] = useState(() => {
+    return localStorage.getItem("region") || "Lucknow";
+  });
+
+  useEffect(() => {
+    localStorage.setItem("currentPage", page);
+  }, [page]);
+
+  useEffect(() => {
+    localStorage.setItem("region", region);
+  }, [region]);
 
   return (
     <div className="min-h-screen">
-      <Navbar page={page} onNavigate={setPage} />
-
-      {page === "login" && <Login onNavigate={setPage} />}
-      {page === "register" && <Register onNavigate={setPage} />}
-
-      {page === "browse" && <Browse />}
-
-      {page === "shelf" && isAuthenticated && user?.role !== "admin" && (
-        <Homepage region={region} setRegion={setRegion} />
+      {/* Hide navbar on Login & Register */}
+      {page !== "login" && page !== "register" && (
+        <Navbar page={page} onNavigate={setPage} />
       )}
 
-      {page === "dashboard" && isAuthenticated && user?.role === "admin" && (
-        <Dashboard region={region} setRegion={setRegion} />
+      {page === "login" && (
+        <Login onNavigate={setPage} />
       )}
 
-      {page === "gaps" && isAuthenticated && user?.role === "admin" && (
-        <GapsAndSellers region={region} setRegion={setRegion} />
+      {page === "register" && (
+        <Register onNavigate={setPage} />
       )}
 
-      {page === "profile" && isAuthenticated && <Profile />}
+      {page === "browse" && (
+        <Browse onNavigate={setPage} />
+      )}
+
+      {page === "shelf" &&
+        isAuthenticated &&
+        user?.role !== "admin" && (
+          <Homepage
+            region={region}
+            setRegion={setRegion}
+            onNavigate={setPage}
+          />
+        )}
+
+      {page === "dashboard" &&
+        isAuthenticated &&
+        user?.role === "admin" && (
+          <Dashboard
+            region={region}
+            setRegion={setRegion}
+          />
+        )}
+
+      {page === "gaps" &&
+        isAuthenticated &&
+        user?.role === "admin" && (
+          <GapsAndSellers
+            region={region}
+            setRegion={setRegion}
+          />
+        )}
+
+      {page === "profile" &&
+        isAuthenticated && (
+          <Profile />
+        )}
     </div>
   );
 }
