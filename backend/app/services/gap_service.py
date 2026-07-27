@@ -11,6 +11,27 @@ def normalize(value: str | None):
 
     return value.strip().lower()
 
+def normalize_gender(value: str | None):
+    if not value:
+        return None
+
+    value = value.strip().lower()
+
+    mapping = {
+        "female": "women",
+        "woman": "women",
+        "women": "women",
+        "male": "men",
+        "man": "men",
+        "men": "men",
+        "girls":"women",
+        "girl":"women",
+        "boy":"men",
+        "boys":"men",
+    }
+
+    return mapping.get(value, value)
+
 
 def detect_catalog_gap(region: str):
     """
@@ -356,7 +377,11 @@ def detect_attribute_opportunity(region: str, attribute: str):
         parsed = event.get("parsed_query", {})
 
         category = normalize(parsed.get("category"))
-        value = normalize(parsed.get(attribute))
+
+        if attribute=="gender":
+            value= normalize_gender(parsed.get(attribute))
+        else:
+            value= normalize(parsed.get(attribute))
 
         if category and value:
             demand[(category, value)] += 1
@@ -378,7 +403,10 @@ def detect_attribute_opportunity(region: str, attribute: str):
     for product in cursor:
 
         category = normalize(product.get("category"))
-        value = normalize(product.get(attribute))
+        if attribute == "gender":
+           value = normalize_gender(product.get(attribute))
+        else:
+           value = normalize(product.get(attribute))
 
         if category and value:
             supply[(category, value)] += 1
