@@ -52,9 +52,7 @@ function AppContent() {
         <Register onNavigate={setPage} />
       )}
 
-      {page === "browse" && (
-        <Browse onNavigate={setPage} />
-      )}
+      {page === "browse" && <Browse onNavigate={setPage} region={region} setRegion={setRegion} />}
 
       {page === "shelf" &&
         isAuthenticated &&

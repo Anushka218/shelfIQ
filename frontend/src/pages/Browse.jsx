@@ -7,9 +7,7 @@ const CATEGORIES = ["Kurta", "Saree", "Sneakers", "Shirt", "Jeans"];
 const GENDERS = ["Women", "Men"];
 const SEASONS = ["Summer", "Spring", "All Season"];
 
-export default function Browse({ onNavigate }) {
-  const [region, setRegion] = useState("Lucknow");
-
+export default function Browse({ onNavigate, region, setRegion }) {
   const [filters, setFilters] = useState({
     category: "",
     gender: "",
@@ -27,14 +25,14 @@ export default function Browse({ onNavigate }) {
 
   function applyFilters() {
     setLoading(true);
-    filterProducts(filters)
+    filterProducts({ ...filters, region })
       .then((res) => setData(res))
       .finally(() => setLoading(false));
   }
 
   useEffect(() => {
     applyFilters();
-  }, []);
+  }, [region]);
 
   return (
     <div className="max-w-6xl mx-auto p-6">
