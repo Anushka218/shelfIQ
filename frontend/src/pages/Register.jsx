@@ -90,6 +90,13 @@ export default function Register({ onNavigate }) {
       {/* Right Panel */}
       <div className="flex items-center justify-center bg-[#F5F5F6] px-6 py-12">
         <div className="w-full max-w-sm">
+          <button
+            onClick={() => onNavigate("browse")}
+            className="text-sm text-muted mb-6 hover:text-ink"
+          >
+            ← Back
+          </button>
+
           <div className="mb-8">
             <h1 className="text-3xl font-bold text-ink mb-2">
               Create your account
