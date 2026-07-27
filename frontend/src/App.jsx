@@ -28,6 +28,15 @@ function AppContent() {
     localStorage.setItem("region", region);
   }, [region]);
 
+  // Sync region to the logged-in user's own region whenever the user changes
+  // (login, logout, or a restored session on refresh) — fixes the shelf
+  // showing a stale/wrong city right after login.
+  useEffect(() => {
+    if (user?.region) {
+      setRegion(user.region);
+    }
+  }, [user]);
+
   return (
     <div className="min-h-screen">
       {/* Hide navbar on Login & Register */}
@@ -43,9 +52,7 @@ function AppContent() {
         <Register onNavigate={setPage} />
       )}
 
-      {page === "browse" && (
-        <Browse onNavigate={setPage} />
-      )}
+      {page === "browse" && <Browse onNavigate={setPage} region={region} setRegion={setRegion} />}
 
       {page === "shelf" &&
         isAuthenticated &&
