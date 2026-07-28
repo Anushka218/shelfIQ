@@ -65,7 +65,7 @@ export default function GapsAndSellers({ region, setRegion }) {
           <h2 className="text-xs font-bold uppercase text-muted mb-3">Attribute Opportunities</h2>
           <div className="mb-4 pb-2 border-b-2 border-pink/20">
             <h2 className="text-sm font-extrabold text-ink uppercase tracking-wide">
-              Zero Supply Gaps
+              Attribute Opportunities
             </h2>
           </div>
           <div className="grid grid-cols-2 gap-3">
