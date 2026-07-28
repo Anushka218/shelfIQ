@@ -58,7 +58,7 @@ export default function GapsAndSellers({ region, setRegion }) {
 
       {data?.attribute_opportunities?.length > 0 && (
         <div className="mb-6">
-          <h2 className="text-xs font-bold uppercase text-muted mb-3">Zero Supply Gaps</h2>
+          <h2 className="text-xs font-bold uppercase text-muted mb-3">Attribute Opportunities</h2>
           <div className="grid grid-cols-2 gap-3">
             {data.attribute_opportunities.map((gap, index) => (
               <div key={index} className="bg-white border-2 border-pink rounded-md p-4">

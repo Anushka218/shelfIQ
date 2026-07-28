@@ -11,4 +11,7 @@ def search(
     q: str,
     current_user=Depends(get_current_user_optional),
 ):
-    return search_products(q, current_user)
+    return search_products(
+    query=q,
+    current_user=current_user,
+)
