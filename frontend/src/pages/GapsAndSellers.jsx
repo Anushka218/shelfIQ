@@ -48,13 +48,17 @@ export default function GapsAndSellers({ region, setRegion }) {
 
   return (
     <div className="max-w-5xl mx-auto p-6">
-      <div className="flex items-center justify-between mb-6">
-        <div>
-          <h1 className="text-lg font-bold text-ink">Market Gaps & Opportunities</h1>
-          <p className="text-xs text-muted">{data?.summary?.total_insights || 0} insights found</p>
-        </div>
-        <RegionSelector region={region} onChange={setRegion} />
-      </div>
+      <div className="flex items-center justify-between mb-8">
+  <div>
+    <h1 className="text-3xl md:text-4xl font-extrabold text-ink tracking-tight">
+      Market Gaps & Opportunities
+    </h1>
+    <p className="text-sm text-muted mt-1">
+      {data?.summary?.total_insights || 0} insights found
+    </p>
+  </div>
+  <RegionSelector region={region} onChange={setRegion} />
+</div>
 
       {data?.attribute_opportunities?.length > 0 && (
         <div className="mb-6">
