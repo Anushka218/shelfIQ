@@ -1,5 +1,6 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
+import os
 
 from app.config import APP_NAME, APP_VERSION
 from app.routes import (
@@ -26,10 +27,7 @@ app = FastAPI(
 # -----------------------------
 # CORS Configuration
 # -----------------------------
-origins = [
-    "http://localhost:5173",
-    "http://127.0.0.1:5173",
-]
+origins = os.getenv("CORS_ORIGINS", "http://localhost:5173").split(",")
 
 app.add_middleware(
     CORSMiddleware,

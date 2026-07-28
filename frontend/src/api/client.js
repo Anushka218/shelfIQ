@@ -2,7 +2,7 @@ import axios from "axios";
 import { mockShelf, mockShelfPersonalized, mockDemand, mockTrends } from "./mockData";
 
 const USE_MOCK = false;
-const BASE_URL = import.meta.env.VITE_BACKEND_URL || "http://127.0.0.1:8000";
+const BASE_URL = import.meta.env.VITE_BACKEND_URL || "https://shelfiq-backend-hyv3.onrender.com";
 
 function getAuthHeaders() {
   const token = localStorage.getItem("shelfiq_token");
@@ -96,6 +96,7 @@ export async function registerUser({ name, email, password, region, gender }) {
 }
 
 export async function loginUser({ email, password }) {
+  console.log({ email, password });
   const res = await axios.post(`${BASE_URL}/auth/login`, { email, password });
   return res.data;
 }
