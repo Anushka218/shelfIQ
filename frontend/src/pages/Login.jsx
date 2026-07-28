@@ -60,12 +60,13 @@ export default function Login({ onNavigate }) {
 
       {/* Right Panel */}
       <div className="flex items-center justify-center bg-[#F5F5F6] px-6 py-12">
-        <div className="w-full max-w-sm">
+        <div className="w-full max-w-sm relative">
           <button
             onClick={() => onNavigate("browse")}
-            className="text-sm text-muted mb-6 hover:text-ink"
+            className="absolute -top-2 right-0 text-muted hover:text-ink text-xl leading-none"
+            aria-label="Close"
           >
-            ← Back
+            ✕
           </button>
 
           <div className="mb-8">
