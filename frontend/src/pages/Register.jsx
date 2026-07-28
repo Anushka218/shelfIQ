@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Eye, EyeOff } from "lucide-react";
 import { registerUser, loginUser } from "../api/client";
 import { useAuth } from "../components/AuthContext";
 import { useToast } from "../components/ToastContext";
@@ -18,6 +19,7 @@ export default function Register({ onNavigate }) {
     gender: "Female",
   });
 
+  const [showPassword, setShowPassword] = useState(false);
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
 
@@ -143,14 +145,24 @@ export default function Register({ onNavigate }) {
                 Password
               </label>
 
-              <input
-                type="password"
-                required
-                value={form.password}
-                onChange={(e) => updateField("password", e.target.value)}
-                placeholder="••••••••"
-                className="w-full rounded-md border border-border bg-white px-4 py-3 outline-none focus:border-pink focus:ring-1 focus:ring-pink"
-              />
+              <div className="relative">
+                <input
+                  type={showPassword ? "text" : "password"}
+                  required
+                  value={form.password}
+                  onChange={(e) => updateField("password", e.target.value)}
+                  placeholder="••••••••"
+                  className="w-full rounded-md border border-border bg-white px-4 py-3 pr-11 outline-none focus:border-pink focus:ring-1 focus:ring-pink"
+                />
+                <button
+                  type="button"
+                  onClick={() => setShowPassword((prev) => !prev)}
+                  className="absolute right-3 top-1/2 -translate-y-1/2 text-muted hover:text-ink"
+                  aria-label={showPassword ? "Hide password" : "Show password"}
+                >
+                  {showPassword ? <EyeOff size={18} /> : <Eye size={18} />}
+                </button>
+              </div>
             </div>
 
             <div className="grid grid-cols-2 gap-3">
