@@ -58,7 +58,11 @@ export default function GapsAndSellers({ region, setRegion }) {
 
       {data?.attribute_opportunities?.length > 0 && (
         <div className="mb-6">
-          <h2 className="text-xs font-bold uppercase text-muted mb-3">Zero Supply Gaps</h2>
+          <div className="mb-4 pb-2 border-b-2 border-pink/20">
+            <h2 className="text-sm font-extrabold text-ink uppercase tracking-wide">
+              Zero Supply Gaps
+            </h2>
+          </div>
           <div className="grid grid-cols-2 gap-3">
             {data.attribute_opportunities.map((gap, index) => (
               <div key={index} className="bg-white border-2 border-pink rounded-md p-4">
@@ -77,15 +81,40 @@ export default function GapsAndSellers({ region, setRegion }) {
 
       {data?.catalog_gaps?.length > 0 && (
         <div className="mb-6">
-          <h2 className="text-xs font-bold uppercase text-muted mb-3">Catalog Gaps</h2>
-          <div className="bg-white border rounded divide-y">
+          <div className="mb-4 pb-2 border-b-2 border-pink/20">
+            <h2 className="text-sm font-extrabold text-ink uppercase tracking-wide">
+               Catalog Gaps
+            </h2>
+          </div>
+          <div className="grid grid-cols-2 gap-3">
             {data.catalog_gaps.map((gap, index) => (
-              <div key={index} className="flex justify-between p-3">
-                <div>
-                  <div className="font-bold capitalize">{gap.category}</div>
-                  <div className="text-xs text-muted">{gap.evidence}</div>
+              <div
+                key={index}
+                className="group relative border border-border rounded-lg p-4 transition-all hover:shadow-md hover:border-pink/40 overflow-hidden bg-white"
+              >
+                {index === 0 && (
+                  <span className="absolute top-0 right-0 text-[9px] font-bold text-white bg-pink px-2 py-0.5 rounded-bl-lg">
+                    HIGHEST GAP
+                  </span>
+                )}
+                <div className="flex items-start gap-3">
+                  <div
+                    className="w-10 h-10 rounded-full flex items-center justify-center text-sm font-extrabold text-white flex-shrink-0"
+                    style={{
+                      background: `linear-gradient(135deg, #FF3F6C, #FF3F6C99)`,
+                    }}
+                  >
+                    {gap.category?.[0]?.toUpperCase()}
+                  </div>
+                  <div className="min-w-0">
+                    <div className="font-bold text-sm text-ink capitalize truncate">{gap.category}</div>
+                    <div className="text-xs text-muted mt-0.5">{gap.evidence}</div>
+                  </div>
                 </div>
-                <div className="font-bold text-pink">{gap.ratio}x</div>
+                <div className="flex items-center justify-between mt-3 pt-3 border-t border-border">
+                  <span className="text-[10px] font-semibold text-muted uppercase">Demand/Supply</span>
+                  <span className="text-sm font-bold text-pink">{gap.ratio}x</span>
+                </div>
               </div>
             ))}
           </div>
@@ -94,15 +123,40 @@ export default function GapsAndSellers({ region, setRegion }) {
 
       {data?.pricing_opportunities?.length > 0 && (
         <div className="mb-6">
-          <h2 className="text-xs font-bold uppercase text-muted mb-3">Pricing Opportunities</h2>
-          <div className="bg-white border rounded divide-y">
+          <div className="mb-4 pb-2 border-b-2 border-pink/20">
+            <h2 className="text-sm font-extrabold text-ink uppercase tracking-wide">
+               Pricing Opportunities
+            </h2>
+          </div>
+          <div className="grid grid-cols-2 gap-3">
             {data.pricing_opportunities.map((item, index) => (
-              <div key={index} className="flex justify-between p-3">
-                <div>
-                  <div className="font-bold capitalize">{item.category}</div>
-                  <div className="text-xs text-muted">{item.evidence}</div>
+              <div
+                key={index}
+                className="group relative border border-border rounded-lg p-4 transition-all hover:shadow-md hover:border-pink/40 overflow-hidden bg-white"
+              >
+                {index === 0 && (
+                  <span className="absolute top-0 right-0 text-[9px] font-bold text-white bg-pink px-2 py-0.5 rounded-bl-lg">
+                    TOP OPPORTUNITY
+                  </span>
+                )}
+                <div className="flex items-start gap-3">
+                  <div
+                    className="w-10 h-10 rounded-full flex items-center justify-center text-sm font-extrabold text-white flex-shrink-0"
+                    style={{
+                      background: `linear-gradient(135deg, #FF3F6C, #FF3F6C99)`,
+                    }}
+                  >
+                    {item.category?.[0]?.toUpperCase()}
+                  </div>
+                  <div className="min-w-0">
+                    <div className="font-bold text-sm text-ink capitalize truncate">{item.category}</div>
+                    <div className="text-xs text-muted mt-0.5">{item.evidence}</div>
+                  </div>
                 </div>
-                <div className="font-bold">{item.budget_match_rate}%</div>
+                <div className="flex items-center justify-between mt-3 pt-3 border-t border-border">
+                  <span className="text-[10px] font-semibold text-muted uppercase">Above budget</span>
+                  <span className="text-sm font-bold text-ink">{item.budget_match_rate}%</span>
+                </div>
               </div>
             ))}
           </div>
@@ -111,14 +165,17 @@ export default function GapsAndSellers({ region, setRegion }) {
 
       {data?.seller_recommendations?.length > 0 && (
         <div>
-          <h2 className="text-xs font-bold uppercase text-muted mb-3">Recommended Sellers</h2>
+          <div className="mb-4 pb-2 border-b-2 border-pink/20">
+            <h2 className="text-sm font-extrabold text-ink uppercase tracking-wide">
+              Recommended Sellers
+            </h2>
+          </div>
           <div className="space-y-5">
             {data.seller_recommendations.map((group) => (
               <div key={group.category} className="bg-white border border-border rounded-lg p-5">
-                <div className="flex items-center gap-2 mb-4">
-                  <span className="w-1.5 h-5 bg-pink rounded-full"></span>
-                  <h3 className="font-bold capitalize text-ink">{group.category}</h3>
-                </div>
+                <span className="inline-block bg-pink/10 text-pink text-xs font-bold uppercase tracking-wide px-3 py-1 rounded-full mb-4">
+                  {group.category}
+                </span>
                 <div className="grid grid-cols-2 gap-3">
                   {group.recommended_sellers.slice(0, 4).map((seller, i) => (
                     <div
