@@ -96,6 +96,7 @@ export async function registerUser({ name, email, password, region, gender }) {
 }
 
 export async function loginUser({ email, password }) {
+  console.log({ email, password });
   const res = await axios.post(`${BASE_URL}/auth/login`, { email, password });
   return res.data;
 }

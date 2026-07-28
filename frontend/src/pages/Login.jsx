@@ -18,7 +18,7 @@ export default function Login({ onNavigate }) {
     setLoading(true);
 
     try {
-      const data = await loginUser(email, password);
+      const data = await loginUser({email,password,});
       login(data.access_token, data.user);
 
       if (data.user.role === "admin") {
