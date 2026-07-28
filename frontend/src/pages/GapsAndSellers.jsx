@@ -112,16 +112,51 @@ export default function GapsAndSellers({ region, setRegion }) {
       {data?.seller_recommendations?.length > 0 && (
         <div>
           <h2 className="text-xs font-bold uppercase text-muted mb-3">Recommended Sellers</h2>
-          <div className="space-y-4">
+          <div className="space-y-5">
             {data.seller_recommendations.map((group) => (
-              <div key={group.category} className="bg-white border rounded-md p-4">
-                <h3 className="font-bold capitalize mb-3">{group.category}</h3>
+              <div key={group.category} className="bg-white border border-border rounded-lg p-5">
+                <div className="flex items-center gap-2 mb-4">
+                  <span className="w-1.5 h-5 bg-pink rounded-full"></span>
+                  <h3 className="font-bold capitalize text-ink">{group.category}</h3>
+                </div>
                 <div className="grid grid-cols-2 gap-3">
-                  {group.recommended_sellers.slice(0, 4).map((seller) => (
-                    <div key={seller.seller_id} className="border rounded-md p-3">
-                      <div className="font-bold">{seller.business_name}</div>
-                      <div className="text-xs text-muted">{seller.primary_region}</div>
-                      <div className="text-xs mt-2">⭐ {seller.rating}</div>
+                  {group.recommended_sellers.slice(0, 4).map((seller, i) => (
+                    <div
+                      key={seller.seller_id}
+                      className="group relative border border-border rounded-lg p-4 transition-all hover:shadow-md hover:border-pink/40 overflow-hidden"
+                    >
+                      {i === 0 && (
+                        <span className="absolute top-0 right-0 text-[9px] font-bold text-white bg-pink px-2 py-0.5 rounded-bl-lg">
+                          TOP MATCH
+                        </span>
+                      )}
+                      <div className="flex items-start gap-3">
+                        <div
+                          className="w-10 h-10 rounded-full flex items-center justify-center text-sm font-extrabold text-white flex-shrink-0"
+                          style={{
+                            background: `linear-gradient(135deg, #FF3F6C, #FF3F6C99)`,
+                          }}
+                        >
+                          {seller.business_name?.[0]?.toUpperCase()}
+                        </div>
+                        <div className="min-w-0">
+                          <div className="font-bold text-sm text-ink truncate">{seller.business_name}</div>
+                          <div className="text-xs text-muted flex items-center gap-1 mt-0.5">
+                            📍 {seller.primary_region}
+                          </div>
+                        </div>
+                      </div>
+                      <div className="flex items-center justify-between mt-3 pt-3 border-t border-border">
+                        <div className="flex items-center gap-1">
+                          <span className="text-amber-400 text-sm">★</span>
+                          <span className="text-sm font-bold text-ink">{seller.rating}</span>
+                        </div>
+                        {seller.verified && (
+                          <span className="text-[10px] font-semibold text-green bg-[#E7F8F3] px-2 py-0.5 rounded-full flex items-center gap-1">
+                            ✓ Verified
+                          </span>
+                        )}
+                      </div>
                     </div>
                   ))}
                 </div>
