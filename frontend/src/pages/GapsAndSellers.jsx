@@ -62,7 +62,7 @@ export default function GapsAndSellers({ region, setRegion }) {
 
       {data?.attribute_opportunities?.length > 0 && (
         <div className="mb-6">
-          <h2 className="text-xs font-bold uppercase text-muted mb-3">Attribute Opportunities</h2>
+          {/* <h2 className="text-xs font-bold uppercase text-muted mb-3">Attribute Opportunities</h2> */}
           <div className="mb-4 pb-2 border-b-2 border-pink/20">
             <h2 className="text-sm font-extrabold text-ink uppercase tracking-wide">
               Attribute Opportunities
